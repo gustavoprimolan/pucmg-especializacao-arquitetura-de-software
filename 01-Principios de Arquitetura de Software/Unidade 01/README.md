@@ -288,189 +288,169 @@
 	* Dao origem a casos de uso.
 	* Como algo que vai ter uma ação a um sistema, vai ter uma interação entre o sistema e seus atores. Interagir com o usuário e fornecer dados desse mundo externo.
 	* Vou precisar realizar um conjunto de passos é requisito funcional.
-	Exemplo de Requisito funcional:
-		- O Gerente devera visualizar todos os  empréstimos  efetuados do mes, indicando do funcionário que disponibilizou o empréstimo, o cliente que obteve o empréstimo e o valor emprestado.
-	Gera valor ao nosso usuário, uma ação que vai realizar dentro do sistema.
-	Sistema que trabalha com empréstimos e vai gerar um relatório. Tem interação para realizar isso.	
+	* Exemplo de Requisito funcional:
+		* O Gerente devera visualizar todos os  empréstimos  efetuados do mes, indicando do funcionário que disponibilizou o empréstimo, o cliente que obteve o empréstimo e o valor emprestado.
+		* Gera valor ao nosso usuário, uma ação que vai realizar dentro do sistema.
+		* Sistema que trabalha com empréstimos e vai gerar um relatório. Tem interação para realizar isso.	
 
-	Requisitos nao funcionais - As vezes devemos entregar as funcionalidades sujeito a um conjunto de restrições, então essas restrições esses requisitos de qualidade que pode ser de uma funcionalidade especifica ou como um sistema ao todo, são chamados de requisitos não funcionais.
-	Ideia é que os requisitos não funcionais restrigem e limitam a forma como o sistema são entregues.
-	Entregar uma tarefa, gerar um relatório. O processo de gerar o relatório seria algo mais análogo, mais parecido com a ideia do requisito funcional.
-	O papel onde voce precisa escrever precisa ser o papel de x espessura, entregar ate as 2 da tarde. Tipo de restrição análogas, requisitos não funcionais.
-	Os requisitos não funcionais estão relacionados ou podem ate limitar o desenvolvimento de uma sistema como um todo e não somente uma funcionalidade especifica.
-	Exemplo de requisito não funcional: O fechamento contabiliza do mes devera ser realizado em no máximo 4h para um volume de ate 40 milhões de registros.
-	O sistema devera suportar dois idiomas: português e espanhol
-	Categorias de requisitos não funcionais: Confiabilidade, usabilidade, desempenho, desenho, fisico, implementação, interface, segurança e entre outros.
-	Confiabilidade - Algo relacionado a falhas ou recuperar essas falhas
-	Desempenho - tempo de resposta
-	Segurança - Posso ter uma funcionalidade de login - Requisito funcional, entrega algo de valor do funcionário. Tem que ser feito com algoritmo de criptografia x, passa ser um requisito não funcional
+* Requisitos nao funcionais - As vezes devemos entregar as funcionalidades sujeito a um conjunto de restrições, então essas restrições esses requisitos de qualidade que pode ser de uma funcionalidade especifica ou como um sistema ao todo, são chamados de requisitos não funcionais.
+	* Ideia é que os requisitos não funcionais restrigem e limitam a forma como o sistema são entregues.
+	* Entregar uma tarefa, gerar um relatório. O processo de gerar o relatório seria algo mais análogo, mais parecido com a ideia do requisito funcional.
+	* O papel onde voce precisa escrever precisa ser o papel de x espessura, entregar ate as 2 da tarde. Tipo de restrição análogas, requisitos não funcionais.
+	* Os requisitos não funcionais estão relacionados ou podem ate limitar o desenvolvimento de uma sistema como um todo e não somente uma funcionalidade especifica.
+	* Exemplo de requisito não funcional: O fechamento contabiliza do mes devera ser realizado em no máximo 4h para um volume de ate 40 milhões de registros.
+	* O sistema devera suportar dois idiomas: português e espanhol
+	* Categorias de requisitos não funcionais: Confiabilidade, usabilidade, desempenho, desenho, fisico, implementação, interface, segurança e entre outros.
+	* Confiabilidade - Algo relacionado a falhas ou recuperar essas falhas
+	* Desempenho - tempo de resposta
+	* Segurança - Posso ter uma funcionalidade de login - Requisito funcional, entrega algo de valor do funcionário. Tem que ser feito com algoritmo de criptografia x, passa ser um requisito não funcional
 	Classificação de Requisito FURPS - A ideia é que um acrônimo, que define alguns  tipos desses requisitos.
-	F - Funcionalidade (Functionality) F
-	U - Usabilidade (Usability) U
-	C - Confiabilidade (Reliabity) R
-	D - Desempenho (Performance) P
-	S - Suportabilidade (Supportability) S
+	* F - Funcionalidade (Functionality) F
+	* U - Usabilidade (Usability) U
+	* C - Confiabilidade (Reliabity) R
+	* D - Desempenho (Performance) P
+	* S - Suportabilidade (Supportability) S
 
-	Exemplo de requisitos arquiteturas
-		- Suporte a multiplas linguagens 
-		- O Banco utilizado sera o Oracle 8i
-		- O sistema rodara 7 dias/semana, 24 horas/dia
-		- Sera required um help online
-		- Toda lógica de apresentação sera escrito em visual basic ou em uma outra linguagem.
-	Requisitos são as principais entradas para o arquiteto, independente se trabalha com agile ou tradicional e conhecer os requisitos e como eles atrapalham no trabalho do arquiteto.
+	* Exemplo de requisitos arquiteturas
+		*  Suporte a multiplas linguagens 
+		*  O Banco utilizado sera o Oracle 8i
+		*  O sistema rodara 7 dias/semana, 24 horas/dia
+		*  Sera required um help online
+		*  Toda lógica de apresentação sera escrito em visual basic ou em uma outra linguagem.
+	* Requisitos são as principais entradas para o arquiteto, independente se trabalha com agile ou tradicional e conhecer os requisitos e como eles atrapalham no trabalho do arquiteto.
 
 
------------
-Discussão Requisitos funcionais e não funcionais
+<h3>Discussão Requisitos funcionais e não funcionais</h3>
 
-	Para classificar um requisito como funcional e não funcional é necessário verificar em que etapa o requisito esta, ele é um requisito menos detalhado ou mais detalhado, ele é mais macro ou micro e qual a granularidade desses requisitos.
-	Os requisito não funcionais precisam ser identificados e documentados o quanto antes, valendo para projetos tradicionais e agile. Justamente pq os requisitos não funcionais vai ter um influencia da arquitetura, quanto antes eu souber mais previamente eu consigo atacar esses riscos e considerar esses requisitos dentro da minha arquitetura.
-	Nao é uma classificação tao exata, dependendo do momento e o nível de detalhes que os requisitos estão.
-	O requisito funcional tem a ver com uma funcionalidade, ou algo que vai entregar valor para o cliente. Ex: Cadastro, geração de relatório, execução de processos
-	O requisito nao funcional vai ser uma restrição. Relacionada a um desses requisitos funcionais ou a todo o sistema.
-	Qual é o requisito não funciona?
-
-	I - Os valores das faturas devem ser totalizados por cliente e por data de vencimento igual a fornecida pela area de contas a pagar. - FUNCIONAIS - Visto como regra de negocio, se o requisito esta mais detalhado posso ter uma parte de um requisito funcional. Relacionado a funcionalidade.
-
-	II - O software deve ser processado tanto em alta quanto em baixa plataforma. - REQUISITO NAO FUNCIONAL. 	Requisito que não esta relacionado a um requisito funcional especifico, mas com o sistema como um todo. Todas as funcionalidades do sistemas tem que funcionar tanto em alta quanto em baixa.
-Tem que atender a essa restrição.
-	III - A data de vencimento constante dos boletos de pagamento deve ser igual a data de registro de documento do cadastro mais trinta dias corridos. - FUNCIONAL.
+* Para classificar um requisito como funcional e não funcional é necessário verificar em que etapa o requisito esta, ele é um requisito menos detalhado ou mais detalhado, ele é mais macro ou micro e qual a granularidade desses requisitos.
+* Os requisito não funcionais precisam ser identificados e documentados o quanto antes, valendo para projetos tradicionais e agile. Justamente pq os requisitos não funcionais vai ter um influencia da arquitetura, quanto antes eu souber mais previamente eu consigo atacar esses riscos e considerar esses requisitos dentro da minha arquitetura.
+* Nao é uma classificação tao exata, dependendo do momento e o nível de detalhes que os requisitos estão.
+* O requisito funcional tem a ver com uma funcionalidade, ou algo que vai entregar valor para o cliente. Ex: Cadastro, geração de relatório, execução de processos
+* O requisito nao funcional vai ser uma restrição. Relacionada a um desses requisitos funcionais ou a todo o sistema.
+* Qual é o requisito não funciona?
+	* I - Os valores das faturas devem ser totalizados por cliente e por data de vencimento igual a fornecida pela area de contas a pagar. - FUNCIONAIS - Visto como regra de negocio, se o requisito esta mais detalhado posso ter uma parte de um requisito funcional. Relacionado a funcionalidade.
+	* II - O software deve ser processado tanto em alta quanto em baixa plataforma. - REQUISITO NAO FUNCIONAL. Requisito que não esta relacionado a um requisito funcional especifico, mas com o sistema como um todo. Todas as funcionalidades do sistemas tem que funcionar tanto em alta quanto em baixa. Tem que atender a essa restrição.
+	* III - A data de vencimento constante dos boletos de pagamento deve ser igual a data de registro de documento do cadastro mais trinta dias corridos. - FUNCIONAL.
 	
-	Quais são os requisitos não funcionais?
-	I - Para cada cliente deve ser aplicado um identificador único.
-	II - O tempo de resposta entre a requisição e a informação não pode exceder a 2 ms. - NAO FUNCIONAL - Geral pra todas as funcionalidades. Posso ate entregar a funcionalidade, mas se isso demorar mais de 2 ms eu estou afetando esse requisito não funcional. Restrição em como a informação é entregue ao cliente.
-	III - Clientes tem filiais que devem carregar, na base de dados, o identificador do cliente principal.
-	IV - O sistema não deve ferir as leis de proteção ambiental. - NAO FUNCIONAL. Geral para todas as funcionalidades. Pode fazer tudo o que ele faz (funcional), mas fazer tudo dentro das leis é uma característica não funcional.\
+* Quais são os requisitos não funcionais?
+	* I - Para cada cliente deve ser aplicado um identificador único.
+	* II - O tempo de resposta entre a requisição e a informação não pode exceder a 2 ms. - NAO FUNCIONAL - Geral pra todas as funcionalidades. Posso ate entregar a funcionalidade, mas se isso demorar mais de 2 ms eu estou afetando esse requisito não funcional. Restrição em como a informação é entregue ao cliente.
+	* III - Clientes tem filiais que devem carregar, na base de dados, o identificador do cliente principal.
+	* IV - O sistema não deve ferir as leis de proteção ambiental. - NAO FUNCIONAL. Geral para todas as funcionalidades. Pode fazer tudo o que ele faz (funcional), mas fazer tudo dentro das leis é uma característica não funcional.
 
-	Uma maneira mais fácil para classificar os requisitos não funcionais é lembrar de todos aqueles tipos de requisitos não funcionais.
+* Uma maneira mais fácil para classificar os requisitos não funcionais é lembrar de todos aqueles tipos de requisitos não funcionais.
 
-	Lembre-se dos tipos de Requisitos Não Funcionais
-	- Desempenho
-	- Usabilidade
-	- Ambiente
-	- Portabilidade
-	- Seguranca
+* Lembre-se dos tipos de Requisitos Não Funcionais
+	* Desempenho
+	* Usabilidade
+	* Ambiente
+	* Portabilidade
+	* Seguranca
 
-	Verificar se aquele requisito pertence em uma dessas categorias.
-	Funcionalidade de Login - Funcional
-	Se a funcionalidade tem um determinado nível de segurança, um determinado algoritmo de criptografia - Nao funcional.
+	* Verificar se aquele requisito pertence em uma dessas categorias.
+	* Funcionalidade de Login - Funcional
+	* Se a funcionalidade tem um determinado nível de segurança, um determinado algoritmo de criptografia - Nao funcional.
 
+<h3>Diagramas URL de Arquitetura - Componente</h3>
+* Precisa ser conhecido e bastante utilizado pelo arquiteto de software.
+* O que é um componente?
+* É uma parte encapsulada, reutilizável do software. Sao como um conjunto de blocos que são combinados para formar o software. Pode ser do tamanho de uma classe ate um subsistema. Diversas granularidades.
+* Candidatos a componentes devem realizar uma função chave e serem usados frequentemente. Muito associada a encapsulamento e rezo.
+* Conjunto de componentes como varios legos.
+* Um componente sozinho nao faz muita coisa, mas um conjunto de componentes definem a arquitetura do sistema. Entregando algo interessante.
+* Exemplo: Componente para registrar logs. Sempre que eu deparar para realizar um log no meu sistema, eu posso realizar esse componente.
+* Criar um documento para fazer parsing entre documentos. Sempre quando precisar posso utilizar o mesmo componente.	
+* Um componente faz tudo o que uma classe ou um conjunto de classes faz. Simplesmente tenho que pensar em quais são as funcionalidades que eu quero encapsuladas que provavelmente vai ser utilizadas e fazer isso dentro de um componente.
+* Componentes nao possuem muita dependência. Quanto maior a dependência do componente mais difícil vai ser a reutilização. Eles tem que ser mais isolados nesse sentido.
+* Mudanças em um componente noa devem afetar o restante do sistema. Justamente se eu fizer de maneira encapsulada a mudança não tera impacto.
+* Sao acessados por meio de interfaces. Precisam ser pouco acoplados para que possam ser alterados sem demandar mudanças no sistema.
+* Em um diagrama UML um componente é representado como um retângulo com o nome do componente
+* Os componentes vai estar tbm em um diagrama de componentes, quando projetamos um software é comum planejar os pedaços em um nível mais alto para estabelecer a arquitetura e pensar nas grandes dependias desses modelos.
+* A medida que vai decompondo, pensamos em componentes em mais baixo nível, para ter a oportunidade de reutiliza-los.
+* Pensando em documentação o diagrama faz parte do desenvolvimento, como as partes vai ser organizadas em modelos e componentes utilizáveis.
+* Diagrama de Componentes:
+	* Objetivo: Apresentar a disposição dos componentes “fisico” de um sistema.
+	* Componente: Unidade de software com funcionalidades auto-contidas (um .class, um .exe, uma DLL etc). (Exemplo de diagrama de componentes)
+	* Pacotes - Organizar componentes
+	* Seta tracejada - Relacionamento de dependência - O que esta sendo apontado fornece um serviço.
+	* Componentes precisam se comunicar e existem dependências entre eles. Para utilizar como essa comunicação é feita, utilizamos interfaces e essas interfaces tbm tem uma representação na UML.
+	* Existe a interface fornecida, ou seja, o componente fornece essa abertura essa possibilidade de comucacao para outros componentes.
+	* Existe a interface demandada, ou seja, eu preciso consultar o serviço de outro componente.
+	* Interface com bolinha na ponta - Interface fornecida, eu faço tal tipo de serviço e para voce utilizar eu libero uma interface
+	* Interface com meia bolinha - Recebe dados
+	* Se um precisa outro tem que fornecer - 
+
+* Discussão Exemplos de Diagramas de Componentes
+	* Principais items de um diagrama de componente da uma.
+	* O tipo do componente vai ser mostrado no símbolo superior direito do retângulo.
+	* Cada componente é um retângulo com o símbolo do lado superior direito.
+	* Formas como os componentes interages entre si
+	* Interfaces fornecidas e interfaces demandadas.
+	* Componente customer fornece duas interfaces
+
+
+<h3>Diagrama UML de arquitetura - Pacote</h3>
+* Um diagrama de pacotes vai organizar elementos da uml, normal vermos ele sendo utilizado junto a casos de usos e a classes. A ideia é que o conteúdo que o pacote possui possa ser desenhado dentro do próprio pacote ou externamente. Se for externamente o conteúdo vai ser conectado  pelo pacote por uma linha.
+* O diagrama de pacotes vai favorecer também a organizacao lógica das camadas, cada camada poderia ser um pacote, mostrando a comunicação entre os pacotes, como o dado flui entre as camadas.
+* É possível usar tbm estereótipos para os pacotes, que são mecanismos de extensão da UML.
+* Exemplo de estereotipo: <<facede>>, <<framework>>, <<model>>, <<stub>>, <<subsystem>>, <<system>>.
+* Como se fossem tipos de elementos que posso usar para diferenciar os pacotes.
+* Existem algumas diretrizes na confecção e liberação de pacotes, por exemplo: 
+	* Classes da mesma hierarquia vai pertencer ao mesmo pacote.
+	* Classes relacionadas a outra por composição (uma precisa da outra), frequentemente possuem o mesmo pacote;
+	* Classes que tem um alto grau de acoplamento, precisam estar próximas.
+	* A dependencia de pacotes são representadas por setas (mostra a relação de dependencia).
+	* Pacote gera ou fornece um serviço que o outro demanda.
+	* Pacotes pode ser utilizados para organizar casos de uso.
 	
+<h3>Diagramas UML de arquitetura - Implantação</h3>
+* Em ingles recebe o nome como deployment, mas aqui recebe o nome de implatacao.
+* Ele contempla a implantação fisico do sistema, essa visão fisico vai abranger os elementos fisico do sistema.
+* Como os elementos vai ser dispostos. Posso ter um servidor de banco de dados, servidor de aplicação, mais maquinas cliente. Distribuição fisico do software entre esse elementos. E esses elementos juntos permitem que o sistema execute.
+* Nos casos mais simples, o software vai ser entregue com um único arquivo executável, que vai ser instalado em um único computador. Nesse caso é bastante simples pro tipo de software que nos desenvolvemos atualmente.
+* Software hoje conta com uma estrutura de hardware maior, vai ser usado por varias usuários em maquinas diferentes, então precisamos de um diagrama para ilustrar a complexidade dessa situação.
+* Para cada elemento de hardware, ou seja, cada elemento fisico que precisamos mostrar nós utilizamos um elemento que se chama nodo.
+* Um nodo é um recurso de hardware ou software que pode hospedar software ou arquivos relacionados.
+* Podem-se usar todos para representar elementos de hardware, porem, nodos não precisam sempre de hardware.
+* A representação de um todo na UML é feita através de uma caixa.
+* O nome do nodo vem no centro. 
+* Alguns tipos de software provem um ambiente no qual outros componentes de software podem ser executados. Nesse caso, eles também podem ser representados como nodos. Por exemplo em um contexto de aplicação.
+* Um nodo vai alem de simplesmente hardware. Se eu tenho um software que hospeda outros, eu tbm posso representa-lo como um nodo.
+* Nodo de maneira mais ampla pode ser entendida como um ambiente externo que vai prove serviços para o software.
+* Alguns exemplos de nodos pensando em hardware: Um servidor, um computador desktop, driver.
+* Pensando em contextos de aplicação: Sistemas Operacionais, um container J2EE, servidores web. Sao ambientes de execução de outro software, podendo ser representado como nodos.
+* Um nodo vai representar um software que roda dentro de um hardware e essa modelagem vai ser feita através de artefatos. Esse software que vai ser utilizado dentro de componente, de hardware ou de software vai receber o nome de artefato.
+* Por exemplo: pode ser um único artefato desse software, posso hospeda-lo como um nodo.
 	
-	
--------------
+* Artefatos
+	* Sao arquivos fisico que executam ou são usados pelo software, por exemplo:
+	* Executaveis, como .exe ou .jar
+	* Bibliotecas como dlls
+	* Fonte como .java ou .cpp
+	* De configuração .xml, .properties, .txt
 
-Diagramas URL de Arquitetura - Componente
-
-	Precisa ser conhecido e bastante utilizado pelo arquiteto de software.
-	O que é um componente?
-	- É uma parte encapsulada, reutilizável do software. Sao como um conjunto de blocos que são combinados para formar o software. Pode ser do tamanho de uma classe ate um subsistema. Diversas granularidades.
-
-	Candidatos a componentes devem realizar uma função chave e serem usados frequentemente. Muito associada a encapsulamento e rezo.
-	Conjunto de componentes como varios legos.
-	Um componente sozinho nao faz muita coisa, mas um conjunto de componentes definem a arquitetura do sistema. Entregando algo interessante.
-	Exemplo: Componente para registrar logs. Sempre que eu deparar para realizar um log no meu sistema, eu posso realizar esse componente.
-	Criar um documento para fazer parsing entre documentos. Sempre quando precisar posso utilizar o mesmo componente.
-	Um componente faz tudo o que uma classe ou um conjunto de classes faz. Simplesmente tenho que pensar em quais são as funcionalidades que eu quero encapsuladas que provavelmente vai ser utilizadas e fazer isso dentro de um componente.
-	Componentes nao possuem muita dependência. Quanto maior a dependência do componente mais difícil vai ser a reutilização. Eles tem que ser mais isolados nesse sentido.
-	Mudanças em um componente noa devem afetar o restante do sistema. Justamente se eu fizer de maneira encapsulada a mudança não tera impacto.
-	Sao acessados por meio de interfaces. Precisam ser pouco acoplados para que possam ser alterados sem demandar mudanças no sistema.
-	Em um diagrama UML um componente é representado como um retângulo com o nome do componente
-	Os componentes vai estar tbm em um diagrama de componentes, quando projetamos um software é comum planejar os pedaços em um nível mais alto para estabelecer a arquitetura e pensar nas grandes dependias desses modelos.
-	A medida que vai decompondo, pensamos em componentes em mais baixo nível, para ter a oportunidade de reutiliza-los.
-	Pensando em documentação o diagrama faz parte do desenvolvimento, como as partes vai ser organizadas em modelos e componentes utilizáveis.
-	Diagrama de Componentes
-		- Objetivo: Apresentar a disposição dos componentes “fisico” de um sistema.
-		- Componente: Unidade de software com funcionalidades auto-contidas (um .class, um .exe, uma DLL etc).
-		(Exemplo de diagrama de componentes)
-		- Pacotes - Organizar componentes
-		- Seta tracejada - Relacionamento de dependência - O que esta sendo apontado fornece um serviço.
-		Componentes precisam se comunicar e existem dependências entre eles. Para utilizar como essa comunicação é feita, utilizamos interfaces e essas interfaces tbm tem uma representação na UML.
-		Existe a interface fornecida, ou seja, o componente fornece essa abertura essa possibilidade de comucacao para outros componentes.
-		Existe a interface demandada, ou seja, eu preciso consultar o serviço de outro componente.
-		Interface com bolinha na ponta - Interface fornecida, eu faço tal tipo de serviço e para voce utilizar eu libero uma interface
-		Interface com meia bolinha - Recebe dados
-		Se um precisa outro tem que fornecer - 
-
-		Discussão Exemplos de Diagramas de Componentes
-	
-	Principais items de um diagrama de componente da uma.
-	0 tipo do componente vai ser mostrado no símbolo superior direito do retângulo.
-	Cada componente é um retângulo com o símbolo do lado superior direito.
-	Formas como os componentes interages entre si
-	Interfaces fornecidas e interfaces demandadas.
-	Componente customer fornece duas interfaces
-
-	------------
-
-	Diagrama UML de arquitetura - Pacote
-
-	Um diagrama de pacotes vai organizar elementos da uml, normal vermos ele sendo utilizado junto a casos de usos e a classes. A ideia é que o conteúdo que o pacote possui possa ser desenhado dentro do próprio pacote ou externamente. Se for externamente o conteúdo vai ser conectado  pelo pacote por uma linha.
-	O diagrama de pacotes vai favorecer também a organizacao lógica das camadas, cada camada poderia ser um pacote, mostrando a comunicação entre os pacotes, como o dado flui entre as camadas.
-	É possível usar tbm estereótipos para os pacotes, que são mecanismos de extensão da UML.
-	Exemplo de estereotipo: <<facede>>, <<framework>>, <<model>>, <<stub>>, <<subsystem>>, <<system>>.
-	Como se fossem tipos de elementos que posso usar para diferenciar os pacotes.
-	Existem algumas diretrizes na confecção e liberação de pacotes, por exemplo: 
-	- Classes da mesma hierarquia vai pertencer ao mesmo pacote.
-	- Classes relacionadas a outra por composição (uma precisa da outra), frequentemente possuem o mesmo pacote;
-	- Classes que tem um alto grau de acoplamento, precisam estar próximas.
-	
-	A dependencia de pacotes são representadas por setas (mostra a relação de dependencia).
-	Pacote gera ou fornece um serviço que o outro demanda.
-	Pacotes pode ser utilizados para organizar casos de uso.
-	
-
-	-------------
-
-	Diagramas UML de arquitetura - Implantação
-
-	Em ingles recebe o nome como deployment, mas aqui recebe o nome de implatacao.
-	Ele contempla a implantação fisico do sistema, essa visão fisico vai abranger os elementos fisico do sistema.
-	Como os elementos vai ser dispostos. Posso ter um servidor de banco de dados, servidor de aplicação, mais maquinas cliente. Distribuição fisico do software entre esse elementos. E esses elementos juntos permitem que o sistema execute.
-	Nos casos mais simples, o software vai ser entregue com um único arquivo executável, que vai ser instalado em um único computador. Nesse caso é bastante simples pro tipo de software que nos desenvolvemos atualmente.
-	Software hoje conta com uma estrutura de hardware maior, vai ser usado por varias usuários em maquinas diferentes, então precisamos de um diagrama para ilustrar a complexidade dessa situação.
-	Para cada elemento de hardware, ou seja, cada elemento fisico que precisamos mostrar nós utilizamos um elemento que se chama nodo.
-	Um nodo é um recurso de hardware ou software que pode hospedar software ou arquivos relacionados.
-	Podem-se usar todos para representar elementos de hardware, porem, nodos não precisam sempre de hardware.
-	A representação de um todo na UML é feita através de uma caixa.
-	O nome do nodo vem no centro. 
-	Alguns tipos de software provem um ambiente no qual outros componentes de software podem ser executados. Nesse caso, eles também podem ser representados como nodos. Por exemplo em um contexto de aplicação.
-	Um nodo vai alem de simplesmente hardware. Se eu tenho um software que hospeda outros, eu tbm posso representa-lo como um nodo.
-	Nodo de maneira mais ampla pode ser entendida como um ambiente externo que vai prove serviços para o software.
-	Alguns exemplos de nodos pensando em hardware: Um servidor, um computador desktop, driver.
-	Pensando em contextos de aplicação: Sistemas Operacionais, um container J2EE, servidores web. Sao ambientes de execução de outro software, podendo ser representado como nodos.
-	Um nodo vai representar um software que roda dentro de um hardware e essa modelagem vai ser feita através de artefatos. Esse software que vai ser utilizado dentro de componente, de hardware ou de software vai receber o nome de artefato.
-	Por exemplo: pode ser um único artefato desse software, posso hospeda-lo como um nodo.
-	
-	Artefatos
-	- Sao arquivos fisico que executam ou são usados pelo software, por exemplo:
-	- Executaveis, como .exe ou .jar
-	- Bibliotecas como dlls
-	- Fonte como .java ou .cpp
-	- De configuração .xml, .properties, .txt
-
-	A ideia de representar esses artefatos é muito importante para a implantação do software.
-	Pode ocorrer erro na hora da implatacao por falta de configuração.
-	Fazendo com que o diagrama de implatacao mostre o que vai precisar estar fisicamente no sistema.
-	O Artefato na UML vai ser exibido como um retângulo e ele vai ter o  estereotipo <<artifact>>.
-	Um artefato é exibido como um retângulo com o estereotipo <<artifact>>, ou o ícone de documento no canto superior direito ou ambos.
-	Artefatos isolados.
-	O valor do diagrama vai estar em implantar um artefato em um nodo, isso indica que o artefato reside foi copiado, ou esta instalado naquele nódulo fisico.
-	Para representar isso, eu posso colocar então o artefato como nodo e uma seta de dependencia, usando o esteotipo deploy, ou ainda o nome do artefato dentro do nodo.
-	Pode ter ainda alguns casos que eu vou ter que listar varios artefatos, nesse caso os mesmo vao poder ser listados dentro do nodo, talvez não consiga mostrar a dependencia entre eles.
-	Se um artefato usa o outro, eu vou ter que usar uma seta de dependencia para ligar um ao outro internamente, dentro do próprio nodo.
-	Diagrama de implantação ou diagrama de distribuição.
-	Um diagrama de implantação precisa conter as informações necessárias para cada tipo de publico. Tipo de diagrama que pode ser possível mostrar ate para o cliente, ou para alguém mais técnico.
-	Dependendo do contexto, vou ter mais ou menos informações. O diagrama precisa conter as informações necessárias para cada publico, para cada ambiente.
-	Diagrama de implantação vai sendo detalhado ao longo do projeto.
-	Util  em todos os estágios do processo de desenvolvimento.
-	Talvez no inicio tenho poucas informações como os componentes vai ser distribuídos dentro dos nodos.
-	Importante comunicar informações como:
-	- Como a arquitetura inclui um servidor web
-	- Um servidor de aplicação.
-	- Com um sgdb
-	- Por meio de um browser, uma interface gráfica.
-	- Protecao de firewall, etc.
+* A ideia de representar esses artefatos é muito importante para a implantação do software.
+* Pode ocorrer erro na hora da implatacao por falta de configuração.
+* Fazendo com que o diagrama de implatacao mostre o que vai precisar estar fisicamente no sistema.
+* O Artefato na UML vai ser exibido como um retângulo e ele vai ter o  estereotipo <<artifact>>.
+* Um artefato é exibido como um retângulo com o estereotipo <<artifact>>, ou o ícone de documento no canto superior direito ou ambos.
+* Artefatos isolados.
+* O valor do diagrama vai estar em implantar um artefato em um nodo, isso indica que o artefato reside foi copiado, ou esta instalado naquele nódulo fisico.
+* Para representar isso, eu posso colocar então o artefato como nodo e uma seta de dependencia, usando o esteotipo deploy, ou ainda o nome do artefato dentro do nodo.
+* Pode ter ainda alguns casos que eu vou ter que listar varios artefatos, nesse caso os mesmo vao poder ser listados dentro do nodo, talvez não consiga mostrar a dependencia entre eles.
+* Se um artefato usa o outro, eu vou ter que usar uma seta de dependencia para ligar um ao outro internamente, dentro do próprio nodo.
+* Diagrama de implantação ou diagrama de distribuição.
+* Um diagrama de implantação precisa conter as informações necessárias para cada tipo de publico. Tipo de diagrama que pode ser possível mostrar ate para o cliente, ou para alguém mais técnico.
+* Dependendo do contexto, vou ter mais ou menos informações. O diagrama precisa conter as informações necessárias para cada publico, para cada ambiente.
+* Diagrama de implantação vai sendo detalhado ao longo do projeto.
+* Util em todos os estágios do processo de desenvolvimento.
+* Talvez no inicio tenho poucas informações como os componentes vai ser distribuídos dentro dos nodos.
+* Importante comunicar informações como:
+	* Como a arquitetura inclui um servidor web
+	* Um servidor de aplicação.
+	* Com um SGDB
+	* Por meio de um browser, uma interface gráfica.
+	* Protecao de firewall, etc.
 
 
 
