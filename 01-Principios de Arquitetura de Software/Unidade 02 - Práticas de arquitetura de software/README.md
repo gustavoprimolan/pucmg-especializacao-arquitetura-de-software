@@ -73,7 +73,7 @@
 <h3>Visoes Arquiteturais</h3>
 
 * Sao importantes para a documentação de uma arquitetura de um sistema. A representação da arquitetura de um sistema vai ocorrer em varias visões, em varias representacoes.
-* Cada uma dessas visões vai abordar um conjunto de questões especificas, para os envolvidos nos processos de desenvolvimento de software. Assim, algumas visões vao ser mais de interesse dos usuários finais. Outras dos projetistas ou dos analistas. Outras dos gerentes, outras dos desenvolvedores.
+* Cada uma dessas visões vai abordar um conjunto de questões especificas, para os envolvidos nos processos de desenvolvimento de software. Assim, algumas visões vao ser mais de interesse dos usuários finais, outras dos projetistas ou dos analistas, outras dos gerentes e outras dos desenvolvedores.
 * Modelo de visão de arquitetura comentada é o modelo chamado quatro mais 1 (4+1), ele trás quatro visões, mais uma visão que seria a visão de caso de uso.
     * Visão Logica -> Usuario Final
     * Visto de Implementação -> Programadores
@@ -81,18 +81,29 @@
     * Visão de Implantação -> Engenharia de Sistemas	
     * Visão de Caso de Uso. -> Analistas
 
+<img src="imgs/01.png"/> 
+
 * Cada uma dessas visões mostra um componente, um detalhamento do sistema sobre um ponto de vista.
 * A primeira visão é a Visão de Casos de Uso -> A Visão de casos de uso contem casos de uso e cenários que abrangem comportamentos significativos em termos de arquitetura, classes ou riscos técnicos.
 * Nesse cenário não é necessário mostrarmos talvez todos os casos de uso do sistema. O Arquiteto vai ter a preocupação de mostrar os principais ou aqueles mais críticos que exigem uma integração. 
 * Alguns requisitos são chamados de requisitos arquiteturalmente relevantes. Esses requisitos apresentam um desafio para a arquitetura ou eles determinam a arquitetura do sistema.
 * Alguns desses casos de uso que contem ou implementam esses requisitos mais relevantes do ponto de vista da arquitetura serão mostrados aqui na visão de casos de uso. Se quisermos uma visão completa de todos os casos de uso, isso vai estar em um documento datalhado de casos de uso ou uma especificacao de requisitos de software.
 * Aqui os casos de uso vai ser aqueles que afetam a arquitetura ou que trazem riscos técnicos. Riscos de integração, de comunicação, riscos relacionados a alguma requisito não funcional como tratar ou alcançar algum desempenho determinado.
+* Casos de Uso ->
+    * A visao de casos de uso contem casos de uso e cenários que abrangem comportamentos significativos em termos de arquitetura, classes ou riscos tecnicos.
+    * Afetam a arquitetura em relacao a riscos.
+
 * Elementos da visão de casos de Uso ->
 	* Modelo de Casos de Uso
 	* Pacote de nivels superior -> Agrupar pacotes de casos de uso relacionados. Casos de usos acionados pelos mesmos atores ou casos de uso no mesmo nível de complexidade, ou de um modulo do sistema.
 	* Representação de atores e casos de uso mostrando quais atores acionam ou interagem com casos de uso.
-	
-* Visão Logica - A visto logica contem classes de design mais importantes e sua organizacao em pacotes e subsistemas. Contem algumas realizadoes de casos de uso. É um subconjunto do modelo de design.
+    * Casos principais do ponto de vista da arquitetura.
+
+<img src="02.png"/>
+<img src="03.png"/>
+
+
+* Visão Logica - A visao logica contem classes de design mais importantes e sua organizacao em pacotes e subsistemas. Contem algumas realizadoes de casos de uso. É um subconjunto do modelo de design.
     * Algumas empresas tratam algumas informações dentro de um documento de arquitetura, as vezes outras empresas tem tbm esse documento, como documento de desenho que traria tbm algumas dessas informações ate mesmo essas realizações desses casos de uso.
     * A realização do caso de uso poderia ser feita talvez mostrando um diagrama de sequencia da UML, ela mostra como que o fluxo como as informações correm dentro do sistema. Passando por diversas camadas ou atores ou classes diferentes.
     * Os casos de uso mostrariam a execução de um cenário de um caso de uso de um ponto de vista mais interno, não daquele ponto de vista mais externo, pensando no foco no usuário.
@@ -100,18 +111,29 @@
 	    * A visão logica pode ter pacotes, também de níveis superior
 	    * Subsistemas de Design.
 	    * Pacotes podem se quebrar ou agrupar classes ou relizacoes de casos de uso.
-	
+
+<img src="04.png"/>
+
 * Visão de Implementação - A Visão de Implementação contem uma visão geral do modelo de implementação e sua organizacao em termos de modelos em pacotes e camadas.
 	* Comum termos diversos frameworks que trabalham com estruturas de camadas especificas. Essa visão de arquitetura documentaria como é essa estrutura em camadas.
 	* O diagrama mostra como a integração entre os componentes ocorrem.
-	
+
+<img src="05.png"/>
+
 * Visão de Processos - A visão de processos contem a descrição das tarefas (processo e threads) envolvidas, suas interações e configurações, e a alocação dos objetos e classes de design em tarefas. Essa visão só precisará ser usada se o sistema tiver um grau significativo	de simultaneidade.
 	* Nao é uma visão comum nos sistemas comerciais.
 	* Muitas vezes essas empresas tratam como algo opcional que vai ser feitos normalmente quando o sistema apresentar essas características.
-	
+    * As threads tem maior maior, menor menor.
+<img src="06.png"/>
+
 * Visão de Implantação - A visão de implantação contem a descrição dos varios nos fisico da maior parte das configurações comum da plataforma e como as tarefas são alocadas na visão de processos nos nós fisico. Essa visão só precisara ser usada se o sistema estiver distribuído.
     * Na visão de implatacao é usado o diagrama de implatacao ou de distribuição da Url
 	* Documento de arquitetura.
+<img src="07.png"/>
+	
+* Se existe um documento de arquitetura, a empresa ira documentar essas visoes, sendo uma parte substancial de um documento de arquitetura das organizacoes.
 
-	
-	
+<h3>Documento de Arquitetura</h3>
+
+* Um Documento de Arquitetura pode ser elaborado de diferentes formas e pode conter informações diferentes. Cada organização se preocupa ou precisa documentar diferentes tipos de informação. Entretanto, algumas informações são típicas em boa parte dos documentos que vemos no mercado. Nesta vídeoaula, apresentamos um pouco do que pode ser considerado uma estrutura típica de documentação de arquitetura.
+
