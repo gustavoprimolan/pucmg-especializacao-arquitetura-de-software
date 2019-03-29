@@ -1,8 +1,7 @@
 <h1>Unidade 01 - Introdução a Arquitetura de Software</h1>
-
 <h2>1 - O Arquiteto de Software</h2>
-
 <h3>Introdução a Arquiteturas de Software</h3>
+
 * Tema arquitetura tem diversos significados. Se pensarmos na construção civil, conhecemos o termo como na construção de uma casa, de um prédio ou mesmo o layout interno de um comodo.
 * No meio de tecnologia temos o termo "arquitetura" aplicado com diversos significados. Aplicado em diversos contextos.
 * Em todos os assuntos o termo arquitetura da ideia de alicerce, de algo que vai ser usado como base para desenvolvimento.
@@ -393,7 +392,7 @@
 * Um diagrama de pacotes vai organizar elementos da uml, normal vermos ele sendo utilizado junto a casos de usos e a classes. A ideia é que o conteúdo que o pacote possui possa ser desenhado dentro do próprio pacote ou externamente. Se for externamente o conteúdo vai ser conectado  pelo pacote por uma linha.
 * O diagrama de pacotes vai favorecer também a organizacao lógica das camadas, cada camada poderia ser um pacote, mostrando a comunicação entre os pacotes, como o dado flui entre as camadas.
 * É possível usar tbm estereótipos para os pacotes, que são mecanismos de extensão da UML.
-* Exemplo de estereotipo: <<facede>>, <<framework>>, <<model>>, <<stub>>, <<subsystem>>, <<system>>.
+* Exemplo de estereotipo: facede>>, framework>>, model, stub, subsystem>>, system>>.
 * Como se fossem tipos de elementos que posso usar para diferenciar os pacotes.
 * Existem algumas diretrizes na confecção e liberação de pacotes, por exemplo: 
 	* Classes da mesma hierarquia vai pertencer ao mesmo pacote.
@@ -432,8 +431,8 @@
 * A ideia de representar esses artefatos é muito importante para a implantação do software.
 * Pode ocorrer erro na hora da implatacao por falta de configuração.
 * Fazendo com que o diagrama de implatacao mostre o que vai precisar estar fisicamente no sistema.
-* O Artefato na UML vai ser exibido como um retângulo e ele vai ter o  estereotipo <<artifact>>.
-* Um artefato é exibido como um retângulo com o estereotipo <<artifact>>, ou o ícone de documento no canto superior direito ou ambos.
+* O Artefato na UML vai ser exibido como um retângulo e ele vai ter o  estereotipo artifact.
+* Um artefato é exibido como um retângulo com o estereotipo artifact, ou o ícone de documento no canto superior direito ou ambos.
 * Artefatos isolados.
 * O valor do diagrama vai estar em implantar um artefato em um nodo, isso indica que o artefato reside foi copiado, ou esta instalado naquele nódulo fisico.
 * Para representar isso, eu posso colocar então o artefato como nodo e uma seta de dependencia, usando o esteotipo deploy, ou ainda o nome do artefato dentro do nodo.
