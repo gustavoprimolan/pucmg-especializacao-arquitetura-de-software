@@ -3,124 +3,128 @@
 <h2>1 - O Arquiteto de Software</h2>
 
 <h3>Introdução a Arquiteturas de Software</h3>
-	Tema arquitetura tem diversos significados, se pensarmos na construção civil, conhecemos o termo na construção de uma casa, de um prédio ou mesmo o layout interno de um comodo.
-	No meio de tecnologia temos o termo arquitetura aplicado em diversos significados, aplicado em diversos contextos.
-	Em todos os assuntos o termo arquitetura da ideia de alicerce, de algo que vai ser usado como base para desenvolvimento.
-	Arquitetura de Software esse termo se refere a descrição de elementos dos quais o sistema vai ser construído, que são os seus componentes, necessitando ter uma interação entre eles.
-	Existem varios padroes, como padrões do mercado ou padrões da própria organizacao.
-	Podem existir restrições do uso desses padroes.
-	Arquitetura de Software define a estrutura do software. Isso vai compreender os componentes do software que irao se relacionar. É um objetivo importante da Arquitetura de Software conseguir identificar esses relacionamentos.
-	Algumas questões precisam ser abordadas no nível da arquitetura de software.
-	Se inicia através da identificação de alternativas para a arquitetura de um determinado sistema. Essas alternativas precisam ser identificadas, analisadas e uma alternativa ou um conjunto de componentes dessa alternativa precisa ser selecionado naquele projeto.
-	Essa seleção pode levar em consideração diversos critérios, como por exemplo o risco ou o atendimento dos próprios requisitos do projeto, restrições do cliente, restrições do contexto do qual o sistema é desenvolvido.
-	O Arquiteto precisa passar por essas alternativas e selecionar a que melhor se adeque.
-	É importante pensar que uma primeira alternativa pensada naquele projeto vai ser a melhor.
-	Outra questão que é abordada no nível arquitetura é a questão de escalabilidade, desempenho, em geral atributos de qualidade do software. Um software precisa atender um conjunto de requisitos NAO FUNCIONAIS que muitas vezes são uma preocupação do pessoal de arquitetura de software. Dentro dessas restrições, podemos citar a questão de escalabilidade, desempenho, usabilidade, confiabilidade, falhas e serem conhecidas pelo arquiteto e vao ter uma influencia nas alternativas do projeto que serão selecionadas.
-	Outras questões que precisam ser tratadas em nível arquitetura é a comunicação e a sincronização entre os componentes de um sistema ou ate mesmo de um sistema com outros sistemas ou dispositivos externos.
-	Toda essa questão de comunicação precisa ser decidida e pensada em nível arquitetura.
-	Atribuir funcionalidades nos componentes desse software.
-	Damos inicio a uma visão mais macro da arquitetura e a medida que o tempo passa a ideia da arquitetura vai se refinando, conseguindo então enxergar componentes menos e tomar decisões em um nível menor.
-	Arquitetura pode atuar como estrutura a fim de atender os requisitos de um sistemas, funcionais e não funcionais.
-	Alguns requisitos são chamados de arquiteturalmente relevantes, são requisitos que tem impacto nessa arquitetura, eles vão influenciar na escolha dessa arquitetura.
-	A arquitetura pode auxiliar na estimativa de custos e no gerenciamento do processo de desenvolvimento.
-	Vai existir um conjunto de requisitos não funcionais, e de acordo com o esses requisitos, podemos fazer uma estimativa de custo para esses projetos. Nesse sentido podemos fazer uma priorização ou uma analise de viabilidade, mostrando se a forma como essa arquitetura esta sendo concebida consegue atender a todos os requisitos, ou ainda se todos esses requisitos são todos importantes ou se são todos necessários para o projeto.
-	Um Arquitetura pode ainda servir de base para uma analise de consistência e dependência.
-	Consistencia entre os varias elementos que essa arquitetura tem entre suas dependências.
-	Existem padroes de arquitetura que possuem validações em questão a consistência e dependência.
-	A arquitetura pode tbm dar suporte ao reuso. Se um determinado projeto ou determinado empresa tem a necessidade de reutilizar um determinado componente em um determinado software, a arquitetura vai ter que permitir a utilização dessa reutilização.
-	Algumas questões fundamentais que devemos tratar na arquitetura de software:
-	1- Existe uma arquitetura genérica que pode atuar como modelo para o sistema?
-		Se a empresa trabalha sempre de uma forma padronizada, como por exemplo a empresa trabalha sempre com software para web, sempre cliente-servidor. Se o tipo de software que ela produz é basicamente o mesmo em todos os projetos, provavlmente vai ter uma arquitetura referencia e claro que ela pode ter mais de uma arquitetura genérica, por exemplo: uma arquitetura genérica java que teriam todos seus componentes java e uma arquitetura .net para todos os seus componentes e frameworks e cada um desses projetos eles utilizariam cada uma dessas arquiteturas e teriam um refinamento.
-	2- Como esse sistema vai ser distribuido?
-		É um sistema em uma maquina só, é um cliente servidor. É algo que iremos ter varios usuários ou um usuários apenas.
-	3- Que padroes ou estilos de arquiteturas podem ser usados?
-		Existem soluções ja definidas para problemas ja conhecidos. Se enfrentamos no projeto onde a situação ja é conhecida, podemos encaixar um desses padroes.
-	4- Como componentes sao decompostos?
-		Pensamos na arquitetura de maneira genérica, de maneira mais ampla e depois realizamos uma decomposição para saber quais são esses componentes internos da arquitetura e quais são esses componentes arquiteturais a gente precisa tomar no nível de cada um desses componentes.
-	5 - Qual a melhor organizacao da arquitetura para satisfazer requisitos não funcionais?
-		É importante identificar os requisitos não funcionais e a escolha da arquitetura pode contribuir para a descoberta de novos requisitos não funcionais, mas nesse momento eles precisam ser conhecidos.
-	6 - Como esse projeto de arquitetura vai ser avaliado?
-		Necessário fazermos algum tipo de validação, necessário termos mais garantia mais certeza de que a arquitetura vai atender os requisitos e as necessidades técnicas desse projeto e as necessidades do cliente.
-		Algumas empresas e alguns projetos trabalham com uma prova de conceito, parecido com um protótipo. Se não temos certeza do comportamento e do desempenho daquela arquitetura, podemos fazer uma prova de conceito
-	7 - Como essa arquitetura vai ser documentada?
-		Se tivermos falando de uma arquitetura que vai ser utilizada em varios projetos devemos criar uma documentação clara ao nível dos componentes interno dessa arquitetura.
+* Tema arquitetura tem diversos significados. Se pensarmos na construção civil, conhecemos o termo como na construção de uma casa, de um prédio ou mesmo o layout interno de um comodo.
+* No meio de tecnologia temos o termo "arquitetura" aplicado com diversos significados. Aplicado em diversos contextos.
+* Em todos os assuntos o termo arquitetura da ideia de alicerce, de algo que vai ser usado como base para desenvolvimento.
+* O termo Arquitetura de Software se refere a descrição de elementos dos quais o sistema vai ser construído, que são os seus componentes, necessitando ter uma interação entre eles. Existindo vários padroes, como por exemplo, os padrões do mercado ou os padrões da própria organizacao, podem existir restrições do uso desses padroes.
+* Arquitetura de Software define a estrutura do software. Isso vai compreender os componentes do software que irao se relacionar. É um objetivo importante da Arquitetura de Software conseguir identificar esses relacionamentos. Algumas questões precisam ser abordadas no nível da arquitetura de software.
+* Se inicia através da identificação de alternativas para a arquitetura de um determinado sistema. Essas alternativas precisam ser identificadas, analisadas e uma alternativa ou um conjunto de componentes dessa alternativa precisa ser selecionado naquele projeto.
+* Essa seleção pode levar em consideração diversos critérios, como por exemplo o risco ou o atendimento dos próprios requisitos do projeto, restrições do cliente, restrições do contexto do qual o sistema é desenvolvido.
+* O Arquiteto precisa passar por essas alternativas e selecionar a que melhor se adeque.
+* É importante pensar que uma primeira alternativa pensada naquele projeto vai ser a melhor.
+* Outra questão que é abordada no nível arquitetura é a questão de escalabilidade, desempenho, em geral atributos de qualidade do software. Um software precisa atender um conjunto de requisitos NAO FUNCIONAIS que muitas vezes são uma preocupação do pessoal de arquitetura de software. Dentro dessas restrições, podemos citar a questão de escalabilidade, desempenho, usabilidade, confiabilidade, falhas e serem conhecidas pelo arquiteto e vao ter uma influencia nas alternativas do projeto que serão selecionadas.
+* Outras questões que precisam ser tratadas em nível arquitetura é a comunicação e a sincronização entre os componentes de um sistema ou ate mesmo de um sistema com outros sistemas ou dispositivos externos.
+* Toda essa questão de comunicação precisa ser decidida e pensada em nível arquitetura.
+* Atribuir funcionalidades nos componentes desse software.
+* Damos inicio a uma visão mais macro da arquitetura e a medida que o tempo passa a ideia da arquitetura vai se refinando, conseguindo então enxergar componentes menos e tomar decisões em um nível menor.
+* Arquitetura pode atuar como estrutura a fim de atender os requisitos de um sistemas, funcionais e não funcionais.
+* Alguns requisitos são chamados de arquiteturalmente relevantes, são requisitos que tem impacto nessa arquitetura, eles vão influenciar na escolha dessa arquitetura.
+* A arquitetura pode auxiliar na estimativa de custos e no gerenciamento do processo de desenvolvimento.
+* Vai existir um conjunto de requisitos não funcionais, e de acordo com o esses requisitos, podemos fazer uma estimativa de custo para esses projetos. Nesse sentido podemos fazer uma priorização ou uma analise de viabilidade, mostrando se a forma como essa arquitetura esta sendo concebida consegue atender a todos os requisitos, ou ainda se todos esses requisitos são todos importantes ou se são todos necessários para o projeto.
+* Um Arquitetura pode ainda servir de base para uma analise de consistência e dependência.
+* Consistencia entre os varias elementos que essa arquitetura tem entre suas dependências.
+* Existem padroes de arquitetura que possuem validações em questão a consistência e dependência.
+* A arquitetura pode tbm dar suporte ao reuso. Se um determinado projeto ou determinado empresa tem a necessidade de reutilizar um determinado componente em um determinado software, a arquitetura vai ter que permitir a utilização dessa reutilização.
+* Algumas questões fundamentais que devemos tratar na arquitetura de software:
+	* 1- Existe uma arquitetura genérica que pode atuar como modelo para o sistema?
+		* Se a empresa trabalha sempre de uma forma padronizada, como por exemplo a empresa trabalha sempre com software para web, sempre cliente-servidor. Se o tipo de software que ela produz é basicamente o mesmo em todos os projetos, provavlmente vai ter uma arquitetura referencia e claro que ela pode ter mais de uma arquitetura genérica, por exemplo: uma arquitetura genérica java que teriam todos seus componentes java e uma arquitetura .net para todos os seus componentes e frameworks e cada um desses projetos eles utilizariam cada uma dessas arquiteturas e teriam um refinamento.
+	* 2- Como esse sistema vai ser distribuido?
+		* É um sistema em uma maquina só, é um cliente servidor. É algo que iremos ter varios usuários ou um usuários apenas.
+	* 3- Que padroes ou estilos de arquiteturas podem ser usados?
+		* Existem soluções ja definidas para problemas ja conhecidos. Se enfrentamos no projeto onde a situação ja é conhecida, podemos encaixar um desses padroes.
+	* 4- Como componentes sao decompostos?
+		* Pensamos na arquitetura de maneira genérica, de maneira mais ampla e depois realizamos uma decomposição para saber quais são esses componentes internos da arquitetura e quais são esses componentes arquiteturais a gente precisa tomar no nível de cada um desses componentes.
+	* 5 - Qual a melhor organizacao da arquitetura para satisfazer requisitos não funcionais?
+		* É importante identificar os requisitos não funcionais e a escolha da arquitetura pode contribuir para a descoberta de novos requisitos não funcionais, mas nesse momento eles precisam ser conhecidos.
+	* 6 - Como esse projeto de arquitetura vai ser avaliado?
+		* Necessário fazermos algum tipo de validação, necessário termos mais garantia mais certeza de que a arquitetura vai atender os requisitos e as necessidades técnicas desse projeto e as necessidades do cliente.
+		* Algumas empresas e alguns projetos trabalham com uma prova de conceito, parecido com um protótipo. Se não temos certeza do comportamento e do desempenho daquela arquitetura, podemos fazer uma prova de conceito
+	* 7 - Como essa arquitetura vai ser documentada?
+		* Se tivermos falando de uma arquitetura que vai ser utilizada em varios projetos devemos criar uma documentação clara ao nível dos componentes interno dessa arquitetura.
 
 
 -----------
 <h3>O Arquiteto de Software</h3>
 
-	O Arquiteto de Software precisa ter algumas habilidades, como reconhecer estruturas comuns em sistema ja desenvolvidos.
-	Uma das preocupações do trabalho do arquiteto de software é reutilizar coisas que ja foram feitas dentro da organizacao. Componentes ja desenvolvidos dentro da organizacao. Por conta disso, é necessário conhecer os componentes para evitar o custo do desenvolvimento de software.
-	Um arquiteto deve usar o conhecimento sobre arquiteturas existentes, ele precisa conhecer arquiteturas comuns, arquiteturas de mercado, frameworks, tecnologias de ponta. Justamente para tomar decisões em novos sistemas.
-	Um dos trabalhos do arquiteto é analisar opções, possíveis arquiteturas cada vez que ele tem um projeto novo. Nesse sentido quanto mais arquiteturas possíveis ele conhece, mais embasamento e mais informação ele vai ter para tomar a decisão para aquele projeto.
-	O arquiteto precisa ser capaz de realizar uma descrição formal da arquitetura, então ele tem que ser alguém que consiga documentar a arquitetura do sistema para ser utilizada pelo os outros componentes, necessitando se comunicar com o analista de requisitos, para entender como os requisitos vai ser recebidos e precisa ter contato com o restante da equipe técnica, como o pessoal do banco de dados, projetistas, os desevolvedores, ui e precisa ser compreendida por todos esses membros.
-	O arquiteto tem uma compreensão profunda do domínio e das tecnologias pertinentes. O domínio das tecnologias ele consegue com um tempo de experiência maior, normalmente o arquiteto ja tem  um tempo de experiencia grande com desenvolvimento de software. Muitas vezes na  empresa o arquiteto seria um desenvolvedor bastante experiente, mas com essa diferenciação de que é capaz de conhecer as tecnologias existentes, capaz de conhecer o que a empresa ja fez e tomar decisões arquiteturais para novos projetos na empresa.
-	O arquiteto pode precisar conhecer tbm de um domínio especifico, o que pode ser exigido dele em alguns casos. O domínio tem a ver com o campo, o negocio da empresa. Como por exemplo algumas empresas desenvolvem para um domínio contábil, um domínio financeiro, um domínio jurídico, por conta de que cada domínio podem existir sistemas ja existentes, sendo importante o arquiteto conhecer o domínio.
-	Conhecer e saber utilizar técnicas de modelagem e metodologias de desenvolvimento. O arquiteto tbm é um membro de equipe de desenvolvimento como os outros. Ele tem que se integrar as ativadas da equipe.
-	Ele precisa entender as estratégias de negocio da instituição que ele atua, como por exemplo quanto tempo ele tem, de estimativas se existe um ramo de atuação desse empresa.
-	Precisa conhecer produtos, processo e estratégias dos próprios concorrentes e o que pode trazer para dentro da organizacao dele, ou mesmo se atualizar em frente a novas tecnologias que estão sendo utilizadas no mercado.
-	Quais seriam as principais atividades de um arquiteto?
-	Existe em algumas organizações uma certa nuvem de onde começa e onde termina o trabalho do arquiteto, pq as organizações Dao nomes diferentes para esses papeis e alocam atividades diferentes.
-	Em algumas empresas os arquitetos possuem as atividades de:
-	* Modelagem. - Realizar ou entender um pouco de modelagem.
-	* Analise de trade-offs e viabilidade
-	* Prototipacao, simulação e realização de experimentos. - Fazer analise de compra ou reautilizacao de componentes e validar se a arquitetura é viável para o projeto.
-	Precisa ser uma pessoa inovadora do ponto de vista tecnológico, tendo que entender o que for melhor para empresa e o usuário. Mais moderno e melhor usabilidade. Acaba sendo a pessoa responsável trazendo isso para dentro do projeto.
+* O Arquiteto de Software precisa ter algumas habilidades, como reconhecer estruturas comuns em sistema ja desenvolvidos.
+
+* Uma das preocupações do trabalho do arquiteto de software é reutilizar coisas que ja foram feitas dentro da organizacao. Componentes ja desenvolvidos dentro da organizacao. Por conta disso, é necessário conhecer os componentes para evitar o custo do desenvolvimento de software.
+
+* Um arquiteto deve usar o conhecimento sobre arquiteturas existentes, ele precisa conhecer arquiteturas comuns, arquiteturas de mercado, frameworks, tecnologias de ponta. Justamente para tomar decisões em novos sistemas.
+
+* Um dos trabalhos do arquiteto é analisar opções, possíveis arquiteturas cada vez que ele tem um projeto novo. Nesse sentido quanto mais arquiteturas possíveis ele conhece, mais embasamento e mais informação ele vai ter para tomar a decisão para aquele projeto.
+
+* O arquiteto precisa ser capaz de realizar uma descrição formal da arquitetura, então ele tem que ser alguém que consiga documentar a arquitetura do sistema para ser utilizada pelo os outros componentes, necessitando se comunicar com o analista de requisitos, para entender como os requisitos vai ser recebidos e precisa ter contato com o restante da equipe técnica, como o pessoal do banco de dados, projetistas, os desevolvedores, ui e precisa ser compreendida por todos esses membros.
+
+* O arquiteto tem uma compreensão profunda do domínio e das tecnologias pertinentes. O domínio das tecnologias ele consegue com um tempo de experiência maior, normalmente o arquiteto ja tem  um tempo de experiencia grande com desenvolvimento de software. Muitas vezes na  empresa o arquiteto seria um desenvolvedor bastante experiente, mas com essa diferenciação de que é capaz de conhecer as tecnologias existentes, capaz de conhecer o que a empresa ja fez e tomar decisões arquiteturais para novos projetos na empresa.
+
+* O arquiteto pode precisar conhecer tbm de um domínio especifico, o que pode ser exigido dele em alguns casos. O domínio tem a ver com o campo, o negocio da empresa. Como por exemplo algumas empresas desenvolvem para um domínio contábil, um domínio financeiro, um domínio jurídico, por conta de que cada domínio podem existir sistemas ja existentes, sendo importante o arquiteto conhecer o domínio.
+* Conhecer e saber utilizar técnicas de modelagem e metodologias de desenvolvimento. O arquiteto tbm é um membro de equipe de desenvolvimento como os outros. Ele tem que se integrar as ativadas da equipe.
+* Ele precisa entender as estratégias de negocio da instituição que ele atua, como por exemplo quanto tempo ele tem, de estimativas se existe um ramo de atuação desse empresa.
+* Precisa conhecer produtos, processo e estratégias dos próprios concorrentes e o que pode trazer para dentro da organizacao dele, ou mesmo se atualizar em frente a novas tecnologias que estão sendo utilizadas no mercado.
+* Quais seriam as principais atividades de um arquiteto?
+	* Existe em algumas organizações uma certa nuvem de onde começa e onde termina o trabalho do arquiteto, pq as organizações Dao nomes diferentes para esses papeis e alocam atividades diferentes.
+	* Em algumas empresas os arquitetos possuem as atividades de:
+		* Modelagem. - Realizar ou entender um pouco de modelagem.
+		* Analise de trade-offs e viabilidade
+		* Prototipacao, simulação e realização de experimentos. - Fazer analise de compra ou reautilizacao de componentes e validar se a arquitetura é viável para o projeto.
+	* Precisa ser uma pessoa inovadora do ponto de vista tecnológico, tendo que entender o que for melhor para empresa e o usuário. Mais moderno e melhor usabilidade. Acaba sendo a pessoa responsável trazendo isso para dentro do projeto.
 	* Atuacao como mentor de arquitetos novatos - Ponto mais alto de uma carreira técnica.
-	Algumas empresas podem chamar o cargo de líder técnico.
+	* Algumas empresas podem chamar o cargo de líder técnico.
 
 
 <h3>Integração com outros papeis do desenvolvimento de software</h3>
 
-	O trabalho do arquitetura esta entregado com outros papeis do desenvolvimento de um software.
-	Analista de Requisitos - Papel responsável por coletar, identificar e levantar requisitos, tanto funcionais, quanto não funcionais do sistema. Junto ao arquiteto de software, é responsabilidade dele discutir os requisitos não funcionais e também as funcionalidades que o sistema ira possuir para que o arquiteto faca uma melhor escolha da arquitetura que sera utilizada.
-	O arquiteto e o analista trabalham na verificação de documentos de requisitos, dessa forma tanto o arquiteto pode contribuir com a sua visão de artefatos de produtos de trabalho típicos do trabalho do analista de requisitos, quanto o analista tbm pode contribuir na verificação de documentos de arquitetura.
-	Desenvolvedor - A integração com o desenvolvedor é grande e intensa.
-O arquiteto é responsável por apresentar a arquitetura do sistema para os desenvolvedores da equipe. Ele tbm define padroes de desenvolvimento ou de codificação que serão utilizados pelos desenvolvedores.
-	Muitas vezes o Arquiteto é visto como uma referencia técnica dos desenvovledores, alguém mais experiente, alguém que passa essas informações e experiencias para o desenvolvimento.
-	Muitas vezes o líder técnico é visto como um grau a baixo do arquiteto.
-	Analista de Testes - O Arquiteto discuti requisitos e critérios de aceitação, principalmente aqueles relacionados aos requisitos não funcionais, como os requisitos podem ou irão ser testados e validados pela equipe de testes.
-	O Arquiteto pode ainda contribuir na discucao de estratégia de automação de testes junto a arquitetura do sistema.
-	O arquiteto vai ainda apoiar a execução de testes de integração a integração entre as varias camadas do sistema vai ser avaliada por esse tipo de teste.
-	Gerente de Projetos - O Gerente de projetos vai realizar atividades ao planejamento a execução e ao monitoramento do projeto. O Arquiteto pode apoiar o planejamento das atividades técnicas da equipe. Ele pode apoiar o gerente de projetos na realização de estimativas das atividades, caso isso faca parte do processo de desenvolvimento dessa empresa.
-	O arquiteto pode ainda acompanhar atividades da equipe mais técnica, contribuindo para o trabalho da gerencia de projetos como um todo.
-	Gestor de Configuração - É atividade do gestor de configuração a geração de releases, de linhas de base, o planejamentos dos itens de linha de configuração e ainda as auditorias dessas linhas de bases geradas.
-	Arquiteto vai apoiar a dissiminacao de boas praticas relacionamento a gerencia de configuração na equipe de desenvolvimento.
-	Uma pratica comum é não trabalhar com o código sendo trabalhada em uma maquina local durante muito tempo. O arquiteto pode ajudar a equipe de confiugracao a implementar essa pratica.
-	Existem praticas relacionadas a padroes de commit, ou seja quando voce vai subir um código ao repositório central.
-	Equipe de Qualidade - Trabalha na definição de padroes de qualidade. É comum varios papeis do desenvolvimento de software acompanharem a equipe de qualidade serem olhos da equipe de qualidade em cada uma das equipes.
-	Caso existam padroes de qualidade relacionados a arquitetura, a equipe de arquitetos pode apoiar a equipe de qualidade na formulação desses padroes.
-	Esses padroes vai definir regras e diretrizes de padronização e de elaboração do produto de trabalho de cada uma das equipes, no nosso caso a equipe de qualidade.
-	A equipe de qualidade também pode demandar inspetores técnicos, podendo o arquiteto tbm apoiar.
-	Equipe de Processos - Muitas vezes unificadas com a equipe de qualidade. Normalmente responsável por escrever processos, como a organizacao realiza a atividade de desenvolvimento de software, quais são os templates e os padroes utilizados no desenvolvimento de software. É comum a equipe de processos contar com a equipe de desenvolvimento, incluso o arquiteto. O arquiteto tem a responsabilidade a ajudar a escrita desses projetos, ajudando com informações de como as atividades são feitas no momento atual e caso haja necessidade de melhorias e de alterações nesse processo como elas deveriam ser feitas no futuro.
-	Integração bastante comum em equipes que utilizam o padrão de maturidade de software.
-	Par timers - Parte do tempo na escrita de processos.
+* O trabalho do arquitetura esta entregado com outros papeis do desenvolvimento de um software.
+* Analista de Requisitos - Papel responsável por coletar, identificar e levantar requisitos, tanto funcionais, quanto não funcionais do sistema. Junto ao arquiteto de software, é responsabilidade dele discutir os requisitos não funcionais e também as funcionalidades que o sistema ira possuir para que o arquiteto faca uma melhor escolha da arquitetura que sera utilizada.
+* O arquiteto e o analista trabalham na verificação de documentos de requisitos, dessa forma tanto o arquiteto pode contribuir com a sua visão de artefatos de produtos de trabalho típicos do trabalho do analista de requisitos, quanto o analista tbm pode contribuir na verificação de documentos de arquitetura.
+* Desenvolvedor - A integração com o desenvolvedor é grande e intensa.
+* O arquiteto é responsável por apresentar a arquitetura do sistema para os desenvolvedores da equipe. Ele tbm define padroes de desenvolvimento ou de codificação que serão utilizados pelos desenvolvedores.
+* Muitas vezes o Arquiteto é visto como uma referencia técnica dos desenvovledores, alguém mais experiente, alguém que passa essas informações e experiencias para o desenvolvimento.
+* Muitas vezes o líder técnico é visto como um grau a baixo do arquiteto.
+* Analista de Testes - O Arquiteto discuti requisitos e critérios de aceitação, principalmente aqueles relacionados aos requisitos não funcionais, como os requisitos podem ou irão ser testados e validados pela equipe de testes.
+	* O Arquiteto pode ainda contribuir na discucao de estratégia de automação de testes junto a arquitetura do sistema.
+	* O arquiteto vai ainda apoiar a execução de testes de integração a integração entre as varias camadas do sistema vai ser avaliada por esse tipo de teste.
+* Gerente de Projetos - O Gerente de projetos vai realizar atividades ao planejamento a execução e ao monitoramento do projeto. O Arquiteto pode apoiar o planejamento das atividades técnicas da equipe. Ele pode apoiar o gerente de projetos na realização de estimativas das atividades, caso isso faca parte do processo de desenvolvimento dessa empresa.
+	* O arquiteto pode ainda acompanhar atividades da equipe mais técnica, contribuindo para o trabalho da gerencia de projetos como um todo.
+* Gestor de Configuração - É atividade do gestor de configuração a geração de releases, de linhas de base, o planejamentos dos itens de linha de configuração e ainda as auditorias dessas linhas de bases geradas.
+	* Arquiteto vai apoiar a dissiminacao de boas praticas relacionamento a gerencia de configuração na equipe de desenvolvimento.
+	* Uma pratica comum é não trabalhar com o código sendo trabalhada em uma maquina local durante muito tempo. O arquiteto pode ajudar a equipe de confiugracao a implementar essa pratica.
+	* Existem praticas relacionadas a padroes de commit, ou seja quando voce vai subir um código ao repositório central.
+* Equipe de Qualidade - Trabalha na definição de padroes de qualidade. É comum varios papeis do desenvolvimento de software acompanharem a equipe de qualidade serem olhos da equipe de qualidade em cada uma das equipes.
+	* Caso existam padroes de qualidade relacionados a arquitetura, a equipe de arquitetos pode apoiar a equipe de qualidade na formulação desses padroes.
+	* Esses padroes vai definir regras e diretrizes de padronização e de elaboração do produto de trabalho de cada uma das equipes, no nosso caso a equipe de qualidade.
+	* A equipe de qualidade também pode demandar inspetores técnicos, podendo o arquiteto tbm apoiar.
+* Equipe de Processos - Muitas vezes unificadas com a equipe de qualidade. Normalmente responsável por escrever processos, como a organizacao realiza a atividade de desenvolvimento de software, quais são os templates e os padroes utilizados no desenvolvimento de software. É comum a equipe de processos contar com a equipe de desenvolvimento, incluso o arquiteto. O arquiteto tem a responsabilidade a ajudar a escrita desses projetos, ajudando com informações de como as atividades são feitas no momento atual e caso haja necessidade de melhorias e de alterações nesse processo como elas deveriam ser feitas no futuro.
+	* Integração bastante comum em equipes que utilizam o padrão de maturidade de software.
+* Par timers - Parte do tempo na escrita de processos.
 
 <h2>2 - Requisitos<h2>
 
-<h3>Requisitos de Software<h3>
+<h3>Requisitos de Software</h3>
 
-	Requisitos de software incluem características desejáveis de um produto, necessidades de um cliente para resolver um problema ou atender a restrições legais e contratuais. Nesta vídeo aula, iremos ver algumas definições de requisitos de software.
-	Uma condição ou capacidade necessitada por um usuário para resolver um problema ou atingir um objetivo.
-	Nesse sentido o requisito é algo que usuário precisa para resolver um problema que existe no mundo real dele.
-	Usuário pode precisar automatizar um processo, por exemplo. Executar o processo de maneira mais rápida, sem erros. Isso pode ser um requisito.
-	No caso de um call center, temos como necessidade atingir ou atender o maior numero de usuários possível. Um requisito para esse cenário poderia ser algo que tornasse o sistema com maior capacidade de atendimento. Por exemplo: Sortear igualmente as ligações. Dividir essas ligações entre os diversos operadores de forma automática. Ter uma lista de chamadas a serem realizadas durante um dia.
-	Tudo isso  são necessidades que o usuário precisa para poder trabalhar melhor.
-	Outra definicao:
-		Uma condição ou capacidade que deve ser cumprida ou possuída por um sistema ou componente do sistema para satisfazer um contrato, um padrão, especificação ou outro documento formal imposto.
-		Mostra que o requisito vem como algo obrigatório.
-		Na area contábil é muito comum, por exemplo, atualizações no programa da receita federal para a nossa declaração de imposto de renda.
-	A grosso modo um requisito existe para definir um problema para ajudar a resolver um problema de uma forma melhor, mais automatizado, ou para atender algum requisito legal.
-	É chamado de requisito também a representação documental de condição ou capacidade, como em 1 e 2.
+* Requisitos de software incluem características desejáveis de um produto, necessidades de um cliente para resolver um problema ou atender a restrições legais e contratuais. Nesta vídeo aula, iremos ver algumas definições de requisitos de software.
+
+* Uma condição ou capacidade necessitada por um usuário para resolver um problema ou atingir um objetivo. Nesse sentido o requisito é algo que usuário precisa para resolver um problema que existe no mundo real dele.
+* Usuário pode precisar automatizar um processo, por exemplo. Executar o processo de maneira mais rápida, sem erros, podendo ser um requisito.
+* No caso de um call center, temos como necessidade atingir ou atender o maior numero de usuários possível. Um requisito para esse cenário poderia ser algo que tornasse o sistema com maior capacidade de atendimento. Por exemplo: Sortear igualmente as ligações. Dividir essas ligações entre os diversos operadores de forma automática. Ter uma lista de chamadas a serem realizadas durante um dia.
+* Tudo isso  são necessidades que o usuário precisa para poder trabalhar melhor.
+* Outra definicao:
+	* Uma condição ou capacidade que deve ser cumprida ou possuída por um sistema ou componente do sistema para satisfazer um contrato, um padrão, especificação ou outro documento formal imposto.
+	* Mostra que o requisito vem como algo obrigatório.
+	* Na area contábil é muito comum, por exemplo, atualizações no programa da receita federal para a nossa declaração de imposto de renda.
+	* A grosso modo um requisito existe para definir um problema para ajudar a resolver um problema de uma forma melhor, mais automatizado, ou para atender algum requisito legal.
+	* É chamado de requisito também a representação documental de condição ou capacidade, como em 1 e 2.
 	Um requisito também esta relacionado com características que definem os critérios de aceitação de um produto.
-		Garantia de que o produto que voce esta recebendo pode ser usado.
-		Quando voce vai em uma loja, por exemplo, e compra uma tv. Voce troca de canal, aumenta o volume etc. Se alguma dessas funcionalidades básicas não passar nos testes, esses requisitos nao foram correspondidos.
-		Quando voce recebe um produto esta relacionado a um critério de aceitação.	
-		Em questão de software, por exemplo, se voce fizer uma busca por contas a pagar por exemplo, deve retornar corretamente as infomracoes. Se houver filtros, devera corresponder com os filtros.
-	Pode ser tbm: Propriedade que um software deve exibir para resolver um problema do mundo real.
-	- Condição ou capacidade que o sistema deve contemplar que pode ser derivada diretamente das necessidades do usuario ou de um documento imposto.
-	- Características do sistema ou descrição de algo  que sistema é capaz de fazer para atingir seus objetvios.
-	- Uma declaracao que vai identificar um produto funcional ou uma restricao.  Um requisito precisa ser nao ambiguo, ou seja, quando um requisito declarado, todas pessoas precisam entender da mesma forma. Ser testavel e mensuravel, para garantir que tudo foi implementado de acordo com o combinado.
+	* Garantia de que o produto que voce esta recebendo pode ser usado.
+	* Quando voce vai em uma loja, por exemplo, e compra uma tv. Voce troca de canal, aumenta o volume etc. Se alguma dessas funcionalidades básicas não passar nos testes, esses requisitos nao foram correspondidos.
+	* Quando voce recebe um produto esta relacionado a um critério de aceitação.	
+	* Em questão de software, por exemplo, se voce fizer uma busca por contas a pagar por exemplo, deve retornar corretamente as infomracoes. Se houver filtros, devera corresponder com os filtros.
+	* Pode ser tbm: 
+		* Propriedade que um software deve exibir para resolver um problema do mundo real.
+		* Condição ou capacidade que o sistema deve contemplar que pode ser derivada diretamente das necessidades do usuario ou de um documento imposto.
+		* Características do sistema ou descrição de algo  que sistema é capaz de fazer para atingir seus objetvios.
+		* Uma declaracao que vai identificar um produto funcional ou uma restricao.  Um requisito precisa ser nao ambiguo, ou seja, quando um requisito declarado, todas pessoas precisam entender da mesma forma. Ser testavel e mensuravel, para garantir que tudo foi implementado de acordo com o combinado.
 	* Aspectos relevantes:
 		* Requisitos envolvem questoes na fronteira do dominio. (Assunto, tema, contexto que aquele sistema existe). Por exemplo: Domínio contábil, domínio juridico, dominio da saude, dominio financeiro. Irá resolver problemas reais dentro desses domínios.
 		* Problema existe no mundo real e nao no software. Comeca coletar os requisitos tentando entender como esse problema existe no mundo real. O software será uma consequencia para a solucao do problema.
@@ -159,7 +163,7 @@ O arquiteto é responsável por apresentar a arquitetura do sistema para os dese
 
 * Estudos feitos:
 
-<img src="imgs/01.PNG">
+<img src="imgs/01.png">
 
 * Menos trabalho executados na etapa de requisitos.
 * A medida qqueo o projeto anda, mais artefatos sao entregues.
@@ -167,7 +171,7 @@ O arquiteto é responsável por apresentar a arquitetura do sistema para os dese
 * Erro grave na operacao, muita gente fica sem trabalho. As vezes a pessoa precisa do sistema e nao tem o sistema.
 
 * Relatorio do caos:
-<img src="imgs/02.PNG">
+<img src="imgs/02.png">
 
 * No inicio havia uma porcentagem baixa de projetos com sucesso.
 * Muita gente atribui a melhora a um melhor gerenciamento do projeto, de escopo, inclusao dos métodos ageis.
@@ -264,36 +268,26 @@ O arquiteto é responsável por apresentar a arquitetura do sistema para os dese
 	* Lingaugem mais proxima dos analistas, entretanto, continua a descrever o que deve ser feito, nao como devera ser feito.
 
 
+<h3>Requisitos Arquiteturais</h3>
 
+* O que são requisitos? O IEEE define requisito como:
+	* “Uma condição ou capacidade necessitada por um usuário para resolver um problema ou atingir um objetivo”.
 
+* Tudo o que um sistema precisa fazer para tratar alguma coisa que o usuario precisa, para suprir uma necessidade para esse usuário. O IEEE, diz ainda que:
+	* “Uma condição ou capacidade que deve ser cumprida ou possuída por um sistema ou componente do sistema para satisfazer um contrato, padrão, especificação ou outro documento formal imposto”.
 
-
-
-
-
------------
-Requisitos Arquiteturais
-
-	O que são requisitos? O IEEE define requisito como:
-
-	“Uma condição ou capacidade necessitada por um usuário para resolver um problema ou atingir um objetivo”.
-
-	Tudo o que um sistema precisa fazer para tratar alguma coisa que o usuario precisa, para suprir uma necessidade para esse usuário. O IEEE, diz ainda que:
-
-	“Uma condição ou capacidade que deve ser cumprida ou possuída por um sistema ou componente do sistema para satisfazer um contrato, padrão, especificação ou outro documento formal imposto”.
-
-	Juntando as duas definições, o requisito existe ou para atender uma necessidade do usuário ou para resolver um problema desse usuário ou ainda que existe uma situação imposta, um contrato uma norma que impõe uma mudança ou a implementação do requisito em um software.
+* Juntando as duas definições, o requisito existe ou para atender uma necessidade do usuário ou para resolver um problema desse usuário ou ainda que existe uma situação imposta, um contrato uma norma que impõe uma mudança ou a implementação do requisito em um software.
 	
-	Outras definições de requisito. Segundo Wilson de Pádua, requisitos são  características que definem os critérios de aceitação de um produto.
-	Essa definição vai pensando no final de um projeto, e normalmente pensamos no inicio do projeto.
-	Para o Wilson tudo que esta relacionado para aceitar um sistema é um requisito. É interessante pois mostra que muitas vezes não conseguimos perceber todos os requisitos no momento adequado, podendo perceber quando o produto ja esta pronto. Tudo que o usuário for exigir nessa aceitação é um requisito, claro que devíamos  evitar isso na hora do desenvolvimento do software.
-	O SWEBOK define requisito como propriedade que um software deve exibir para resolver um problema do mundo real.
-	Existem duas classificações em termo de requisitos que são importantes para entendermos como isso vai nos impactar na arquitetura
+* Outras definições de requisito. Segundo Wilson de Pádua, requisitos são  características que definem os critérios de aceitação de um produto.
+* Essa definição vai pensando no final de um projeto, e normalmente pensamos no inicio do projeto.
+* Para o Wilson tudo que esta relacionado para aceitar um sistema é um requisito. É interessante pois mostra que muitas vezes não conseguimos perceber todos os requisitos no momento adequado, podendo perceber quando o produto ja esta pronto. Tudo que o usuário for exigir nessa aceitação é um requisito, claro que devíamos  evitar isso na hora do desenvolvimento do software.
+* O SWEBOK define requisito como propriedade que um software deve exibir para resolver um problema do mundo real.
+* Existem duas classificações em termo de requisitos que são importantes para entendermos como isso vai nos impactar na arquitetura
 	
-	Requisitos Funcionais - Especificam acoes que um sistema deve executar, sem levar em consideração restrições físicas.
-	Dao origem a casos de uso.
-	Como algo que vai ter uma ação a um sistema, vai ter uma interação entre o sistema e seus atores. Interagir com o usuário e fornecer dados desse mundo externo.
-	Vou precisar realizar um conjunto de passos é requisito funcional.
+* Requisitos Funcionais - Especificam acoes que um sistema deve executar, sem levar em consideração restrições físicas.
+	* Dao origem a casos de uso.
+	* Como algo que vai ter uma ação a um sistema, vai ter uma interação entre o sistema e seus atores. Interagir com o usuário e fornecer dados desse mundo externo.
+	* Vou precisar realizar um conjunto de passos é requisito funcional.
 	Exemplo de Requisito funcional:
 		- O Gerente devera visualizar todos os  empréstimos  efetuados do mes, indicando do funcionário que disponibilizou o empréstimo, o cliente que obteve o empréstimo e o valor emprestado.
 	Gera valor ao nosso usuário, uma ação que vai realizar dentro do sistema.
