@@ -370,7 +370,7 @@
 * Pensando em documentação o diagrama faz parte do desenvolvimento, como as partes vai ser organizadas em modelos e componentes utilizáveis.
 * Diagrama de Componentes:
 	* Objetivo: Apresentar a disposição dos componentes “fisico” de um sistema.
-	* Componente: Unidade de software com funcionalidades auto-contidas (um .class, um .exe, uma DLL etc). (Exemplo de diagrama de componentes)
+	* Componente: Unidade de software com funcionalidades auto-contidas (um .class, um .exe, uma DLL etc). (Exemplo de diagrama de componentes)
 	* Pacotes - Organizar componentes
 	* Seta tracejada - Relacionamento de dependência - O que esta sendo apontado fornece um serviço.
 	* Componentes precisam se comunicar e existem dependências entre eles. Para utilizar como essa comunicação é feita, utilizamos interfaces e essas interfaces tbm tem uma representação na UML.
