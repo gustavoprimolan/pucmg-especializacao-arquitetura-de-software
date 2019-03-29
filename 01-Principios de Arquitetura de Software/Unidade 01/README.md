@@ -98,7 +98,7 @@
 	* Integração bastante comum em equipes que utilizam o padrão de maturidade de software.
 * Par timers - Parte do tempo na escrita de processos.
 
-<h2>2 - Requisitos<h2>
+<h2>2 - Requisitos</h2>
 
 <h3>Requisitos de Software</h3>
 
@@ -351,6 +351,7 @@
 	* Se a funcionalidade tem um determinado nível de segurança, um determinado algoritmo de criptografia - Nao funcional.
 
 <h3>Diagramas URL de Arquitetura - Componente</h3>
+
 * Precisa ser conhecido e bastante utilizado pelo arquiteto de software.
 * O que é um componente?
 * É uma parte encapsulada, reutilizável do software. Sao como um conjunto de blocos que são combinados para formar o software. Pode ser do tamanho de uma classe ate um subsistema. Diversas granularidades.
@@ -389,6 +390,7 @@
 
 
 <h3>Diagrama UML de arquitetura - Pacote</h3>
+
 * Um diagrama de pacotes vai organizar elementos da uml, normal vermos ele sendo utilizado junto a casos de usos e a classes. A ideia é que o conteúdo que o pacote possui possa ser desenhado dentro do próprio pacote ou externamente. Se for externamente o conteúdo vai ser conectado  pelo pacote por uma linha.
 * O diagrama de pacotes vai favorecer também a organizacao lógica das camadas, cada camada poderia ser um pacote, mostrando a comunicação entre os pacotes, como o dado flui entre as camadas.
 * É possível usar tbm estereótipos para os pacotes, que são mecanismos de extensão da UML.
@@ -403,6 +405,7 @@
 	* Pacotes pode ser utilizados para organizar casos de uso.
 	
 <h3>Diagramas UML de arquitetura - Implantação</h3>
+
 * Em ingles recebe o nome como deployment, mas aqui recebe o nome de implatacao.
 * Ele contempla a implantação fisico do sistema, essa visão fisico vai abranger os elementos fisico do sistema.
 * Como os elementos vai ser dispostos. Posso ter um servidor de banco de dados, servidor de aplicação, mais maquinas cliente. Distribuição fisico do software entre esse elementos. E esses elementos juntos permitem que o sistema execute.
@@ -450,6 +453,3 @@
 	* Com um SGDB
 	* Por meio de um browser, uma interface gráfica.
 	* Protecao de firewall, etc.
-
-
-
