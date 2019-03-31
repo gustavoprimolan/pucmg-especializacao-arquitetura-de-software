@@ -183,5 +183,35 @@
 * O modelo de maturidade tem basicamente dois grandes objetivos:
     * Comparar empresas - Se uma empresa tem uma maturidade de maior do que a outra isso é facilitado ou possível em funcao da existencia dos modelos de maturidade.
     * Mostrar o caminho para a empresa seguir. Quais processos precisam ser melhorados primeiro, quais serao trabalhados primeiro, para depois voce evoluir nesse caminho da maturidade. Alcancando o nivel de maturidade maior.
-    * Esses modelos trazem uma serie de boas praticas. A ideia é que essas boas praticas ja foram testadas por diversas empresas, industrias e sao reconhecidas pela literatura. Eles compilam essas boas pratica em processos que estao dentro do modelo de maturidade.
-    * Existem praticas que sao especificas de cada processo (tecnico ou gerencial) e existem praticas que sao comuns a todos esses processos de um determinado nivel que a empresa deseja alcancar
+* Esses modelos trazem uma serie de boas praticas. A ideia é que essas boas praticas ja foram testadas por diversas empresas, industrias e sao reconhecidas pela literatura. Eles compilam essas boas pratica em processos que estao dentro do modelo de maturidade.
+* Existem praticas que sao especificas de cada processo (tecnico ou gerencial) e existem praticas que sao comuns a todos esses processos de um determinado nivel que a empresa deseja alcançar.
+
+* Quais são os resultados esperados em questão a arquitetura de software e processos similares dentro do MPS? - Resultados esperados.
+
+* Princípais Processos de Arquitetura:
+	* No MPS.Br:
+		* Projeto e Construção do Produto (PCP) - nível D.
+		* O MPS vai do nível G até o nível A, possuindo 7 níveis, sendo que os dois primeiros o F e o G são corresponder ao nível 2 do CMMI, que é o modelo internacional.
+		* Os níveis E, D e C são equivalentes ao nível 3 do CMMI. Até o nível 3, podemos dizer que é onde estão a grande maioria das organizações que são certificadas.
+		* Os níveis 4 e 5 do CMMI ou A e B no MPS são ditos níveis de alta maturidade, requer um tempo de maturidade maior, uma evolução maior dos processos. No Brasil são poucas as empresas que detem esse selo.
+		* Junto ao nível D, existem outros processos técnicos da Engenharia de Software, como processos relacionados ao desenvolvimento de requisitos, a verificação e validação que envolve também algo de testes. Integração dos produtos faz parte da Arquitetura ou sendo influenciado por ela.
+	* No CMMI:
+		* Technical Solution (TS) - Nível 3.
+* O MPS é similar para o que existe no CMMI.
+
+* PCP - Projeto e Construção do Produto
+	* Todo processo no MPS ou no CMMI parte de um propósito.
+	* Propósito:
+		* Projetar, desenvolver e implementar soluções para atender os requisitos.
+		* Parte da arquitetura até a implementação da solução.
+		* A princípal entrada são os requisitos, que é outro processo também do nível D, chamado DRE (Desenvolvimento de Requisitos).
+		* Sua execução vai começar quando os requisitos tiverem definidos, desenvolvidos no sentido de detalhadados, e aprovados. São práticas que refletem nos resultados desse processo DRE.
+	* Objetivo:
+		* Objetivo do processo é definir atividades que permitam a elaboração do projeto (design) do software e, também, possibilitem a implementação da solução de projeto (design) para os requisitos em questão.
+
+<h3>Arquitetura no MPS - Resultados 1</h3>
+
+* Iremos discutir cada um dos resultados esperados do processo Projeto e Construção do Produto.
+
+
+
