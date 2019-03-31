@@ -213,5 +213,74 @@
 
 * Iremos discutir cada um dos resultados esperados do processo Projeto e Construção do Produto.
 
+* Arquitetura de Software dentro do modelo MPS.
+* Cada processo tem um conjunto de resultados esperados. Estes resultados esperados indicam práticas que precisam ser observadas pelos avaliadores nos projetos executados pela empresa, tem que ser resultados alcançados, e esses resultados são mostrados por meio de evidencias no mundo de avaliação de melhoria de processo costuma-se dizer que acredita-se em Deus e pros outros a gente pede evidencia. Toda avaliação precisa ser evidenciada, a execução e a implementação correta desses resultados esperados ela tem que ser evidenciada, através de documentos de emails de planos de logs. N maneiras de evidenciar a implementação correta, ou que atenda esses resultados.
+* Esses modelos não dizem como as empresas devem realizar suas atividades, mas ditam resultados esperados que as empresas devem alcançar. Cada empresa é livre e deve ser livre para implementar esses resultados da melhor forma possível, obedecendo sempre estando conforme a sua cultura aos anseios da própria equipe, da autoadministração, mas tem que atingir aquele resultado.
+* A verificação se aquele resultado ou não foi atingido é realizado durante uma avaliação, no final desse processo de implementação, um ou mais avaliadores vão a essa organização, também seguindo o método formal seguido pelo MPS, vão verificar cada uma das evidencias para cada um desses resultados esperados de cada um desses processos. É um trabalho árduo. Vão verificar se essa empresa antigiu ou se esta implementando corretamente esses resultados.
+* Resultados são boas práticas, nesse caso especifico de processo relacionado a arquitetura.
+* Cada resultado esperado é definido com a sigla do processo, nesse caso o PCP e um número sequencial
 
+* PCP - Resultado esperados - PCP1
+	* PCP1 - Alternativas de solução e critérios de seleção são desenvolvidos para atender aos requisitos definidos de produto e componentes de produto.
+	* A definição de uma arquitetura é o primeiro passo a ser tomado durante um projeto de software.
+	* Esse resultado especifica que essa arquitetura nao pode ser definida ou identificada sem analisar alternativas de solução.
+	* A ideia é:
+		* Dado um conjunto de requisitos definidos, detalhados. Provavelmente existem mais de uma arquitetura que possam ser usadas dentro desse projeto, essas arquiteturas possíveis precisam ser avaliadas.
+	* Critérios de seleção:
+		* Padronização de processos. Todos os projetos da organização precisam seguir um processo padronizado, mas nao engessado. Processo padronizado significa que as atividades estão bem definidas dentro do processo ou dentro na metologia da organização. É exigido da organização a existencia de uma métodologia de desenvolvimento de software padrão.
+		* Esse padrão mostra quais são os critérios para adaptar esse processo, quando cada uma das atividades ou artefatos precisam ser ativados ou elaborados.
+		* Critério é uma palavra chave nesse nível de maturidade.
+		* Não posso escolher uma alternativa de solução por estetica, ou por que conhece melhor. Existem critérios de seleção.
+		* A ideia é que se a escolha da arquitetura for questionada, é para mostrar que a escolha da arquitetura foi em função dos critérios do projeto.
+		* Padronizar essas decisões e ter menos variações entre os projetos.
+		* É papel do arquiteto idenficar as várias alternativas de soluções e ele vai ter que mostrar que existem critérios objetivos uma melhor solução para esse caso.
 
+	* Exemplos de alternativas de solução e decisões:
+		* Fazer ou comprar? (Make or Buy). Quais seriam os critérios objetivos para tratar esse caso?
+			* Se for feito talves fique mais barato, mas não existe tempo, talvés seja mais arriscado.
+			* Critérios relacionados a risco, disponibilidade, conhecimento, experiencia técnica. Todos esses podem ser critérios objetivos a serem usados para avaliar esses soluções.
+		* Linguagem de Programação.
+		* Ambiente Desktop ou Web
+		* Estilo Arquitetural.
+		* Banco de Dados
+		* Outras...
+	* Todos componentes arquiteturais que precisam ser escolhidos, seguindo os critérios do MPS.
+
+	* Esse resultado esperado se relaciona com outro processo, que está no nível C, ainda dentro da faixa do nível 3 do CMMI. Existe um processo que chama gerencia de decisões que ele dita regras como realizar decisoes formais dentro do projeto.
+	* PCP1 vai ser tomada como uma decisão formal.
+	* Exemplos de Critérios:
+		* Risco; 
+		* Custo;
+		* Capacitação da equipe;
+		* Restrições do cliente;
+		* Atendimento a requisitos não funcionais;
+		* Outros...
+	* Normalmente usa-se um método de pontuação para apoiar a decisão dessa arquitetura, muitas vezes usa-se a ideia de pesos para os critérios, por exemplo estar mais preocupado com risco do que com preço. Risco irá ter uma pontuação maior.
+	* Cada alternativa vai tirar uma nota em cada um desses critérios e a alternativa que tiver maior pontuação seria a alternativa selecionada ou mais indicada para ser utilizada nesse projeto.
+	* Normal registrar em uma planilha excel esse documento.
+	* Não só no caso do MPS, as avaliações são através das evidencias, mas também na própria empresa e evolução do projeto para algo que possa ser consultado no futuro.
+	
+* O PCP2 é a continuação do PCP1. É uma organização natural. Os resultados esperados tem essa sequencia.
+* PCP - Resultados esperados - PCP2
+	* PCP2 - Soluções são selecionadas para o produto ou componentes do produto, com base em cenários definidos e em critérios identificados
+	* Primeiro é necessário apresentar as alternativas e apresentar os critérios. Em relação ao primeiro, nós ainda não fizemos a seleção da melhor alternativa.
+	* O 2 é usar esse critérios para selecionar uma alternativa de solução.
+* PCP1 é a estrutura para tomar a decisão e o PCP2 é tomar a decisão de fato.
+* Uma vez identificados esses critérios de seleção que serão utilizados, basta avaliar as soluções alternativas entre os critérios e selecionar a mais adequada.
+
+* PCP - Resultados Esperados - PCP3
+	* PCP3 - O produto e/ou componente do produto é projetado e documentado.
+	* Precisa projetar, realizar o desenho do produto e de seus componentes com base com o que foi representado como requisito e isso precisa ser documentado.
+	* O projeto vai ser constituido do projeto de arquitetura.
+	* Mostra que precisamos projetar e documentar um produto e seus componentes.
+	* Como evidenciar este resultado?
+		* Documentos técnicos tais como:
+			* Documento de Arquitetura, Documento de Desenho, Documento de Análise, Modelo de Banco de Dados.
+
+* PCP - Resultados Esperados - PCP4
+	* Tem uma preocupação em relação as interfaces.
+	* Arquitetura é a documentação do sistema, pensando em seus componentes e a integração nas interfaces realizadas entre eles.
+	* Faz parte do trabalho da arquitetura, também, identificar e documentar essas interfaces.
+	* PCP4 - As interfaces entre os componentes do produto são projetadas com base em critérios predefinidos.
+	* Um recurso fundamental dos componentes é a capacidade de definir interfaces.
+	
