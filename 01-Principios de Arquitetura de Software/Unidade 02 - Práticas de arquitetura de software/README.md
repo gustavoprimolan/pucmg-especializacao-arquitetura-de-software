@@ -135,5 +135,53 @@
 
 <h3>Documento de Arquitetura</h3>
 
-* Um Documento de Arquitetura pode ser elaborado de diferentes formas e pode conter informações diferentes. Cada organização se preocupa ou precisa documentar diferentes tipos de informação. Entretanto, algumas informações são típicas em boa parte dos documentos que vemos no mercado. Nesta vídeoaula, apresentamos um pouco do que pode ser considerado uma estrutura típica de documentação de arquitetura.
+* Um Documento de Arquitetura pode ser elaborado de diferentes formas e pode conter informações diferentes. Cada organização se preocupa ou precisa documentar diferentes tipos de informação. Entretanto, algumas informações são típicas em boa parte dos documentos que vemos no mercado.
 
+* Documento importante, elaborado pelo arquiteto de software para comunicar e detalhar a arquitetura do sistema.
+* O documento de arquitetura registra as principais decisões relacionadas a arquitetura de um software.
+* Estabelece como esse sistema esta organizado. Quais são seus componentes internos e como esses componentes se comunicam e interagem entre si.
+* Serve como mecanismo de comunicação entre a equipe.
+* Os desenvolvedores vao consultar esse documento para conhecer melhor a arquitetura do sistema e em suas implementações estarem aderentes ou conforme essa arquitetura utilizada.
+* Os analistas podem utilizar essa arquitetura também para verificar ou validar as informações que foram colocadas em suas especificações e outros papeis podem utilizar esse documento sempre que necessário.
+* O documento de arquitetura vai ser definido por cada organizacao ou por cada projeto, claro que em organizações que possuem  uma metodologia de desenvolvimento de software ja estabelecida padronizada. Esse documento de arquitetura ja vai possuir um padrão. Esse processo, a metodologia da organizacao, vai dizer quando esse documento de arquitetura precisa ser produzido dependendo das características do projeto e quais as informações que são obrigatórias para esse documento.
+* Vai também assinalar o momento, uma atividade em que esse documento vai ser realizado e também um papel responsável pela realização desse documento.
+* Mesmo existindo a possibilidade de variações entre as organizações, mesmo a gente tendo o processo rup, o processo unificado que nos tras um padrão para trabalharmos arquitetura em projetos tradicionais, podemos destacar algumas sessões típicas em documentos de arquitetura.
+* Normalmente um documento de arquitetura vai começar com uma sessão introdutória. Nessa sessão podem ser apresentadas informações relacionadas ao escopo do sistema
+* Escopo - Claro que esse documento pode referenciar um documento de requisitos de especificação que ja tenha sido produzido, ou qualquer outro documento que contem informações de escopo.
+* Definicoes e siglas dos termos utilizados.
+* Referencias - Por ser um documento tecnico, na sua construção podem ser usados outros documentos mais técnicos, ate mesmo livros na literatura em geral. Posso fazer referencias a documentos entregues pelo cliente.
+* Contexto do sistema - Contexto que o sistema esta sendo desenvolvido.
+* Muitos acham que o documento de arquitetura é basicamente um conjunto de diagramas. Nao há necessidade de pensar dessa forma.
+* O documento de arquitetura tem sim seus diagramas, mas ele deve ter também um bom texto de apoio, explicando qual é o contexto, explicando qual é o cenário de desenvolvimento desse projeto, desse software.
+* Pode ter ainda tbm uma explicação sobre a estrutura do documento, como um sumario.
+* Estrutura do Documento - O que é tratado em cada uma das sessões desse documento.
+* Esse documento vai ter ainda uma lista para apresentar os requisitos que são arquiteturalmente relevantes para o sistema. Provavelmente vamos encontrar os requisitos não funcionais que tem um impacto na arquitetura. Que ira nos auxiliar a definir a arquitetura.
+* Os requisitos podem ser trazidos para ca, podem ser explicados aqui ou podemos referenciados um outro documento onde os requisitos estão escritos.
+* É uma boa prática registro de requisitos e cada requisito tem um código único, justamente que possamos rastrear e identificar melhor esses requisitos. Claramente vai ser tratados aqui questões relacionadas a tamanho do software e a desempenho. Tamanho em sentido a quantidade de usuários, volume de dados que o software deve tratar e com qual desempenho, alem dos outros  tipos de requisitos nao funcionais que por ventura existirem nesse sistema.
+* O documento de arquitetura vai trazer então as visões de arquitetura. Lembre-se que utilizamos o modelo 4 + 1 das visões arquiteturais.
+* Sera mostrado as visões logica, visão de implantacao, visão de processos, visão de implementação e a de casos de uso.
+* Essas visões são explicadas e detalhadas e serão tbm ilustradas com diagramas, provavelmente os diagramas da uml em sessões especificas desse documento.
+* Diagrama de implantação vai ser usada na visão de implantação, diagrama de pacotes e componentes, provavelmente vai aparecer na visão logica ou na visão de implementação. Os diagramas de uml vistos, eles encaixam muito bem, são usados nesses contextos das visões.
+* Algumas empresas também documentam essas visões sem o uso de diagramas uml. É comum vermos outros diagramas. Nao usam uma anotação padronizadas, mas que tbm são fáceis de entender, que podem ser usadas para documentar essas sessões e mostrar a arquitetura internamente.
+* Um documento de arquitetura pode trazer alguma informação relacionada a persistência dos dados. 
+* Existem modelos para tratar essa persistência, como os dados serão registrados no sistema, na base de dados.
+* Temos uma visão de dados do sistema. Nessa visão a preocupacao do arquitetura é documentar como esse mecanismo de persistência é utilizado, do ponto de vista para facilitar a vida do desenvolvedor. Podem ser mostrados inclusive exemplos de usos desses mecanismos para que os desenvolvedores tenham o seu trabalho facilidade ao implementar um código especifico de um caso de uso, por exemplo. 
+* E ainda, em um documento de arquitetura, pode haver uma explicação sobre algum framework utilizado. Bastante comum herdarmos algo ja reuzado, ja utilizado na empresa.
+* Uma coisa importante é nao faltar detalhes da arquitetura, que é importante, tanto em quesito a diagramas e informações textuais. 
+
+<h3>Exemplo de documento de arquitetura</h3>
+* https://github.com/DroidFoundry/DroidMetronome/wiki/TEMPLATE-Documento-de-Arquitetura-de-Software#1-introdu%C3%A7%C3%A3o
+
+<h2>Arquitetura no MPS.Br (Melhoria de Processo de Software)</h2>
+
+<h3>Arquitetura no MPS (Melhoria de Processo de Software)</h3>
+
+* O modelo de maturidade MPS.Br, usado desde 2003 no Brasil, tem o objetivo de auxiliar as empresas na evolução de seus processo de desenvolvimento, criando um caminho que possa ser trilhado pelas mesmas. Além disso, o modelo permite a comparação da maturidade entre empresas. No MPS.Br, existem vários processos, correspondentes às diferentes disciplinas da Engenharia de Software. As exigências para a implementação de tais processos é organizada em resultados esperados do processo (REPs). Estes REPs são práticas que devem ser implementadas para que se possa considerar que a empresa atingiu a maturidade esperada neste processo. Neste vídeo, iniciamos a apresentação do processo Projeto e Construção do Produto (PCP) que apresenta as práticas esperadas para a Arquitetura de software no MPS.Br.
+
+* MPS é um modelo de melhoria de software brasileiro. MPS (Melhoria de Processo de Software).
+* Modelos de maturidade descrevem boas práticas relacionadas a diversos processos. Processos da engenharia de software e processos de apoio, como processos de gestao.
+* O modelo de maturidade tem basicamente dois grandes objetivos:
+    * Comparar empresas - Se uma empresa tem uma maturidade de maior do que a outra isso é facilitado ou possível em funcao da existencia dos modelos de maturidade.
+    * Mostrar o caminho para a empresa seguir. Quais processos precisam ser melhorados primeiro, quais serao trabalhados primeiro, para depois voce evoluir nesse caminho da maturidade. Alcancando o nivel de maturidade maior.
+    * Esses modelos trazem uma serie de boas praticas. A ideia é que essas boas praticas ja foram testadas por diversas empresas, industrias e sao reconhecidas pela literatura. Eles compilam essas boas pratica em processos que estao dentro do modelo de maturidade.
+    * Existem praticas que sao especificas de cada processo (tecnico ou gerencial) e existem praticas que sao comuns a todos esses processos de um determinado nivel que a empresa deseja alcancar
