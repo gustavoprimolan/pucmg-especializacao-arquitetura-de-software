@@ -288,4 +288,15 @@
 
 <h3>Arquitetura no MPS - Resultados 2</h3>
 
+* Conjunto final dos resultados esperados.
+* São resultados esperado:
+	* Identificar soluções.
+	* Selecionar soluções de arquitetura com base em critérios definidos.
+	* Realizar o projeto do sistema.
+	* Especificar as interfaces do sistema
 
+* PCP - Resultados esperados - PCP5
+	* PCP5 - Uma análise dos componentes do produtos é conduzida para decidir sobre sua construção, compra ou reutilização.
+	* Inicialmente a arquitetura é pensada de um ponto de vista mais macro. Depois é quebrada e separando em componentes menores. Ao pensar nesses componentes menores podemos chegar em um componental x, e iremos analisar se a organização já desenvolveu um componente similar ou até mesmo um componentes que possa ser utilizadas nesse contexto. Será que é melhor construir esse componente ou se é melhor comprar um que já exista? Será que o componente que será comprado atende totalmente os requisitos? Como será integrado? Terá que ser alterado ou evoluido?
+	* Toda essa analise de componente é feita no PCP5. Trata da analise de fazer ou comprar ou reutilizar os componentes.
+	
