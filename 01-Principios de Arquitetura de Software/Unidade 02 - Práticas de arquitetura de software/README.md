@@ -283,4 +283,9 @@
 	* Faz parte do trabalho da arquitetura, também, identificar e documentar essas interfaces.
 	* PCP4 - As interfaces entre os componentes do produto são projetadas com base em critérios predefinidos.
 	* Um recurso fundamental dos componentes é a capacidade de definir interfaces.
-	
+	* O componente precisa expor alguns dos meios para os outros componentes se comunicarem com ele.
+	* Uma interface declara o conjunto de serviços que são fornecidos ou exigidos pelo componente.
+
+<h3>Arquitetura no MPS - Resultados 2</h3>
+
+
