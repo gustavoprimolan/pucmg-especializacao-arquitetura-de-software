@@ -337,7 +337,18 @@
 	* Critérios definidos, pois são padronizados.
 	* Documentação necessária para a manutenção, operação e instalação do produto deve ser mantida e revisada.
 	* Consistência em relação aos requisitos e projeto.
+	* Organização vai ter um conjunto de padrões e templates que facilitará a leitura dessa documentação.
 
-	
+<h3>Apresentação de um Processo	de Arquitetura</h3>
+
+* http://mds.cultura.gov.br/core.base_rup/disciplines/rup_analysis_design_discipline_29760231.html
+
+* Documentação gerada com o Eclipse Process Framework Project (EPF). Plugin para Eclipse.
+* Gera o HTML com os links depois.
 
 
+<h3>Planilha de Indicadores</h3>
+
+* A avaliação de uma empresa quanto à implementação do MPS.Br se dá por meio de evidências, que comprovam a implementação de tais práticas. São evidências típicas: relatórios, documentos, emails, processos, políticas, modelos, etc. A empresa deve organizar as evidências criadas em uma Planilha de indicadores, que orienta o trabalho dos avaliadores no dia da avaliação. Nesta videoaula, mostramos um pouco mais sobre o preenchimento da planilha de indicadores.
+
+<img src="imgs/08.png"/>
