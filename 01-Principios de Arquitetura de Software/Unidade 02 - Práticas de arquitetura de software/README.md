@@ -299,4 +299,45 @@
 	* PCP5 - Uma análise dos componentes do produtos é conduzida para decidir sobre sua construção, compra ou reutilização.
 	* Inicialmente a arquitetura é pensada de um ponto de vista mais macro. Depois é quebrada e separando em componentes menores. Ao pensar nesses componentes menores podemos chegar em um componental x, e iremos analisar se a organização já desenvolveu um componente similar ou até mesmo um componentes que possa ser utilizadas nesse contexto. Será que é melhor construir esse componente ou se é melhor comprar um que já exista? Será que o componente que será comprado atende totalmente os requisitos? Como será integrado? Terá que ser alterado ou evoluido?
 	* Toda essa analise de componente é feita no PCP5. Trata da analise de fazer ou comprar ou reutilizar os componentes.
+	* Desenvolver um determinado componente internamente.
+	* Contratar uma outra organização para fazer este desenvolvimento; ou mesmo contratar algo pronto, ou reutilizar algo que já exista.
+
+	" Na linha da reutilização, existem dois processos relacionados, um chamado GRU (Gerência de Reutilização), se preocupa muito com a identificação e reuso dos ativos relacionados a software, a código. Para reutilizar um componente eu preciso ter algum mecânismo que permita descubrir quais são os componentes que se tem hoje. Se existe um componente que está sendo usado em vários projetos e vai ser modificado, será necessário descobrir quem são os projetos que utilizam. Comunicar com os reponsáveis etc. "
+
+	* Análise "Fazer ou comprar" (Make or Buy):
+		* Considera relação custo-benefício;
+		* Análise deve incluir custos diretos e indiretos;
+		* Fatores levados em consideração: capacidade, experiência, disponibilidade...
+
+* PCP - Resultados Esperados - PCP6
 	
+	* PCP6 - Os componentes do produto são implementadose verificados de acordo com o que foi projetado.
+	* Vai de fato gerar esses componentes, codificação.
+	* Atendendo aos requisitos e ao documento de arquitetura.
+	* Revisão pode ser feita ou por pares ou por testes de unidades. (Ajudam a alcançar resultados de outros processos).
+	* Como evidenciar este resultado?
+		* Código fonte;
+		* Padrões de codificação;
+		* Checklists de inspeção;
+		* Relatórios de inspeção.
+	
+* PCP - Resultados Esperados - PCP7
+
+	* PCP7 - A documentação é identificada, desenvolvida e disponiblizada de acordo com os padrões estabelecidos.
+	* É necessário receber essa documentação e estar de acordo com padrões no nível D.
+	* Gera o pacote de dados.
+	* O pacote de dados técnico pode conter:
+		* O projeto da arquitetura do sistema;
+		* Raciocínio por trás das decisões tomadas;
+		* Projeto dos componentes e das interfaces;
+		* Rastreabilidade entre os requisitos e os componentes do projeto e interfaces.
+
+* PCP - Resultado Esperados - PCP8
+	* PCP8 - A documentação é mantida de acordo com os critérios definidos.
+	* Critérios definidos, pois são padronizados.
+	* Documentação necessária para a manutenção, operação e instalação do produto deve ser mantida e revisada.
+	* Consistência em relação aos requisitos e projeto.
+
+	
+
+
