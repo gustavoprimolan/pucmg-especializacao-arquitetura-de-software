@@ -99,8 +99,8 @@
 	* Representação de atores e casos de uso mostrando quais atores acionam ou interagem com casos de uso.
     * Casos principais do ponto de vista da arquitetura.
 
-<img src="02.png"/>
-<img src="03.png"/>
+<img src="imgs/02.png"/>
+<img src="imgs/03.png"/>
 
 
 * Visão Logica - A visao logica contem classes de design mais importantes e sua organizacao em pacotes e subsistemas. Contem algumas realizadoes de casos de uso. É um subconjunto do modelo de design.
@@ -112,24 +112,24 @@
 	    * Subsistemas de Design.
 	    * Pacotes podem se quebrar ou agrupar classes ou relizacoes de casos de uso.
 
-<img src="04.png"/>
+<img src="imgs/04.png"/>
 
 * Visão de Implementação - A Visão de Implementação contem uma visão geral do modelo de implementação e sua organizacao em termos de modelos em pacotes e camadas.
 	* Comum termos diversos frameworks que trabalham com estruturas de camadas especificas. Essa visão de arquitetura documentaria como é essa estrutura em camadas.
 	* O diagrama mostra como a integração entre os componentes ocorrem.
 
-<img src="05.png"/>
+<img src="imgs/05.png"/>
 
 * Visão de Processos - A visão de processos contem a descrição das tarefas (processo e threads) envolvidas, suas interações e configurações, e a alocação dos objetos e classes de design em tarefas. Essa visão só precisará ser usada se o sistema tiver um grau significativo	de simultaneidade.
 	* Nao é uma visão comum nos sistemas comerciais.
 	* Muitas vezes essas empresas tratam como algo opcional que vai ser feitos normalmente quando o sistema apresentar essas características.
     * As threads tem maior maior, menor menor.
-<img src="06.png"/>
+<img src="imgs/06.png"/>
 
 * Visão de Implantação - A visão de implantação contem a descrição dos varios nos fisico da maior parte das configurações comum da plataforma e como as tarefas são alocadas na visão de processos nos nós fisico. Essa visão só precisara ser usada se o sistema estiver distribuído.
     * Na visão de implatacao é usado o diagrama de implatacao ou de distribuição da Url
 	* Documento de arquitetura.
-<img src="07.png"/>
+<img src="imgs/07.png"/>
 	
 * Se existe um documento de arquitetura, a empresa ira documentar essas visoes, sendo uma parte substancial de um documento de arquitetura das organizacoes.
 
