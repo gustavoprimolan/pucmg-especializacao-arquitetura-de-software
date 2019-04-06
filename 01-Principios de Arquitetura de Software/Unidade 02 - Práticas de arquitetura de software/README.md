@@ -352,3 +352,36 @@
 * A avaliação de uma empresa quanto à implementação do MPS.Br se dá por meio de evidências, que comprovam a implementação de tais práticas. São evidências típicas: relatórios, documentos, emails, processos, políticas, modelos, etc. A empresa deve organizar as evidências criadas em uma Planilha de indicadores, que orienta o trabalho dos avaliadores no dia da avaliação. Nesta videoaula, mostramos um pouco mais sobre o preenchimento da planilha de indicadores.
 
 <img src="imgs/08.png"/>
+
+
+<h3>Teste - Unidade 2</h3>
+
+* 1 - Sobre as visões de Arquitetura de Software, avalie as sentenças abaixo e escolha a seleção correta.
+
+	* I – A Visão de Casos de Uso contém casos de uso e cenários que abrangem comportamentos significativos em termos de arquitetura, classes ou riscos técnicos.
+
+	* II – A Visão de Implantação contém a descrição dos vários nodos físicos e a distribuição de software e componentes de software nestes nodos.
+
+	* III – A Visão Lógica contém a descrição das tarefas (processo e threads) envolvidas. Trata-se de uma visão opcional, utilizada somente quando há simultaneidade destes processos.
+
+	* R: Somente as alternativas I e II estão corretas. A alternativa III descreve a Visão de Processos, não a Visão Lógica.
+
+* 2- Considere o seguinte diagrama e avalie as afirmações a seguir sobre o modelo 4+1 de Visões Arquiteturais.
+
+	* I – Na documentação da Visão de Casos de Uso, um diagrama de Casos de Uso pode ser utilizado.
+
+	* II – Na documentação de Visão de Implantação, um diagrama de classes é comumente utilizado.
+
+	* III – Na documentação da Visão de Implementação, um diagrama de componentes é comumente utilizado.
+
+	*  I e III. A afirmação II está incorreta, pois na documentação de Visão de Implantação, um diagrama de implantação ou distribuição é comumente utilizado.
+
+* 3 - Três artefatos elaborados ou de responsabilidade do papel Arquiteto de Software são:
+
+	* R : Documento de Arquitetura de Software, Arquitetura de Referência, Guia de Design
+Todos os três artefatos são de responsabilidade do Arquiteto de Software
+
+* 4 - Selecione a única alternativa que contem um processo que não está relacionado diretamente ao processo PCP.
+
+	* Definição do Processo Organizacional. O processo Definição do Processo Organizacional contempla os resultados relacionados à definição dos processos padrão da organização e seus ativos de processo organizacional. Este processo não tem relacionamento com o processo PCP.
+
