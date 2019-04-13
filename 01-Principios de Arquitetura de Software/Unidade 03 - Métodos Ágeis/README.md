@@ -99,6 +99,75 @@
 
 * Para melhor compreender os princípios ágeis, é importante comparar com os métodos chamados tradicionais ou prescritivos, usados ainda hoje em dia.
 
+* Métodos Prescritivos ou Métodos Convencionais
+    * Adotam a estratégia de previsibilidade. Tenta-se levantar todos os requisitos antes de dar inicio ao processo de desenvolvimento.
+    * Levantar todos os requisitos antes de codificar os requisitos, tendo-se um maior controle do que será desenvolvido.
+    * Métodos convencionais acontecem por meio de processos bem detalhados, bem documentados, também chegamos na mesma estratégia e no mesmo objetivo da previsibilidade.
+    * Se é adotado sempre os mesmos processos, será alcançado os mesmos resultados. Vai ter formas de medir a produtividade, metricas mais faceis para comparação.
+    * Com os requisitos e o escopo do projeto bem definido, é feito o planejamento. Essas mudanças são controladas entre o processo em todo o método tradicional. Esse controle de mudanças passa a ser um controle rígido. O controle rígido nao quer dizer que as mudanças não possam ser implementadas, mas existe todo um fluxo para fazer a mudança, uma análise de impacto, do custo, do prazo, etc.
+
+* Métodos Ágeis
+    * Optam pela adaptabilidade. Buscam levantar aos poucos os requisitos e o planejamento é contínuo. Há adaptação às mudanças.
+    * Os aspectos humanos durante o desenvolvimento do software são bastante enfatizados, como a integração entre a equipe, o feedback, a importância da equipe estar satisfeita, ao contrário dos métodos tradicionais.
+    * Não são centrados nos artefatos. É claro que alguns métodos ágeis tem alguns artefatos previstos, mas eles não tem conjunto grande de artefatos produzidos como nos métodos tradicionais.
+    * O certo é ter uma documentação quando necessário e em um nível apropriado para evitar redundancias e excessos.
+    * Não gastar tempo, dinheiro e recursos escrevendo uma documentação extensa, completa e detalhada, que será difícil manter, ou até mesmo não será mantida, tendo uma documentação desatualizada e ficar dentro de uma gaveta sem consulta-la. Só irá desenvolver documentações sempre que necessário.
+
+* Existem mudanças em relação do ciclo de vida dos métodos tradicionais e dos métodos ágeis.
+
+<img src="imgs/01.png"/>
+
+* Comparação do método cascata e um método ágil.
+* Método cascata uma fase só é iniciada quando a fase anterior é concluída. Só se tem um produto pronto no final. Demorar para ter um feedback do cliente. Chega no final com um risco grande de que o produto não anteda as necessidades do cliente
+* Método ágil possuem vários ciclos, como se fosse um PDCA, algo contínuo. Existem os giros de desenvolvimento e testes com entregas. Giros rápidos com entregas contínuas e frequentes para adaptar as necessidades do cliente.
+
+<img src="imgs/02.png"/>
+
+* Na figura existem dois triangulos, na primeira parte o triangulo azul mostra a estrutura para os projetos tradicionais, projetos em cascata. Na parte de cima existe um retangulo mostrando as restrições. Em um projeto tradicional, orientado a planos o que é fixo o que é restrição é o escopo. O escopo é fechado e bem definido. Em cima do escopo temos a estimativa, que está na parte cinza de baixo da figura. O projeto que está estimado para 500 ponto de função vai ter um custo x e vai durar cerca de y horas.
+* Nos métodos ágeis tudo é invertido, no inicio do projeto temos a discução das principais funcionalidades sem fechar o escopo. Existe um certo norte ao inicio do projeto mas isso vai sendo mudando com o tempo com a ajuda do usuário.
+
+<img src="imgs/03.png"/>
+
+* Outra diferença está relacionada a entregas e velocidade das entregas e como perceber um retorno dos investimento desses projetos.
+* Caso aconteça algo que o projeto pare de ser desenvolvido, no projeto em cascata a especificação irá estar completa e não existe um software que funcione e tenha algo operacional de fato. Esse projeto teria um retorno muito baixo. Não é possível usar a especificação, é preciso de algo. Tem retorno contínuo em relação ao projeto, mesmo que não seja em sua totalidade.
+
+* A metodologia ágil trabalha com equipes pequenas, pela ideia da comunicação rápida, da conversa cara a cara os times precisam ser pequenos. Ao contraŕio da metodologia tradicional que os times são grandes.
+* A metodologia ágil trabalha sem a especificação de papeis, tende todo mundo a ser equipe. Nos métodos tradicionais os processos são muito bem definidos.
+* Equipe ágil não deve exceder 14 pessoas.
+* Equipes pequenas
+* Método Scrum: de Scrum de Scrums (Scrum of Scrums), varias pequenas equipes que tem que ser entregadas e cada equipe pequena utiliza seus métodos ágeis.
+
+* Fatores Humanos
+    * Pessoas capacitadas e com experiência são fator chave para metodologias ágeis.
+    * Como existem menos a diversificação de papeis as pessoas tem que ser mais curingas.
+    * Compromentimento e disponibilidade do cliente.
+    * Processo fica mais atraente e isso reflete na cultura da organização. Vai conseguir ser ágil as organizações mais soltas e menos burocráticas.
+
+* Fatores de riscos
+    * Usados em aplicações que podem ser construídas rapidamente e não necessitam garantia extensiva da qualidade.
+    * Sistemas críticos que demandam alta confiabilidade e segurança são mais adequados para uma metodologia prescritiva.
+    * São tendencias e não quer dizer que pode existir métodos prescritivos com algumas características ágeis e ao contrário também acontece.
+
+* Se o cliente não participa e a organização não tem estrutura para ágil. É um projeto que demanda algo mais processual talvez não seja necessário usar o ágil.
+
+* Não existe uma metodologia boa ou ruim, mas existe sim algo adequado para a organização ou para o projeto.
+* Existem organizações que trabalham com as duas metodologias. Odotam o método tradicional ou o metodo ágil.
+
+<h3>XP - Extreme Programming</h3>
+
+* Para ilustrar as características apresentadas dos métodos ágeis, apresentamos um dos primeiros métodos que foi usado em ampla escala, o Extreme Programming ou XP.
+
+* Introdução ao XP
+    * Metodologia ágil de desenvolvimento de software para times pequenos e médios.
+    * Leva as melhores práticas ao "extremo".
+    * Talvez seja a primeira metodologia ágil mais conhecida ou mais difundida na prática.
+    * Enfatiza colaboração, criação de software cedo e rápida, prática de desenvolvimento.
+    * Fundamentada em 4 valores básicos.
+
+* Valores do XP
+    * Comunicação - Primeiro valor
+        * Comunicação ocorre entre
+
 
 <h2>Scrum</h2>
 
