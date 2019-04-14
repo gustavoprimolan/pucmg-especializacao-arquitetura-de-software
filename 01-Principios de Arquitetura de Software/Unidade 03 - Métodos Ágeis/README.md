@@ -166,10 +166,158 @@
 
 * Valores do XP
     * Comunicação - Primeiro valor
-        * Comunicação ocorre entre
+        * Comunicação ocorre entre os desenvolvedores através de uma prática chamada programação em pares e também das reuniões de pé. As reuniões de pé são realizadas dessa maneira como proposito de durarem pouco, assim contraposição dos métodos tradicionais, que são reuniões longas que muitas vezes não tem necessidade de durar tanto e não tem tantas decisões a serem tomadas.
+        * Envolvimento com os usuários através da escrita de testes de aceitação. Outro mecanismo de comunicação.
+    
+    * FeedBack
+        * Estimativas de tempo; Dão feedback da compreensão do que deve ser feito.
+        * Testes fornecem o estado do sistema (TDD); O desenvolvimento dirigido a testes fornece constantemente informações do estado do sistema.
+        * Integração contínua;
+        * Ciclo de desenvolvimento rápido;
+        * Chance de ver e operar um sistema parcial. O cliente também nos da o feedback.
+    
+    * Coragem
+        * Bastante importante para alguns desenvolvedores, essa coragem está envolvida com simplificar/refatorar o código.
+        * Simplificar e refatorar código; Jogar código fora;
+        * Receber crédito somente por código completo; O código só está completo quando possui um conjunto de testes executados e implementa todos os requisitos e evitar disponibilizar o código para teste e não estar pronto ainda.
+        * Ser transparente;
+        * Fazer correções arquiteturais;
+        * Não descartar práticas essenciais.
 
+    * Simplicidade
+        * XP encoraja o uso de simples cartões de papel para escrita breve de funcionalidades. Pode ser chamado de histórias de usuários.
+        * Evita criação de componentes que não sejam imediatamentejustificáveis pelos requisitos correntes. Desenvolver somente aquilo que de fato precisa ser feito.
+    
+* Práticas do XP
+    * Programação em pares
+        * Todo código fonte é produzido em duplas em um computador. Enquanto um implementa, o outro pensa. Alternam entre si. Duplas normalmente não são fixas. A cada dia um desenvolvedor recebe uma atribuição e recebe um par para ele. A ideia é que o observador faça uma inspeção, uma observação em tempo real, conseguindo pensar em coisas que o desenvolvedor que está implementando de fato não consegue notar, consegue perceber correções que poderiam ser feitas naquele momento, claro que existe algo oneroso, mas é investimento que se paga com os benefícios e resultados alcançados.
+
+    * Propriedade coletiva do código.
+        * Qualquer um pode alterar ou melhorar qualquer parte do código.
+        * Toda equipe responsável por todo o código.
+        * Torna-se reponsável pelo código a equipe inteira, se eu vir um problema ou encontrar um erro eu mesmo posso mudar isso. A qualidade desse código vai ser garantida por outras práticas, como a programação em pares e os testes contínuos.
+    
+    * Semana de 40 horas
+        * Horas extras são um sinal de problemas sérios no projeto.
+        * Não faça horas extras por mais de uma semana.
+        * Principio dos métodos ageis é que o desenvolvimento seja sustentável, ninguém consegue trabalhar de maneira sustentável durante muito tempo, fazendo hora extra durante semanas seguidas. Concentrar o trabalho em 40 horas semanais.
+    
+    * Cliente residente
+        * Deve haver um cliente disponível para responder às questões dos desenvolvedores e estabalecer prioridades de baixo nível.
+        * De preferência fisicamente nos projetos.
+        * Se o cliente não consegue liberar alguem ou se não existe alguém responsável por essa tarefa do lado do cliente, nao vale a pena construir o software, é como se não houvesse interesse por parte do cliente na construção do software. Programadores e clientes habitam o mesmo espaço e implementa-los de maneira mais correta.
+        * Clientes devem conhecer o domínio e ter poder de decisão. Dúvidas e perguntas das equipes desenvolvedores precisam ser sanadas pelos clientes envolvidos.
+        * O cliente deve ser alguém que realmente vá utilizar o sistema.
+        * Maior envolvimento do cliente é fundamental para projetos de sucesso.
+
+    * Integração Contínua
+        * Código é integrado e testado no mínimo diariamente.
+        * Cenário comum: Código é integrado em uma máquina de integração. Todos os testes são executados. Se um erro é encontrado, o código é consertado (não importa a localização).
+        * Para cada código existe um conjunto de testes que o valida e se um erro for encontrado esse código tem que ser consertado. O código que roda sempre no repositório central tem que ser correto na entregação contínua.
 
 <h2>Scrum</h2>
+
+<h3>Scrum - Princípios Básicos</h3>
+
+* Atualmente, talvez o método ágil mais usado seja o Scrum, tanto para desenvolvimento quanto para gerenciamento de projetos ágeis. O coração do Scrum é formado pela Sprint, o que equivalente a uma iteração, que deve ser curta, não mais de 30 dias. Neste vídeo, discutimos esta e outras características básicas deste método.
+
+* Introdução ao Scrum
+    * Origem do nome vem do jogo Hugby.
+    * A equipe do time se junta para analisar quais serão as próximas jogadas e estrátegias.
+    * Metodologia foca em analisar a melhor estratégia para execução, documentação e entrega para alcançar um objetivo.
+
+* Principal divisão de trabalho dentro do Scrum é chamada de Spring
+
+* Sprint
+    * Tem uma ideia de agilidade.
+    * Consiste em intervalos fixos de tempo, em que todo o trabalho é realizado. Passar por todas as atividades que podem estar no ciclo de desenvolvimento, não tem só codificação, pode ter documentação no nível que a equipe precisar, arquitetura, testes. Quem decide isso é a equipe de acordo com as necessidades daquele projeto. Se não foi possível terminar algo na Sprint, isso ira ficar para depois. A prioridade vai ser rediscutida e não vai ser implementada na Sprint que não deu tempo. Intervalo sempre fixo, nao estica, não aumenta e tbm não diminui.
+    * Um Sprint tem duração aproximada de trinta dias, sendo esse um valor do qual a equipe pode escolher o tempo de duração, mas com seu valor máxima de até 30 dias, para que não passe muito tempo sem entregar o incremento de sofware. Não quer dizer que todas as Sprint serão iguais. Não muda o tamanho do que deu ou não conta de terminar. Boa pratica ter Sprints do mesmo tamanho. 
+    * Durante um Sprint a equipe Scrum se organiza para produzir um incremento do produto. Não necessariamente precisa ser entregue ao cliente no sentido de ser colocado em operação, mas a uma demonstração desse incremento do que a equipe conseguiu produzir até o final da Sprint.
+    * O trabalho conduzido dentro de um Sprint é adaptado ao problema em mãos e é definido e, frequentemente, modificado em tempo real pela equipe Scrum.
+    * A quantidade de Sprints varia dependendo da complexidade e do tamanho do produto.
+
+* Principios
+    * Pequenas equipes são organizadas de modo a maximizar a comunicação e compartilhamento de conhecimento tácito e minimizar supervisão. Normalmente no mundo ágil o conhecimento não está formalmente documentado, formalmente descrito, ele é tácito. A própria equipe trabalha de maneira auto gerenciável.
+    * O processo precisa ser adaptável e produz frequentemente incrementos de software que podem ser inspecionados, ajustados, testados, documentados e expandidos. Tudo de acordo com as necessidades do projeto.
+    * O desenvolvimento é dividido em partições claras, de baixo acoplamento ou em pacotes. Todo trabalho que entra na Sprint deve ser feito de maneira individual sem dependencias com outros. Isso facilita decidir quais serão os requisitos mais prioritários, pois se não existe um requisito ligado a outro, não como um requisito ser implementa por dependencia de outro.
+    * Testes e documentação constantes são realizados à medida que o produto é construído. Tipo de documentação a equipe vai decidir de acordo com as características do projeto.
+    * O processo fornece habilidade de declarar o produto "pronto" sempre que necessário. Pode não ser um pronto entregável em produção mas existe uma avaliação que tudo foi implementado de acordo com o desejado.
+
+* Ciclo de vida do Scrum
+    * Antes do período de desenvolvimento é necessário elaborar uma visão.
+    * Lembra um pouco mais os métodos tradicionais, pois tenta entender os requisitos do usuário.
+    * Não existe um compromisso com os requisitos das metodologias tradicionais, mas precisa tirar o retrato das necessidades do cliente naquele momento.
+    * Além das sprints de desenvolvimento existe um período para compreender os requisitos e também existe um período posterior para empacotamento e agrupar esses incrementos e entregá-los na operação do cliente.
+<img src="imgs/04.png"/>
+
+
+<h3>Scrum - Papeis, Cerimônias e Artefatos</h3>
+
+* O método Scrum é formado por Cerimônias ou reuniões (Reunião diária, Reunião de planejamento, Reunião de revisão e Reunião de retrospectiva), papeis (Product Owner, Scrum Master e Equipe de Desenvolvimento) e Artefatos (Product Backlog e Sprint Backlog).
+
+* Papeis
+    * Product Owner - PO
+        * Define os itens que compõe a "lista de pendências" - Product Backlog - e define as prioridades. Muitas vezes existe um PO que não sabe descrever as histórias, mas é ele que vai ter que contar para alguém como essas histórias devem ser escritas e o que é importa que essas histórias tenham, além disso define as prioridades.
+        * Define os objetivos para o próximo Sprint.
+        * Revê o produto ao final de cada Sprint.
+    
+    * Scrum Master
+        * Gerencia o processo do Scrum. Ensina o Scrum a todos os envolvidos no projeto. É muito mais um guia, um orientador do que um gerente, muita gente tenta associar a figura do gerente mas não é exatamente isso. O papel dele é ensinar as pessoas como executar o Scrum.
+        * Implementa o Scrum de modo que esteja adequado à cultura da organização e que todos sigam as regras e práticas do Scrum. Scrum é um conjunto de diretrizes muito básicas e precisa ser trabalhadas e repensadas de acordo com a organização.
+        * É responsável por remover os impedimentos do projeto. Qualquer impedimento tecnico, de infraestrutura, de relacionamento e quem resolve isso é o Scrum Master.
+
+    * Scrum Team
+        * É a equipe de desenvolvimento.
+        * Não existe necessariamente uma divisão funcional através de papéis como: programador, designer, analista de testes ou arquiteto.
+        * Todos trabalham para completar o trabalho com o qual se comprometeram para um Sprint.
+        * Não existem donos, se tem um problema todo mundo pode ajudar a resolver, se tem um defeito todos podem ajudar a resolver. Tudo pode fazer de acordo com as necessidades de acordo com o projeto.
+    
+* Cerimônias
+    * Scrum Planning Meeting
+        * Reunião de planejamento na qual o Product Owner prioriza os itens do Product Backlog. Acontece no inicios das Sprints e trazer os itens que caibam dentro da Sprint para que sejam implementados.
+        * A equipe seleciona as atividades que ela será capaz de implementar durante o Sprint.
+        * As histórias de um Sprint são transferidas do Product Backlog para o Sprint Backlog. Sempre que for dito história será chamado dos requisitos e necessidades daquilo que foi sitado pelo PO. Tarefas são as ações da atividade da equipe de desenvolvimento para que as histórias sejam concluídas corretamente.
+    
+    * Daily Scrum
+        * Breve reunião de 15 minutos de pé.
+        * O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia.
+        * Assuntos discutidos são poucos, não é para discutir solução de problemas.
+        * Equipes são pequenas, por isso 15 minutos.
+
+    * Scrum Review Meeting
+        * Valida os objetivos da iteração e a finalização das histórias.
+        * Software é mostrado ao PO e aplica os critérios de aceitação e se está corretamente implementado e se estiver Ok as histórias estão ok e se não estiver de acordo, volta para o backlog.
+
+    * Scrum Retrospective Meeting
+        * Reunião de retrospectiva para levantar todo conhecimento e experiência da iteração que se encerra.
+        * Acontece em um final de Sprint. Lições aprendidas nos métodos tradicionais.
+        * Fluxo de trabalho muito fluido e pode mudar entre uma Sprint e outra.
+        * Coisas que não funcionaram a equipe vai pensar e aprender como trabalharam e pensar em forma mais corretas.
+
+* Artefatos
+    * Product Backlog
+        * Lista priorizada de requisitos ou características do projeto que fornecem valor de negócio para o cliente. Não precisa estar completo no início do projeto. Não precisa estar completo, pois o cliente pode pensar prioridades e requisitos novos.
+        * Conjunto de histórias/requisitos priorizadas.
+        * Itens podem ser adicionados à pendência a qualquer momento (modificações introduzidas).
+
+    * Sprint Backlog
+        * Histórias que entreram para a Sprint.
+        * Lista de histórias mais relevantes quebradas em tarefas com suas respectivas estimativas de duração do presente momento.
+        * Definida pelo time e negociada com o Product Owner.
+        * Deve ser mantida sempre atualizada.
+        * Tarefas são mais técnicas. Implementação das Histórias.
+        <img src="imgs/05.png"/>
+
+    * Lista de Impedimentos
+        * Lista que contém os impedimentos para o time alcançar os objetivos.
+        * Tais impedimentos devem ser resolvidos pelo Scrum Master.
+        <img src="imgs/06.png"/>
+
+    * Relatórios
+        * São relatórios capazes de mostrar o andamento do projeto. Importantes para controle e tomada de decisão dentro do projeto.
+        * Relatório de burndown - Acompanhamento do tempo restante para concluir as tarefas.
+        * NO primeiro dia existe uma quantidade de horas que vai sendo usadas ao decorrer dos dias.
+        <img src="imgs/07.png"/>
 
 <h2>Histórias de usuário</h2>
 
