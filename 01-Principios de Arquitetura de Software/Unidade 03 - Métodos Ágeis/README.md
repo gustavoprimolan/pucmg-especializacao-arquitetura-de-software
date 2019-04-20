@@ -321,6 +321,140 @@
 
 <h2>Histórias de usuário</h2>
 
+<h3>Histórias de Usuário</h3>
+
+* Histórias de usuário são intenções curtas e negociáveis. Representam requisitos do usuário, mas em função do fato de não definirmos totalmente o escopo do projeto em seu início, estas intenções podem ser modificadas, excluídas ao longo do projeto. Neste vídeo, introduzimos o conceito de história de usuário.
+
+* Inicialmente, unidade de funcionalidade no Extreme Programming (XP).
+
+* Sentença curta de intenção que descreve algo que o sistema deve fazer para o usuário. Sem detalhamentos, apenas a necessidade. Como será feito será discutido depois. Por que intenção? Usuário não é capaz de dizer tudo o que ele quer no início do projeto. Na medida que ele vai recebendo pequenos incrementos do software ele vai dando feedback, falando o que ele gostou e o que ele não gostou. É uma intenção pois nem mesmo o usuário tem condições de saber nesse primeiro momento, pois não viu nada do software ainda. Está dando o poder de redefinir com o tempo. Na metodologia tradicional já possui um escopo fixo.
+
+* No XP, histórias são escritas pelo usuário.
+
+* No Scrum, o Product Owner geralmente escreve (aceita e prioriza) histórias, apoiado pelos clientes, partes interessadas e equipe. Foco muito mais no valor para o usuário, do que uma decomposição hierarquica funcinal.
+
+* Na prática, qualquer membro da equipe com conhecimento no domínio pode escrever histórias.
+
+* Devem ser escritas de forma a serem compreendidas por usuários e desenvolvedores.
+
+* Focam no valor definido pelo usuário em vez de uma decomposição hierarquica funcional.
+
+* Podem ser escritas em cartões ou ferramentas.
+
+* Detalhes não aparecem nas histórias.
+
+* Histórias X Requisitos
+    * Não são especificações detalhadas de requisitos, mas expressões de intenção negociáveis.
+    * São curtas, fáceis de ler e compreensiveis a desenvolvedores, partes interessadas e usuários.
+    * Representam incrementos de funcionalidades.
+    * Relativamente fáceis de se estimar esforços.
+    * Não são registradas em documentos longo, mas em listas organizadas.
+    * Não são detalhadas no início do projeto.
+    * Necessitam de pouca ou nenhuma manutenção.
+    * Servem de entrada para qualquer documentação posterior necessária.
+
+* Como escrever histórias
+    * Tem formato especifico de escrita geralmente
+        * Como um "papel", eu posso/devo "ação" para que "valor para o negócio"
+        * Eu como "aluno", "gerente", preciso ou devo fazer tal coisa para que algo seja alcançado.
+        * Eu como aluno preciso visualizar minhas notas para saber como andam meu desempenho escolar.
+    
+    * Foco:
+        * Papel do usuário.
+        * Valor para o negócio
+    
+    * Papel: Permite uma segmentação da funcionalidade. Identifica necessidades de papeis.
+
+    * Atividade: Representa "requisito do sistema".
+
+    * Valor para o negócio: Comunica porque a atividade é necessária.
+
+* Processo Completo
+    * Defina uma história de valor para o usuário.
+    * Implemente e teste em uma iteração curta.
+    * Demonstre ou entregue para o usuário.
+
+* Representação das Histórias
+    * 3 C's
+        * Cartão 
+            * Representa uma ou três frases usadas para descrever a intenção da estória.
+            * Detalhes ainda serão determinados. Só será visto após a Sprint chegar.
+            * Promessa de conversa
+        
+        * Conversa
+            * Discussão entre equipe, cliente e product owner para determinar o comportamento detalhado.
+        
+        * Confirmação
+            * Representa o teste de aceitação.
+            * Representa condições de satisfação.
+        
+* História grande chamada de Épico
+
+<img src="imgs/08.png"/>
+
+* Conclusão
+    * Histórias são mecanismos importantes para entendimento, detalhamento e negociação dos requisitos.
+    * Permitem maior detalhamento na medida em que o mesmo se faz necessário.
+    * Estimativas podem ser derivadas de histórias.
+
+* Se você tem uma história de usuário que não pode ser entregue em uma sprint, você pode estar em face à dois problemas. O primeiro pode ser que a história não foi bem definida ou compreendida pela equipe de desenvolvimento e isso fez com que mais coisas do que o necessário fossem feitas. O segundo é que a história é mais complexa do que realmente parece, então nesse caso você estará de frente à um épico e não uma história. O certo é quebrar esse épico em histórias menores. Um épico pode sim levar mais de uma sprint pra ser feito, mas uma história não.
+
+<h3>Boas histórias de usuário</h3>
+
+* Começar com  objetivos
+    * Todo sistema existe por um conjunto de objetivos, existe uma razão para desenvolve-lo. Deve começar por esses objetivos para identificar as histórias. Objetivos nos dão um pouco essa orientação.
+    * Em projetos grandes com muitos usuários.
+    * Difícil saber por onde começar
+    * Sugestão é começar em cada papel e começar pelos seus objetivos de maior prioridade.
+    * Objetivos são histórias de alto nível. Épico ou Epic
+    * Irão gerar histórias adicionais.
+
+    <img src="imgs/09.png"/>
+
+* Fatiar o bolo
+    * Ninguém come o bolo da horizontal e sim da vertical.
+    * Por isso cada fatia vai da interface ao banco e depois volta.
+    * Há várias maneiras de se quebrar uma história em pedaços menores.
+    * Existe tendência de se quebrar considerando aspectos técnicos.
+    * Melhor abordagem: Fatiar o bolo.
+    * Cada história deve conter algum nível completo de funcionalidade.
+    * Uma maneira também de se testar camadas de arquitetura.
+    * Aplicação pode até ser entregue com funcionalidade parcial mas que inclui todas as camadas.
+
+* Ciclos trimestrais
+    * Não há regra que determine quanto o projeto deve durar.
+    * Para projetos mais longos que quatro meses, uma boa sugestão é usar ciclos trimestrais.
+    * Lançar uma versão testada e documentada a cada 3 meses.
+
+* Restrições em cartões
+    * Devem ser obedecidas e não implementadas diretamente.
+    * Não são alocadas a iterações e não são diretamente estimadas.
+    * Podem ser colados nas paredes.
+    * Podem ter testes de aceitação associados.
+
+* Algumas coisas não são histórias
+    * Formato de histórias de usuário não é apropriado para tudo.
+    * Se for necessário documentar requisitos em outro formato, então use formato adequado.
+        * Ex. Documentos de interface.
+    * Documentos de fornecedores externos também podem demandar outros formatos.
+
+* Escrever voz na ativa
+    * Histórias de usuário são mais fáceis de ler e entender quando escritas na voz ativa.
+    * Em vez de:
+        * Uma chamada pode ser realizada por um operador.
+    * Escreva:
+        * Um operador pode realizar uma chamada.
+
+* Não numerar os cartões
+    * Pode ser uma tentação para manter controle dos cartões ou ter algum mecanismo de rastreabilidade.
+    * Acrescenta esforço necessário.
+    * Normalmente histórias são referenciadas pela funcionalidade em vez de por número.
+    * Se existir a necessidade, tente ascrescentar um título para a história.
+
+<h3>Problemas com histórias de usuário</h3>
+
+
+
 <h2>Arquitetura em métodos ágeis</h2>
 
 <h2>Adoção de métodos ágeis</h2>
