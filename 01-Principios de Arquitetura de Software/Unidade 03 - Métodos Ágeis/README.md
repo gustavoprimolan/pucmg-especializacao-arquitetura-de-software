@@ -453,7 +453,102 @@
 
 <h3>Problemas com histórias de usuário</h3>
 
+* Trabalhar com histórias de usuário pode gerar alguns problemas.
+* Histórias pequenas demais
+    * Histórias muito pequenas causam problemas de estimativas quando a ordem da implementação afeta consideravelmente as estimativas
+        * Os dados do relatório devem ser salvos em um arquivo .doc.
+        * Os dados do relatório devem ser salvos em um arquivo .xls.
+        * História não pode ser nem muito grande, nem muito pequena.
+    
+* Histórias dependentes
+    * Podem causar dificuldade no planejamento das iterações.
+    * A inclusão de uma história em uma iteração incluir outra relacionada.
+    * Ocorre quando histórias são pequenas ou divididas inapropriadamente.
+    * Solução pode ser combinar histórias.
+    * Lembrar da divisão em camadas (fatias de bolo).
+    * História que é prioritária está amarrada uma que é de baixa prioridade e estaria gastando muito tempo para algo sem prioridade.
 
+* Goldplating
+    * Acontece quando são entregues funcionalidades que não foram solicitadas ou além do que é necessário para sua implementação.
+    * Difícil impressionar o cliente com a participação constante em projetos ágeis.
+    * Pode-se evitar aumentando a visibilidade das tarefas de cada um a reuniões de termino de iteração.
+    * Dar de bandeja.
+    * Fenomeno mais comum no mundo tradicional
+    * Mundo ágil é mais dificil acontecer, pois o usuario está mais próximo.
+
+* Detalhes demais
+    * Acotence quando muito tempo é gasto com detalhes antes da implementação da história ou ainda com a escrita da história.
+    * Demonstra algo valor para documentação em detrimento da conversação.
+    * Uso de cartões (espaço limitado).
+
+* Iniciar desenvolvimento sem visão (ter uma visão geral do escopo)
+    * É um erro iniciar o desenvolvimento sem nenhuma visão do produto.
+    * Deve haver uma visão disponível para enunciar claramente o cliente selecionado, suas necessidades e atributos críticos.
+    * Esta visao ajuda a determinar quais recursos deverão ser implementados e garante a criação de um produto útil.
+
+* Especificação de Requisitos disfaçada
+    * Uma especificação disfarçada em Product Backlog é tentadora porque atende nosso desejo de saber todos os requisitos de cara.
+    * Mas não tem suporte para surgimento de novos requisitos.
+    * Não vê requisitos com algo fluído e transitório.
+    * Pode ser sinal de relacionamento pouco saudável entre Product Owner e equipe.
+
+* Contrato de preço fixo
+    * Se for possível, evite projetos com preço e escopo fixo.
+    * Se não for possível, divida o contrato de preço fixo em duas partes.
+    * O primeiro cria a visão do produto e implementa-o parcialmente.
+    * O segundo continua a dar vida ao projeto com base em feedback do cliente.
+
+<h3>Proxies de Usuários</h3>
+
+* É desejável que o cliente escreva as histórias ou esteja ativamente envolvido em sua escrita. Entretanto, nem sempre isso é possível. Em alguns casos, precisamos utilizar alguém que substitua o cliente. Vamos chamar esta figura de Proxy de usuário, ou intermediário
+
+* É fundamental que um projeto tenha um ou mais usuário reais no time de clientes.
+
+* Pode ser difícil reunir os usuários necessários ou desejáveis.
+
+* Importante selecionar proxies. Alguns papéis típicos podem ser usados.
+
+* Proxies - Gerente de Usuários
+    * Precisa ser também usuário do software.
+    * Pode ter padrões de uso diferentes.
+    * Questões de ego envolvidas.
+    * As vezes o gerente tem uma visão diferente do que o sistema vai ser, uma visão de um usuário diferente.
+
+* Proxies - Gerente de Desenvolvimento
+    * Uma das piores escolhas possíveis.
+    * Objetivos diferentes dos usuários (uso de tecnologia, prazos, ...).
+    * Muito mais preocupado ao uso de tecnologias, prazos do projeto não terá conciencia das reais necessidades dos usuários.
+
+* Proxies - Pessoal de vendas
+    * Preocupados normalmente com funcionalidades que vendem.
+    * Podem ser um canal de apresentação a usuários verdadeiros.
+
+* Proxies - Especialistas de Domínio
+    * Sua utilidade depende se são ou foram usuários do sistema.
+    * Muito úteis ao se construir um modelo de domínio ou identificar regras de negócio ou mesmo especificar processos de negócio como são executados no momento que o projeto está sendo desenvolvido.
+    * Software final pode ficar direcionado a usuários com nível de domínio similar (complexo)
+    * Muitas vezes podem ter um entendimento mais complexo. Usuários reais, típicos, talvez não tenham esse entendimento.
+
+* Proxies - Equipe de Marketing
+    * Mais interessados na quantidade do que na qualidade das funcionalidades.
+    * Podem trazer informações de alto nível, mas dificilmente nos níveis de usuários básicos.
+
+* Proxies - Usuários anteriores
+    * Novas  versões de sistemas. Pode ser sim uma boa opção se a experiência é recente ou similar ao sistema que existe no momento.
+    * Objetivos anteriores do sistema devem estar alinhados aos atuais.
+    
+* Proxies - Equipe de Treinamento
+    * Tendência de se projetar um sistema fácil de treinar ou dar suporte, do que  de fato um sistema que realmente atenda as necessidades dos usuários básicos.
+
+* Proxies - Analistas de Negócio
+    * Podem ser boa opção por conhecer do domínio e de tecnologia.
+    * Devem conversar com usuários reais.
+    * Um problema comum, que existe também no mundo tradicional, é que Analistas podem querer intuir o que o usuário deseja e não perguntar diretamente a ele.
+    * Há uma tendência de querer gastar muito tempo em tarefas de projeto.
+
+<h3>Armazenamento de histórias de usuário</h3>
+
+* O armazenamento de histórias pode ser feito em software ou mesmo em papel. Entretanto, há diferenças quanto ao objetivo de mantê-las de uma forma ou de outra.
 
 <h2>Arquitetura em métodos ágeis</h2>
 
