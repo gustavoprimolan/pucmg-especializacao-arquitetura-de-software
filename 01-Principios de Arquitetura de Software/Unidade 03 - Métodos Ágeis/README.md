@@ -550,6 +550,34 @@
 
 * O armazenamento de histórias pode ser feito em software ou mesmo em papel. Entretanto, há diferenças quanto ao objetivo de mantê-las de uma forma ou de outra.
 
+* Papel ou Software?
+    * Muitos são a favor do uso de papel pela simplicidade.
+    * Cartões encorajam discussões e interação.
+    * Cartões podem ser empilhados, organizados ou levados a uma reunião. Se precisar fazer a discussão com mais pessoas, os cartões são interessantes.
+
+    * Há software com o propósito especifico de gerenciar estórias. (Trello, PivotalTracker).
+    * Planilhas e softwares de gerenciamento de defeitos.
+    * Podem ser necessário em caso de auditoria.
+    * Cartões podem ser empilhados, organizados ou levados a uma reunião.
+
+* Guardar histórias de usuário
+    * Existem dúvidas quanto a guardar ou não os cartões.
+    * Se software é usado, então não há dúvida.
+    * Recomendação de se guardar os cartões por algum tempo. Em uma avaliação poderia ser necessário os cartões. COmo no modelo MPS.
+
+* Quando guardar histórias de usuário
+    * Aquisição da organização
+    * Necessidade de se explicar o processo de desenvolvimento
+    * Manutenção ou evolução do produto;
+    * Necessidade de aprovação dos requisitos
+
+* Histórias de usuários e defeitos
+    * Qual a relação entre histórias e defeitos?
+    * Cada registro de defeito pode ser tratado como uma história.
+    * Se defeitos podem ser corrigidos muito rapidamente, alguns podem ser agrupados em outra história (cartões podem ser grampeados juntos).
+
+
+
 <h2>Arquitetura em métodos ágeis</h2>
 
 <h2>Adoção de métodos ágeis</h2>
