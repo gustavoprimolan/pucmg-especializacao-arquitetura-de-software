@@ -576,10 +576,94 @@
     * Cada registro de defeito pode ser tratado como uma história.
     * Se defeitos podem ser corrigidos muito rapidamente, alguns podem ser agrupados em outra história (cartões podem ser grampeados juntos).
 
-
-
 <h2>Arquitetura em métodos ágeis</h2>
+
+<h3>Arquitetura em Projetos Ágeis</h3>
+
+* Mitos sobre Arquitetura Ágil
+    * Ágil = Frágil.
+    * Nenhuma Arquitetura.
+    * Nenhum Design.
+    * Somente funciona para projetos pequenos.
+
+* Ser ágil não significa que pode realizar mudanças arquiteturais significativas no último momento, por mais que é definido que as mudanças são feitas durante o projeto, temos que pensar em uma arquitetura que seja flexivel mas evitar mudanças arquiteturais no último momento.
+
+* Uma boa arquitetura
+    * Aquela em que a significância das decisões é reduzida. Decisões mais importantes são aquelasque reduzem a importância de outras.
+    * A boa arquitetura torna as mudanças fáceis de se fazer.
+    * Preocupação no inicio do projeto, pois nos projetos ágeis mudanças podem acontecer e aceitamos bem essas mudanças.
+    * Reduz custo de mudanças.
+
+* Na arquitetura tradicional é focado em regras, em padroes, em diretrizes, é limitado o espaço de solução dos projetos. Arquitetura tradicional parte de um conjunto de seleções e é adotado uma estratégia chamada de Big upfront design.
+
+* Big upfront Design
+    * Faz todo o design de forma antecipada.
+    * Pensar em uma arquitetura toda do sistema antes do software ser construido.
+    * As mudanças podem se tornar um desafio.
+    * Talvez seja impossível conhecer tudo de maneira antecipada.
+    * Pode existir a possibilidade de ser ignorada por membros da equipe que nao foram envolvidos no inicio do projeto.
+
+* Requisitos de uma Arquitetura Ágil
+    * O design deve melhorar a comunicação entre as equipes. Deve ser compreensível a todos se muita documentação.
+    * O design tem que melhorar a comunicação entre as equipes.
+    * Deve permitir que testes sejam realizados. Deve permitir também que a comunicação e colaboração com o cliente e responder as mudanças.
+
+* Para o ágil ao inves de trabalhar com Big upfront Design é trabalho com o No upfront Design
+
+* No Upfront Design
+    * Nenhum design antecipado.
+    * Membros da equipe possuem alta experiência técnica.
+    * Membros da equipe possuem conhecimento profundo do domínio.
+
+* Ágil - Reduce Upfront Design
+    * Pouco design antecipado (mas não tão pouco).
+    * Não se tem que saber precisamento o que será construido antes de começar a construir
+    * Uma iteração/sprint 0 pode ajudar a definir conceitos arquiteturais chave, uma visão e uma arquitetura inicial.
+
+* Práticas
+    * Design Spikes
+        * Objetivo: Identificar uma abordagem arquitetural.
+        * São provas de conceito
+        * Protótipos
+        * Itens que ajudam a verificar se uma determinada arquitetura ou componente encaixa no projeto.
+        * Tempo: poucas horas a poucos dias.
+        * Ferramentas: Codificação exploratória, uso de quadro branco.
+        * Times pequenos, inteligentes, e orientados a metas.
+        * Respostas baseadas em evidências. Protótipos funcionando.
+        * Escopo e duração limitados (2-6 semanas).
+        * Falhar é uma opção. Permite respostas que irão mudar seus objetivos.
+
+    * Branches diferentes
+        * Objetivo: Experimentar fora do branch principal.
+        * Fora do ramo principal.
+        * Tempo: poucas horas e poucos dias.
+        * Quando terminado: Realizar o merge ou jogar o branch fora.
+
+    * Refinar abstrações
+        * Objetivo: Refatorar para eliminar código redundante.
+        * Tempo: Poucos minutos.
+        * QUando fazer: sempre que voce detectar.
+
+    * Uso de Backlog Arquitetural
+        * Requisitos arquiteturais.
+        * Tarefas relacionadas a spikes.
+        * Investigação Arquitetural
+        * Protótipos
+        * Desenvolvimento de framework
+
+* Arquitetura tradicional x ágil
+    * Tradicional:
+        * Visão geral.
+        * Produz modelos e desenhos
+        * Não tão prática
+        * Focada na conformidade.
+    
+    * Ágil
+        * Equilibra a visão geral e detalhes
+        * Produz o necessário para tomar decisões aos componentes.
+        * Prática.
+        * Focada na sustentabilidade
 
 <h2>Adoção de métodos ágeis</h2>
 
-
+<h3>Desafios da adoção de métodos ágeis</h3>
