@@ -667,3 +667,100 @@
 <h2>Adoção de métodos ágeis</h2>
 
 <h3>Desafios da adoção de métodos ágeis</h3>
+
+* A adoção dos métodos ágeis não é tao trivial.
+* Existem alguns desafios na adoção dos métodos ágeis.
+* Vários deles são similares a adoção de um método tradicional.
+* Será que o processo de adoção destes métodos pelas empresas é tão diferente?
+* Todos os métodos geram entregáveis
+* Ambos os métodos são baseados em ciclos de vida.
+* RUP e Scrum possuem ciclos de vida marcados
+* Reconhecer e a seguir esses ciclos de vida em ambos os casos
+
+* Métodos possuem alicerces
+    * Mundo tradicional
+        * Controle do escopo
+        * Completo entendimento dos requisitos
+        * Especificação dos Requisitos
+    
+    * Ágil
+        * Integração contínua
+        * Testes constantes
+        * Código fonte
+    
+<img src="imgs/10.png"/>
+
+* A adoção do método vai precisar respeitas a cultura organizacional.
+* Cultura esta relacionada como o processo de desenvolvimento de software tem sido feito.
+* Pessoas precisam se acostumar a trabalhar com novas práticas.
+
+* Cultura Organizacional
+    * Evidente no comportamento de indivíduos e grupos
+    * Inserida em uma rede de práticas organizacionais
+    * Crenças e valores compartilhados por membros
+    * Visível no modo em que o trabalho é realizado dia-a-dia.
+    * Influência a implantação de processos
+    * Amplificada pelo comportamento de líderes.
+
+<img src="imgs/11.png"/>
+
+* Desafios dos métodos ágeis podem ser dividos em quatro grandes grupos.
+
+* Desafios da adoção de métodos ágeis
+    * Gerenciamento e organização
+    * Pessoas
+    * Ferramenta e Tecnologia
+    * Processos
+
+* Gerenciamento e organização
+    * O papel do gerente de projetos
+    * No mundo tracidional ele tem um forte papel de planejador, de controlador.
+    * No método ágil ele passa a ser um coordenador
+    * Leva-se um tempo para mudar a mentalidade dos gerentes e que no mundo ágil eles dividem mais poder de decisão com a equipe de desenvolvimento.
+
+* Pessoas
+    * Gerentes: Precisam escolher pessoas de acordo com o perfil da atividade;
+    * Clientes: Devem ser responsivos e colaboradores. Podem ser barreira para o sucesso;
+    * Coaches: Precisam ser pacientes; Deve haver suficiente treinamento e coaching.
+
+* Processos
+    * Métricas de controles diferentes entre ágil e tradicional
+
+* Ferramenta e Tecnologia
+    * Ágil deve ser codigo fonte e não documentação.
+    * Empresas devem usar ferramentas que suportam:
+        * Evolução incremental, integração contínua, gerenciamento de versões, refatoração, entre outras.
+        * Práticas ágeis demandam uso intensivo de ferramentas.
+
+<h3>Práticas e dificuldades da adoção de métodos ágeis</h3>
+
+* A transição dos métodos ágeis não é tão trivial, sair de um mundo tradicional de software para um mundo de desnvolvimento ágil requer a mudança de alguns valores e práticas na organização.
+* Existem alguns facilitadores
+
+* Transição para Métodos Ágeis
+    * Training
+    * Good Coaching and Mentoring
+    * Management Buy-in
+    * Team Members Buy-in
+    * Right People Selection and Empowering Team
+    * Continuous Meetings and Negotiations
+    * Agile Champions
+    * Incentive Factors
+
+<img src="imgs/12.png"/>
+
+* Treinamento pode se basear em coaching ou mentoring.
+* Apoio gerencial - Necessário para remover obstáculos
+* Membros da equipe também precisam desse apoio
+
+<img src="imgs/13.png"/>
+
+<img src="imgs/14.png"/>
+
+<img src="imgs/15.png"/>
+
+<img src="imgs/16.png"/>
+
+<img src="imgs/17.png"/>
+
+<img src="imgs/18.png"/>
