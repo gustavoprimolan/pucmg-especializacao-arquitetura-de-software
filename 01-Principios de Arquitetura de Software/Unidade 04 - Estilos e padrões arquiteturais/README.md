@@ -17,6 +17,23 @@
 
 <img src="imgs/01.png"/>
 
+* Elementos que caracterizem a arquitetura.
+* Não são uma arquitetura de software completa, mas sim o primeiro passo para desenho ou definir qual vai ser a arquitetura do sistema. Solução inicial, preconcebida.
+* Normalmente utilizada em algumas situações.
+
+* Classificação de Padrões Arquiteturais
+    * Vários parâmetros podem ser usados:
+        * Forma de passagem de controle entre componentes: Sistemas de fluxo de dados ou Padrões de comunicação (síncrono x assíncrono).
+        * Ênfase em atributos de qualidade (manutenibilidade ou desempenho).
+    * Sistema deve:
+        * Atender requisitos funcionais.
+        * Atender requisitos não funcionais: Portabilidade, Manutenabilidade, Estabilidade, Confiabilidade, Desempenho.
+
+<h3>Arquitetura em Camadas</h3>
+
+
+
+
 <h2>Serviços</h2>
 
 <h2>Tópicos em estilos arquiteturais</h2>
