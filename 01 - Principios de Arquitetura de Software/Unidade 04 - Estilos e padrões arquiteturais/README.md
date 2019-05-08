@@ -226,6 +226,139 @@
 <h3>Introdução a Serviços</h3>
 
 * Conceito não é novo.
+* Conveções para poder funcionar
+
+* Arquitetura Orientada a Serviços - SOA - Software Oriented Architecture
+    * Unidades existem de forma autonomas e não isoladas
+    * Unidades são serviços.
+    * Paradigma de desenvolvimento.
+    * Objetivo é criar modulos funcionais - serviços - com baixo acoplamento e permitindo reutilização.
+    * Coesão
+        * Elementos conectados para executar a função do modulo
+    
+    * Componentes fracamente acoplados
+        * Web Services devem ser componentes fracamente acoplados.
+        * Podem continuar a funcionar mesmo como alterações na comunicação como:
+            * Adição de novos parâmetros.
+            * Omissão de parâmetros.
+            * Mudança de ordem de parâmetros.
+        
+    * Granularidade
+        * Ajuda a medir a complexidade de um modelo de componentes.
+        * Granularidade fina:
+            * Desce em nível de classes.
+            * Componentes muito detalhados.
+        * Granularidade Grossa:
+            * Oculta o modelo de classes básico.
+            * Componentes executam mais de uma função.
+        
+        * SOA visa criar componentes de granularidade grossa.
+
+* Podemos definir um serviço que atende uma função de negócio bem específica.
+* Recebe requisições e responde a essas requisições encapsulando todo o detalhe do processamento, assim quem utiliza o serviço de um determinado componente não conhece o detalhe da sua encapsulação.
+
+* Serviço 
+    * Executa unidades completas do trabalho:
+        * Podem ser "stateless" (não armazenam estado).
+        * Facilita a reutilização
+        * Statefull
+            * Mais dificeis de ser mantidos
+            * Mais acoplamento
+
+* Principio do Projeto de Serviços
+    * Fracamente acoplados: Mantém uma relação que minimiza dependências e apenas têm conhecimento de outros.
+    * Contrato de serviço: Serviços concordam com um contrato definido por uma ou mais descrições de serviço e documentos relacionados.
+    * Autonomia: Possuem controle sob a lógica interna que está encapsulada nele.
+    * Abstração: Escondem lógica do mundo externo.
+    * Reusabilidade: Lógica dividida em serviços para promover reuso.
+    * Ausência de estado: Serviços minimizam armazenamento sobre informações específicas de suas atividades.
+    * Serviços são projetados para serem encontrados por mecanismos bem específicos
+
+<h3>Web Services</h3>
+
+* Implentação de SOA
+* Requisitos de um componente SOA
+    * Granularidade grossa
+    * Preferencialmente "Stateless"
+    * Baixo acoplamento.
+    * Interface bem-definida
+    * Detalhes de implementação bem encapsulado.
+
+* SOAP - Simple Object Access Protocol
+    * Possibilita a invocação remota de métodos através da Internet.
+    * Usa:
+        * Protocolo simples e difundido: HTTP
+        * Forma de comunicação padronizada: XML
+        * Possível atravessar firewalls
+
+* WSDL - Web Services Description Language
+    * Forma de estabelecer uma comunicação fracamente acoplada entre serviços web.
+    * Documentos de descrição são necessários para acompanhar qualquer serviço que queira agir como provedor.
+
+    * Interface e Implementação
+        * O uso de WSDL na arquitetura de Web Services é em geral dividido em duas partes:
+            * Interface do Serviço. - Abstrata
+            * Implementação do Serviço. - Concreta
+
+    * Descrição abstrata do WSDL
+        * Interface: Visão alto nível da interface de serviço.
+        * Operação: Ação realizada pelo serviço.
+        * Comparada a um método público de um componente. Tem parâmetro de entrada e saída, representados como mensagens. É um conjunto de mensagens de entrada e saída.
+        * Tipos de dados (Types): Definir tipos a serem usados nas mensagens. Podem ser usados tipos do schema XML padrão.
+        * Mensagens: Com tipos já definidos.
+        * Port types: Compostos de operações. Junto com mensagens de entrada e saída.
+
+    * Descrição concreta do WSDL
+        * Binding: Descreve requisito para o serviço estabelecer conexões físicas. Representa uma tecnologia de transporte que o serviço pode usar para se comunicar. SOAP é a forma mais comum de binding. Pode-se aplicar a toda a interface ou uma operação específica.
+        * Porta: Representa o endereço físico no qualo serviço pode ser acessado com um protocolo específico. Existe separadamente para permitir que informação da localização seja mantida separadamente de outras aspectos da descrição.
 
 
 <h2>Tópicos em estilos arquiteturais</h2>
+
+<h3>Mapeamento Objeto Relacional</h3>
+
+* A interface com o banco de dados é uma decisão importante para a arquitetura de software. Uma das formas de se realizar esta interface é através do mapeamento objeto relacional, que cria uma comunicação e associação entre o mundo relacional das bases de dados e o mundo da orientação por objetos.
+
+* Persistência
+    * Envolve:
+        * Armazenamento, organização e recuperação de dados estruturados.
+        * Concorrência e integridade de dados. Garantir que os dados são acessados por requisições diferentes e garantir a integridade dos dados.
+        * Compartilhamento de dados.
+    
+    * Banco de dados possui:
+        * Tabela Cliente.
+        * Tabela Empregado.
+    
+    * Aplicação O.O possui:
+        * Classe Cliente.
+        * Classe Empregado.
+
+* Uma solução ORM contém
+    * API para realizar operações CRUD básicas em objetos de classes persistentes.
+    * Uma linguagem ou API para especificar consultas.
+    * Mecanismo para especificar metadados de mapeamento.
+    * Recursos para otimizar funções.
+
+* Por que ORM?
+    * Produtividade: Reduz tempo de codificação.
+    * Manutenibilidade: Reduz linhas de códigos. Maior relacionamento entre modelo de dados.
+    * Desempenho: Recursos de otimização. Tempo livre do desenvolvedor para tal.
+    * Independência de fabricante: Independencia de SGBD.
+
+* Tipos de Camadas de Persistência
+    * Tipo mais comum: SQL no código fonte.
+    * Vantagens: Permite escrever código muito rápido. Viável para pequenas aplicações e protótipos.
+    * Desvantagens: Dependência entre classes de negócio e esquema do banco de dados relacional. Pequenas mudanças demandam alteração de código.
+
+<img src="imgs/13.png"/>
+
+* Uma camada de persistencia precisa suportar total encapsulamento do mecanismo de persistência.
+* Ações referentes a múltiplos objetos.
+* Transações, Extensibilidade, Cursores.
+* Múltiplas arquiteturas.
+* Versões e fabricantes diferentes de SGBD.
+* Conexões múltiplas simultâneas.
+
+<h3>Hibernate</h3>
+
+* Uma das ferramentas utilizadas para se implantar o mapeamento objeto relacionado é o , Hibernate
