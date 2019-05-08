@@ -361,4 +361,63 @@
 
 <h3>Hibernate</h3>
 
-* Uma das ferramentas utilizadas para se implantar o mapeamento objeto relacionado é o , Hibernate
+* Uma das ferramentas utilizadas para se implantar o mapeamento objeto relacionado é o , Hibernate.
+* Hibernate mapeia as classes as tabelas
+* Hibernate
+    * Recursos inicias:
+        * Como é uma classe persistente simples;
+        * Como especificar o mapeamento;
+        * Recurso das instâncias das classes persistentes.
+    
+* Importante identificar entidades de negócio em um domínio de problema.
+* Modelo de domínio: modelo conceitual destas entidades.
+* Modelo criado em Java criando uma classe persistente para cada entidade.
+
+* Modelo de Domínio
+    * Deve realizar somente a modelagem do domínio do negócio (separation of concerns).
+    * Modelo pode ser reusado em qualquer aplicação.
+    * Pode ser testado automaticamente (testes de unidade - junit).
+
+* Persistência transparente
+    * Separação completa entre as classes persistentes do modelo de domínio e a lógica de persistência.
+    * Classes persistentes não conhecem e não tem dependência do mecanismo de persistência.
+    * Hibernate permite persistência transparente.
+
+* POJO
+    * Plain Old Java Objects.
+    * Abordagem básica.
+
+* Hibernate e POJO
+    * Hibernate funciona melhor com um modelo de domínio implementado como POJOs.
+    * Requisitos impostos por Hibernate são basicamente os de boa prática de programação.
+
+* XDoclet
+    * Xdoclet é implementado como uma tarefa Ant que gera código ou metadados XML como parte do processo de build.
+    * Criar um documento de mapeamento com XDoclet é direto.
+    * Em vez de se escrevê-lo a mão, código fonte é marcado com tagas javadoc.
+
+<h3>Aplicações Móveis</h3>
+
+* Características de Dispositivos Móveis
+    * Portabilidade
+    * Usabilidade
+    * Funcionalidade (aplicações dependentes e independentes)
+    * Conectividade (sempre, parcial ou nunca).
+
+<img src="imgs/14.png"/>
+
+* Princípios de uma boa arquitetura
+    * Requisitos.
+    * Independência de tecnologia.
+    * Alto desempenho
+    * Escalabilidade
+
+<img src="imgs/15.png"/>
+<img src="imgs/16.png"/>
+
+* Livro: Aplicações móveis, arquitetura, projeto e desenvolvimento. Editora Pearson. 2005.
+
+<h3>ITABok</h3>
+
+* ITABoK, um modelo de atividades de arquitetura de software (similar a outros body of knowledge existentes no mundo da tecnologia da informação);
+* Endereço da IASA é https://iasaglobal.org/ (Links para um site externo)
