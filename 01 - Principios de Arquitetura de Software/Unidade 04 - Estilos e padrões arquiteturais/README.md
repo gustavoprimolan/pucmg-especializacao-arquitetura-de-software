@@ -421,3 +421,81 @@
 
 * ITABoK, um modelo de atividades de arquitetura de software (similar a outros body of knowledge existentes no mundo da tecnologia da informação);
 * Endereço da IASA é https://iasaglobal.org/ (Links para um site externo)
+* ITABoK - Information Technology Architecture Body of Knowledge
+    * É uma coleção de padrões arquiteturais e melhores práticas projetadas e compiladas por arquitetos para arquitetos.
+
+* Existe também o PMBoK - Project Management Body of Knowledge
+* SWEBok - Software Engeneering Body of Knowledge
+
+* Não esta finalizado o ITABoK]
+* IASA associação para todos os arquitetos.
+* ITABoK
+    * É um arquivo público de acesso gratuito construído a partir de experiência de membros individuais e corporativos da IASA.
+    * É focado e direcionado para o arquiteto individualmente, embora contenha porções significativas dedicadas à excelência organizacional.
+    * Pretende ser um framework de pessoas ao contrário de um processo, padrão ou metodologia.
+    * Pretende incluir todos os tipos de arquitetos (de software, de informação, de negócios...).
+    * Ainda em construção...
+
+* Conteúdo do ITABoK está sendo dividido em três grandes sessões.
+    * Capability Guidebook
+        * 5 Pilares
+        * <img src="imgs/17.png"/>
+        * Business Technology Strategy - Capacidades
+            * Business Fundamentals - Análise de Indústria - Arquiteto tem que demonstrar capacidades para demonstrar conhecimento ao negócio da organização e pensar em soluções que atendam as necessidades desse negócio
+            * Strategy Development and Rationalization
+            * Industry Analysis
+            * Business Valuation
+            * Investment Prioritization and Planning - Verificar entre várias demandas possíveis quais delas estão trazendo resultados positivos.
+            * Requirements Discovery and Constraints
+            * Analysis
+            * Compliance
+            * Architecture Methodologies and Frameworks
+            * Risk Management
+        * Human Dynamics - Capacidades
+            * Managing the culture
+            * Customer relations
+            * Leadership Management
+            * Peer interaction
+            * Collaboration and negotiation
+            * Presentation and writing skills
+        * Design Skills - Capacidades
+            * Architecture Description
+            * Requirements Modeling
+            * Design Methods and Processes
+            * Design Analysis and Testing
+            * Design Patterns and Styles
+            * Traceability throughout the lifecycle
+            * Views and viewpoints
+            * Whole system design
+        * IT Environment - Capacidades
+            * Technical Project Management
+            * Asset Management
+            * Change Management
+            * Infrastructure
+            * Application Development
+            * IT Governance
+            * Testing Methods, tools and techniques
+            * Knowledge management
+            * Decision support
+            * Platforms and frameworks
+        * Quality Attributes - Capacidades
+            * Balancing and optimizing quality attributes
+            * Manageability, Maintainability, Supportability, Extensibility, and Flexibility.
+            * Monitoring and Management
+            * Performance, Reliability, Avaiability, and Scalability.
+            * Security
+            * Usability, Localization, Accessibility, Personalization/Customizability.
+            * Compliance
+            * Packaging, Delivery, Post deployment.
+    
+    * Engagement Model
+        * Define:
+            * Papeis de arquiteto em uma organização.
+            * Processo e ciclo de vida da arquitetura
+            * Ferramentas usadas
+            * Layout de equipe e forma de interação entre interessados.
+            * <img src="imgs/18.png"/>
+    * Career Management
+        * <img src="imgs/19.png"/>
+        * Career Path
+        * Job descriptions
