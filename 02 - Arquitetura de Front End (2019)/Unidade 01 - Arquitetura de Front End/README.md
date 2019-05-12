@@ -2,6 +2,13 @@
 
 <h2>Aspectos Arquiteturais de Front end</h2>
 
+* Será avaliado 3 perspectivas
+
+* Componente
+* Contexto
+* Sistema
+
+<img src="imgs/01.png"/>
 
 
 <h2>Profissional de Front end</h2>
