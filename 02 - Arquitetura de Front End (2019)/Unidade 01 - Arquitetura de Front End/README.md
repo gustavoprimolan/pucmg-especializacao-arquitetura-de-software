@@ -58,7 +58,18 @@
 
 <img src="imgs/04.png"/>
 
+* Visual Frameworks
+
+<img src="imgs/05.png"/>
+
+* Web e JavaScripts Engines
+
+<img src="imgs/06.png"/>
+
 <h2>Evolução da Web</h2>
+
+* Conceito da Web
+
 
 <h2>Reflexões sobre a Arquitetura de Front end</h2>
 
