@@ -141,7 +141,7 @@
     * Se voce não inserir o DOCTYPE ele vai utlizar o Quirks Mode que pega vários padrões de todos os HTMLs, podendo causar problemas
 * Strict Mode
     * Acontece quando voce utiliza o DOCTYPE
-<img src="18.png"/>
+<img src="imgs/18.png"/>
 
 * Cabeçalho - Tags mais comuns
     * title: Define o título do documento
@@ -191,10 +191,43 @@
         * Dificulta a legibilidade do HTML e mistura conteúdo e formatação.
 
 
-
 <h2>Linguagem CSS - Sintaxe das Regras</h2>
 
+<img src="imgs/22.png"/>
+
+<img src="imgs/23.png"/>
+
+<img src="imgs/24.png"/>
+
+<img src="imgs/25.png"/>
+
+<img src="imgs/26.png"/>
+
+<img src="imgs/27.png"/>
+
+<img src="imgs/28.png"/>
+
+<img src="imgs/29.png"/>
+
+<img src="imgs/30.png"/>
+
+<img src="imgs/31.png"/>
+
 <h2>Linguagem CSS - Prioridade de Seletores</h2>
+
+* A escolha da declaração CSS a ser aplicada, no caso de conflitos, obedece as seguintes regras:
+    * Especificidade
+    * Ordem de leitura
+    * Importância
+
+* Especificidade
+    * No cálculo da especificidade de uma regra, contabiliza-se as ocorrências de 4 itens:
+
+    * <img src="imgs/32.png"/>
+
+    * Para casa item encontrado (inline style, ids, classes, elementos), contabilza-se um ponto no respectivo aspecto.
+
+    * <img src="imgs/33.png"/>
 
 <h2>Linguagem CSS - Box Model, Unidades e Cores</h2>
 
