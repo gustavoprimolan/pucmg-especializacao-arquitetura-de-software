@@ -304,6 +304,120 @@
 
 <h2>Linguagem JavaScript - Conceitos básicos da Linguagem</h2>
 
+* Formas de Utilização do Javascript
+    * <img src="imgs/44.png"/>
+
+* Gramática
+    * Javascript é CASE SENSITIVE e utiliza conjunto de caracteres Unicode.
+    * Nome é diferente de nome que é diferente de NOME.
+
+* Questões básicas
+    * Declaração de variáveis e constantes
+
+```js
+//Declaração de variáveis, opcionalmente com atribuição de valor.
+var a = 0;
+
+//Declaração de variáveis de escopo local, opcionalmente com atribuição de valor.
+let a = 0;
+
+//Decalaracação de constantes
+const A = 0;
+//Valores constantes não podem ser alterados.
+//O escopo das constantes é semelhante ao das variáveis declaradas como let.
+
+```
+
+<img src="imgs/45.png"/>
+
+
+* Tipos e Estruturas de Dados
+    * <img src="imgs/46.png"/>
+
+    * Booleano
+        * Variáveis booleanas podem ter valores true ou false
+        * Os operadores lógicos permitem comparações de expressões
+        <img src="imgs/47.png"/>
+    
+    * Números
+        * Todos os números são de ponto flutuante com tamanho 64 bits.
+        * O objeto Math contém funções matemáticas avançadas.
+        * NaN é o valor retornado por qualquer operaçãoque nao resulte em um número válido
+        * Existem os valores infinitos e menos infinito.
+            * Number.POSITIVE_INFINITY e
+            * Number.NEGATIVE_INFINITY
+        <img src="imgs/48.png"/>
+
+    * Strings
+        * Strings podem ser declaradas com aspas ("abc") ou apostrofes ('abc')
+        * São compostas por sequências de caracteres Unicode
+        * O operador (+) pode ser utilizado para concatenar strings
+        * Embora sejam primitivos, é possível utilizar métodos e propriedades a partir de variáveis do tipo string
+            * length -> tamanho da string
+            * charAt() -> Caracter específico
+            * toUpperCase() -> String maiúscula
+            * toLowerCAse() -> String minúscula
+            * <img src="imgs/49.png"/>7
+    
+    * Strings - Caracteres Especiais
+        * Para se representar caracteres especiais é necessário utilizar a notação de escape com a barra invertida (\\).
+        * <img src="imgs/50.png"/>
+    
+    * Template Strings
+        * Strings definida via (`) sinal de crase que podem interpretar expressões via construção ${expression} contidas na string
+        * <img src="imgs/51.png"/>
+    
+    * Conversão de strings em números
+        * Função parseInt()
+        * Função parseFloat()
+    
+    * Conversão de números para String
+        * A conversão é automática
+    
+    * Objetos
+        * Em javascript, os objetos são coleções de pares nome e valor
+            * O nome é uma string em Javascript
+            * O valor pode ser de qualquer tipo, incluindo outros objetos.
+        * Os objetos são dinâmicos e podem receber novas propriedades e métodos a qualquer momento.
+        * JSON ou JavaScript Object Notation é a forma como descrevem os objetos em JavaScript
+        * <img src="imgs/52.png"/>
+
+    * Date
+        * As variáveis Date são objetos que permite tratar Datas e Horas.
+        * Existem diversos construtores para Datas:
+            * Date()
+            * Date(milissegundos)
+            * Date(string)
+            * Date(Ano, Mês, Dia, Hora, Minuto, Segundo, millisegundo)
+        
+        * Ao referenciar o número dos meses, é importante saber que janeiro é 0 e dezembro é 11.
+        * <img src="imgs/53.png"/>
+
+    * Vetores (Arrays)
+        * Os vetores também são objetos.
+        * A criação pode ser feita de duas formas
+            * Função Array()
+            * Atribuiçõa literal
+        * Possuem a propriedade length que retorna o número de itens.
+        * <img src="imgs/54.png"/>
+
+* Eventos
+    * O código JavaScript é executado a partir de atributos relacionados com eventos associados aos elementos do HTML.
+    * Os controles de eventos são incluídos como atributos dos elementos HTML.
+    * ```html <body onload="alert('Página carregada.');"> ```        
+    * Atualmente, a forma mais comum de lidar com eventos de um objeto é por meio de código JavaScript que "injeta" esse tratamento fora do código HTML.
+    * Isso torna o código HTML mais legível separando o código de tratamento do JavaScript.
+    * Veja o exemplo
+    * <img src="imgs/55.png"/>
+
+* Funções
+    * Sistema muito flexível - Todas as funções são objetos JavaScript
+    * Podem ter qualquer número de parâmetros
+    * Mais parâmetros podem ser passados do que especificados pela função
+    * Os parâmetros não são obrigatórios
+    * Podem retornar um valor explícito ou undefined.
+    * <img src="imgs/56.png"/>
+
 <h2>Linguagem JavaScript - Ajax</h2>
 
 <h2>Biblioteca jQuery</h2>
