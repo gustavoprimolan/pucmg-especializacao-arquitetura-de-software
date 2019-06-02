@@ -424,10 +424,10 @@ const A = 0;
 
 <h2>Material Complementar</h2>
 
-<a src="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">About HTML semantics and front-end architecture</a>
+<a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/" target="_blank">About HTML semantics and front-end architecture</a>
 
-<a src="https://cssguidelin.es/">CSS Guide Lines</a>
+<a href="https://cssguidelin.es/" target="_blank">CSS Guide Lines</a>
 
-<a src="http://oocss.org/">Object-Oriented CSS</a>
+<a href="http://oocss.org/" target="_blank">Object-Oriented CSS</a>
 
-<a src="http://smacss.com/">Scalable and Modular Architecture for CSS - SMACSS</a>
+<a href="http://smacss.com/" target="_blank">Scalable and Modular Architecture for CSS - SMACSS</a>
