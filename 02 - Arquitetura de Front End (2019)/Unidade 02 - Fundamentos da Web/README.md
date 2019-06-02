@@ -229,9 +229,78 @@
 
     * <img src="imgs/33.png"/>
 
+    * <img src="imgs/34.png"/>
+
+* Ordem de Leitura
+    * Para regras concorrentes de mesma prioridade a ÚLTIMA IRÁ PREVALECER.
+    * <img src="imgs/35.png"/>
+
+    * A palavra !important faz a declaração prevalecer sobre as demais
+
 <h2>Linguagem CSS - Box Model, Unidades e Cores</h2>
 
+* Propriedades do box model
+    * height e width
+        * Tamanho básico do elemento
+    
+    * margin
+        * Espaço ao redor do elemento
+    
+    * border
+        * borda em torno do elemento
+    
+    * padding
+        * Espaço entre a borda e o conteúdo
+
+    * background permite controlar:
+        * cor de fundo do elemento
+        * imagem como fundo
+    
+    * <img src="imgs/36.png"/>
+    * <img src="imgs/37.png"/>
+    * <img src="imgs/38.png"/>
+
+
+* Comprimento e Tamanho
+    * Diferença entre Absoluto e Relativo
+        * Absoluto pega tanto a mesma quantidade de pixels em tv e celular.
+    
+    * <img src="imgs/39.png"/>
+
+* Cores
+    * <img src="imgs/40.png"/>
+
 <h2>Linguagem JavaScript - Histórico e Poder da Linguagem</h2>
+
+* O que é Javascript?
+    * HTML define a estrutura do conteúdo
+    * CSS define o formato da apresentação
+    * Javascript adiciona a interatividade e permite a criação de aplicações ricas.
+
+* Histórico do Javascript
+    * 1995 - Criado por Brendan Eich na Netscape
+    * 1996 - Foi transferido para FCMA International para padronização, sendo a primeira versão ES lançada em 1997
+    * 1998 - A linguagem é aprovada como ISO/IEC 16262 e batizada então como ECMA-262
+    * 2005 - O advento AJAX alavancou o uso de Javascript
+    * 2009 - Lançada o ECMAScript 5 (ES5), versão com maior compartibilidade nos browsers atualmente
+    * 2009 - Criado o projeto CommonJS com o objetivo de levar o Javascript para além do Browser
+    * 2015 - Lançado o ECMAScript 6 (ES6), atualmente em estágio avançado de adoção pelos Browsers
+    * O TC39 (https://github.com/tc39) é o Comitê Técnico responsável pela evolução do ECMAScript.
+    * 2016 - ES7
+    * 2017 - ES8
+    * 2018 - ES9
+    * <img src="imgs/41.png"/>
+
+* Implementações ECMAScripts
+    * <img src="imgs/42.png"/>
+
+* Poder do Javascript
+    * <img src="imgs/43.png"/>
+    * Aprimoramento do Suporte a Orientação a Objetos
+    * Ambiente Node.js
+    * Desenvolvimento desktop
+    * Nodejs - 
+    * Electron -> Desktop
 
 <h2>Linguagem JavaScript - Conceitos básicos da Linguagem</h2>
 
