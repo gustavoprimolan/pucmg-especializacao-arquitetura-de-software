@@ -277,5 +277,29 @@
 - Escolha um conceito de projeto, ou um padrão arquitetural que satisfaça as guias arquiteturais do elemento em decomposição.
 
 - Passo 4.1
-  - Identificar preocupações de projeto em cada uma das guias arquiteturais candidatas.
-    - Por exemplo, para disponibilidade do sistema as preocupações seriam detecção de falahas, recuperação de falahas e prevenção de falhas.
+
+  - Identificar preocupações de projeto em cada uma das guias arquiteturais candidatas. - Por exemplo, para disponibilidade do sistema as preocupações seriam detecção de falahas, recuperação de falhas e prevenção de falhas.
+    <img src="imgs/12.png">
+  - Identificar alternativas de padrões que tratam as preocupações de projeto identificadas no passo anterior.
+  - Em geral a coleção de táticas apresentadas para cada um dos requisitos de qualidade é um bom começo para a identificação de padrões.
+  - Para cada um dos padrões identificados determinar:
+    - Os parâmetros discriminatórios.
+    - Uma estimativa dos valores de cada parâmetro.
+
+- Passo 4.2
+
+  - Por exemplo: Tempo de reinicialização após uma falha utilizando os padrões reinicialização fria ou quente.
+  - Número de dependências entre os elementos de um padrão (camadas, MVS) usado para satisfazer um requisito de modificabilidade.
+
+- Passo 4.3
+  - Selecionar da lista produzida no passo anterior, padrões que sejam as soluções mais apropriadas para satisfazer as guias arquiteturais candidatas.
+    - Registrar as motivações/razões a cada seleção de padrão.
+  - Reflita sobre
+    - As vantagens e desvantagens de cada padrão analisando os ganhos e as perdas em cada possível escolha.
+    - A combinação/integração dos padrões se forem colocados juntos para compor uma solução.
+    - Existe exclusão mútua no grupo de padrões selecionados? (se padrão A for escolhido o padrão B não pode fazer parte da solução).
+    - Faça as escolhas de padrões com base nesta reflexão.
+  - Exemplo:
+    - Decisão: usar o padrão de reinicialização quente.
+    - Motivação/razões:
+      - Segundo o requisito do cenário de falha o tempo de reinicializaçåo.
