@@ -274,24 +274,27 @@
   - Este são os candidatos a guias arquiteturais deste elemento em decomposição.
 
 <h1>ADD Passo 4</h1>
+
 - Escolha um conceito de projeto, ou um padrão arquitetural que satisfaça as guias arquiteturais do elemento em decomposição.
 
 - Passo 4.1
 
   - Identificar preocupações de projeto em cada uma das guias arquiteturais candidatas. - Por exemplo, para disponibilidade do sistema as preocupações seriam detecção de falahas, recuperação de falhas e prevenção de falhas.
     <img src="imgs/12.png">
-  - Identificar alternativas de padrões que tratam as preocupações de projeto identificadas no passo anterior.
-  - Em geral a coleção de táticas apresentadas para cada um dos requisitos de qualidade é um bom começo para a identificação de padrões.
-  - Para cada um dos padrões identificados determinar:
-    - Os parâmetros discriminatórios.
-    - Uma estimativa dos valores de cada parâmetro.
 
 - Passo 4.2
+
+  - Identificar alternativas de padrões que tratam as preocupações de projeto identificadas no passo anterior.
+  - Para cada um dos padrões identificados determinas:
+
+    - Os parametros discriminatórios.
+    - Uma estimativa dos valores de cada parametro.
 
   - Por exemplo: Tempo de reinicialização após uma falha utilizando os padrões reinicialização fria ou quente.
   - Número de dependências entre os elementos de um padrão (camadas, MVS) usado para satisfazer um requisito de modificabilidade.
 
 - Passo 4.3
+
   - Selecionar da lista produzida no passo anterior, padrões que sejam as soluções mais apropriadas para satisfazer as guias arquiteturais candidatas.
     - Registrar as motivações/razões a cada seleção de padrão.
   - Reflita sobre
@@ -302,4 +305,57 @@
   - Exemplo:
     - Decisão: usar o padrão de reinicialização quente.
     - Motivação/razões:
-      - Segundo o requisito do cenário de falha o tempo de reinicializaçåo.
+      - Segundo o requisito do cenário de falha o tempo de reinicializaçåo precisa ser menor do que 2s. O padrao reinicializacao fria é descartado por apresentar tempo de reinicializacao superior ao necessário. O padrao de reinicializacao quente é escolhido pois a principio é mais simples de ser implementado do que os outros padroes.
+
+- Passo 4.4
+
+  - Descreva os novos padroes advindos da combinação dos padrões anteriores.
+    - Quais elementos dos padrões estão relacionados?
+    - Quais elementos não estão relacionados?
+    - Quais funcionalidades dos padrões possuem interseção? dica para combinar os padrões.
+
+- Passo 4.5
+
+  - Descreva os padrões identificados no passo anterior utilizando diferentes visões como: - Módulos, componentes e conectores, distribuição/alocação. - Utilize templates das visões para criar esta documentação.
+    <img src="imgs/13.png"/>
+
+- Passo 4.6
+
+  - Avalie e encontre incosistências no projeto arquitetural do elemento em questão.
+    - Avalie o projeto produzido em relação as guias arquiteturais candidatas.
+
+- Passo 5
+
+  - Instanciação dos elementos arquiteturais e alocação das responsabilidades.
+    - Instancie os elementos (filhos).
+    - Atribua as responsabilidades aos elementos.
+  - Aloque as responsabilidades do elemento em decomposição (pai) aos elementos filhos que acabaram de ser instanciados.
+  - Analise e documente as decisões arquiteturais tomadas até o momento.
+  - Utilize diversas visões.
+  - Instancia do Monitor de Saúde, suas responsabilidades e relacoes com outros elementos do sistema.
+    - O monitor de saúde usa um timer para verificar se recebeu o heartbeat de A, B, A'e B'. Se nāo receber o heartbeat antes do timer terminar, ele notifica o proxy.
+
+- Passo 6
+
+  - Definicao de interfaces entre os elementos instanciados.
+    - A interface é o conjunto de servicos e propriedades que os elementos de software fornecem e requerem.
+  - Intefaces podem incluir:
+    - A sintaxe de operações (assinatura).
+    - A semântica de operações (pré- e pós-condições).
+    - Informações compartilhadas (eventos, dados globais).
+    - Requisitos de qualidade de operações.
+    - Tratamento de erros.
+  - Deve-se seguir esses 3 subpassos?
+    - 1 - Exercitar os requisitos funcionais que involverem os elementos instanciados no passo 5;
+    - 2 - Observar as informações que sao produzidas por um elemento e consumidas por outro;
+    - 3 - Registrar o que foi encontrado na documentacao da interface de cada elemento.
+
+- Passo 7
+
+  - Verificar e refinar os requisitos, transformando-os em restricoes aplicadas aos elementos instanciados.
+    - Ou seja, verificar que a decomposicao até agora atende aos requisitos funcionais e de qualidade.
+  - Deve-se seguir esses 3 subpassos: - Verificar se todos os requisitos atribuídos a um elemento pai foram alocados a um ou mais elementos filho na decomposição; - Transformar responsabilidades atribuídas a elementos filho em requisitos funcionais; - Refinar requisitos de qualidade de elementos filho individuais, quando necessário.
+    <img src="imgs/14.png"/>
+
+- Passo 8
+  - Repetir os passos 2 a 7 para o próximo elemento do sistema que se deseja decompor.
