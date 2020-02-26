@@ -420,6 +420,29 @@ const A = 0;
 
 <h2>Linguagem JavaScript - Ajax</h2>
 
+* Introdução
+    * Asynchronous Javascript and XML (AJAX) não é uma tecnologia, mas várias delas combinadas:
+        * Apresenta baseada em padrões como XHMTL e CSS.
+        * Exibição dinâmica através do DOM.
+        * Troca e manipulação de dados com XML
+        * Recuperação assincrôna de dados com XMLHttpRequest
+        * Javascript para juntar tudo isso.
+    
+    * Exemplo prática: GMAIL.
+        * Navegação entre pasta/tags
+        * Carga automatica de mensagens.
+
+* Modelo Clássico VS Modelo AJAX
+    * No modelo clássico, uma aplicação web trabalha assim:
+        * O usuário dispara uma solicitação HTTP para o servidor web.
+        * O servidor web processa e então retorna a página HTML.
+        * Repete-se esse processo indefinidamente durante a sessão do usuário.
+    
+    * No modelo AJAX:
+        * O usuário dispara uma solicitação HTTP ao servidor web.
+        * O servidor retorna uma aplicação
+
+
 <h2>Biblioteca jQuery</h2>
 
 <h2>Material Complementar</h2>
