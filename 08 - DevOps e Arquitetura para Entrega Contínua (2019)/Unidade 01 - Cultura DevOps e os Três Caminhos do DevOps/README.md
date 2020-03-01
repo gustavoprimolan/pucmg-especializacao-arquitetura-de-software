@@ -261,4 +261,40 @@
 * Mantenha equipes pequenas
     * Os membros da equipe se tornam menos produtivos à medida que o tamanho do grupo aumenta.
     * Se possível, mantenha as equipes pequenas, mas suficientes para cobrir um fluxo de valor.
-        * Jacob Morgan, The Future of WOrk
+        * Jacob Morgan, The Future of Work
+
+<h1>Perguntas</h1>
+
+* 01 - 
+    * "Nós fazemos o nosso sistema de trabalho mais seguro através da criação rápida e frequente de um  fluxo de informação de alta qualidade em todo o nosso fluxo de valor e nossa organização, que inclui feedback e feedforward. Isso nos permite detectar e remediar problemas enquanto eles são menores, mais baratos e mais fáceis de corrigir; evitar problemas antes de causarem catástrofes; e criar aprendizado organizacional que integramos no trabalho futuro. E quando ocorrem falhas e acidentes, nós os tratamos como oportunidades de aprendizado, ao invés de punição e culpa." Essa frase se refere a quais dos caminhos DevOps
+    * R: Segundo caminho
+
+* 02 - 
+    * Um fluxo de valor pode ser definida como a sequência de atividades que uma organização realiza para cumprir uma solicitação do cliente. Em implementações, modelamos e medimos a performance desses fluxos com instrumentos e técnicas diversas. Alguns desses instrumentos incluem:
+    * R: Medição de Tempo de Ciclo e Gráfico de Chegas e Partidas (CFD)
+
+* 03 - 
+    * "A Engenharia do Caos é a disciplina de realizar experimentos sobre sistemas distribuídos com o intuito de construir confiança sobre a capacidade de um sistema distribuído suportar condições adversas em produção.". Um caso concreto dessa disciplina é a empresa Netflix e o seu produto chamado SimianArmy. A engenharia do Caos está ligada a que princípios DevOps?
+    * R: Terceiro Princípio (ou aprendizagem organizaçional)
+
+* 04 - 
+    * Um fluxo de valor de TI pode envolver ambientes verdes e marrons. E a escolha de um fluxo de valor para a transformação DevOps merece consideração cuidadosa. Não só o fluxo de valor que escolhemos ditam a dificuldade de nossa transformação, mas também dita quem estará envolvido na transformação. Isso afetará a forma como precisamos organizar em equipes e como podemos melhor habilitar as equipes e os indivíduos nelas. Quando vamos implantar projetos DevOps, devemos:
+    * R: Projetos marrons podem ser usados em implantações DevOps, desde que os aplicativos envolvidos sejam arquitetados (ou possam ser rearquitetados) para testabilidade e implantabilidade. 
+
+ * 05 - 
+    * Podemos conceituar o DevOps da seguinte forma:
+    * R: Uma abordagem cultural suportada por práticas e ferramentas para aumentar a eficácia e eficiência nas áreas de tecnologia da informação
+
+* 06 - 
+    * O primeiro caminho DevOps diz:
+    * "Para maximizar o fluxo, precisamos tornar o trabalho visível, reduzir o tamanho dos lotes e os intervalos de trabalho, aumentar a qualidade evitando que os defeitos sejam passados para os centros de trabalho mais à direita e otimizar constantemente as metas globais."
+    * Alguns dos instrumentos usados para aumentar o fluxo incluem:
+    * R: Limitação do WIP e redução do tamanho de lote.
+
+* 07 - 
+    * A curva de difusão de inovações, estudada nesse capítulo, é um aliado de analistas em implantações DevOps. Podemos extrair dela o seguinte:
+    * R: Especialmente nos estágios iniciais, não vamos gastar muito tempo tentando converter os grupos mais conservadores. Em vez disso, vamos focar a nossa energia na criação de sucessos com grupo com menor aversão ao risco e construir a nossa base de lá
+
+* 08 - 
+    * Todo o trabalho realizado na sua TI pode ser descrito através de um fluxo de valor. Identificar o trabalho e os envolvidos nesses fluxos de valor é fundamental para buscar melhorar o sistema de trabalho. Para isso realizamos medições no fluxo de valor. Algumas dessas métricas incluem:
+    * R: Tempo Total de Ciclo; % de Retrabalho e Eficiência de Fluxo (Value Added Time) 
