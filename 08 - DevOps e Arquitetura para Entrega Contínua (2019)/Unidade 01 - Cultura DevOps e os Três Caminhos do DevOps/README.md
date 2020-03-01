@@ -225,3 +225,40 @@
 * Identifique os sabotadores
     * Os sabotadores são o alto perfil, detratores influentes que são mais propensos a resistir (e talvez até mesmo sabotar) nossos esforços.
     * Abordamos este grupo apenas depois de alcançarmos uma maioria silenciosa, quando estabelecemos sucessos suficientes para proteger com sucesso a nossa iniciativa.
+
+<h1>Mapeamento do custo do trabalho no fluxo de valor da sua TI</h1>
+
+* Todo o trabalho realizado na sua TI pode ser descrito através de um fluxo de valor. Identificar o trabalho e os envolvidos nesses fluxos de valor é fundamental para buscar melhorar o sistema de trabalho.
+
+<img src="imgs/06.png"/>
+
+* Use métricas para propor melhorias com DevOps
+    * Utilizamos as métricas do nosso mapa de fluxo de valor para orientar os nossos esforços de melhoria. No exemplo Nordstrom, eles se concentraram nas taxas de baixo % C/a no formulário de solicitação apresentado pelos gerentes de departamento, devido à ausência de números de funcionários.
+    * Em outros casos, poderia ser longos prazos de entrega ou taxas ruins % C/A ao fornecer ambientes de teste configurados corretamente para equipes de desenvolvimento, ou pode ser o tempo de execução ao longo exigido para executar e passar o teste de regressão antes de cada versão de software.
+    * Uma vez que identificamos a métrica que queremos melhorar, devemos realizar o próximo nível de observações e medições para entender melhor o problema e, em seguida, construir um mapa de fluxo de valor idealizado, futuro, que serve como uma condição de destino para alcançar.
+
+<h1>Desenho da sua organização e a sua arquitetura com a Lei de Conway</h1>
+
+* "Qualquer empresa que projeta um sistema (definido em termos gerais) irá produzir um produto0 cuja estrutura é uma cópia da estrutura de comunicação da organização." Melvin Conway, 1967
+
+<img src="imgs/07.png"/>
+
+* A Lei de Conway para o DevOps
+    * Em outras palavras, a forma como organizamos nossas equipes tem um efeito poderoso no software que produzimos, bem como nos resultaos arquitetônicos e de produção resultantes. A fim de obter um fluxo rápido de trabalho de desenvolvimetno em operações, com alta qualidade e grandes resultados dos clientes, temos de organizar as nossas equipas e nosso trabalho para que a lei de Conway trabalha a nosso favor.
+    * Se mal feita, a lei de Conway impedirá que as equipes trabalhem de forma segura e independente; em vez disso, eles serão firmemente acoplados, todos esperando uns aos outros para o trabalho a ser feito, com até mesmo pequenas mudanças criando potencialmente global, consequências catastróficas.
+
+* Arquétipos Organizacionais e o impacto para DevOps
+    * As orngaizações funcionais - Orientadas para a especialização do conhecimento, divisão do trabalho ou reduzindo do custo. Essas organizações centralizam o esxpertise, o que ajuda a possibilitar o crescimento da carreira e o desenvolvimento de habilidades, e muitas vezes têm estruturas organizacionais hierárquicas altas. Este tem sido o método predominante de organização para operações (ou seja, administradores de servidor, administradores de rede, administradores de banco de dados, e assim por diante são todos organizados em grupos separados) e construção de produtos (desenvolvedores e QAs).
+    * As organizações orientadas para o mercado - Otimizam para responder rapidamente às necessidades do cliente. Essas organizações tendem a ser planas, compostas por várias disciplinas multifuncionais (por exemplo, marketing, engenharia, etc), que muitas vezes levam a possíveis redundâncias em toda a organização. E asssim que muitas organizações proeminentes que adota o DevOps operam - em exemplo extremos, como na Amazon ou Netflix, cada equipe de serviço é simultaneamente responsável pela entrega de recursos e suporte a serviços.
+    * Organizações matriciais - Tentam combinar a orientação funcional e de meccado. No entanto, como muitos que trabalham ou gerenciam organizaçõess matriciais observam, as organizações matriciais geralmente resultam em estruturas organizacionais complicadas, como contribuintes individuais relatando a dois gerentes ou mais, e as vezes alcançando nenhum dos objetivos do orientação funcional ou de mercado.
+
+<h1>Melhorando as COmpetencias dos TImes em Iniciativas DevOps</h1>
+
+* Colocar mais ênfases em produtos que projetos facilita iniciativas DevOps.
+    * A organização de times que criam e sustentam produtos, ao invés de uma lógica centrada em projetos, facilita a adoção de práticas, melhoria nos sistemas de trabalho, redução dos tempos de ciclo e melhorias no retrabalho.
+* Carreiras em T (ou E)
+    * Forme "especialistas em generalização" que se aprofundam em uma área, mas também se desdobram em outras áreas.
+* Mantenha equipes pequenas
+    * Os membros da equipe se tornam menos produtivos à medida que o tamanho do grupo aumenta.
+    * Se possível, mantenha as equipes pequenas, mas suficientes para cobrir um fluxo de valor.
+        * Jacob Morgan, The Future of WOrk

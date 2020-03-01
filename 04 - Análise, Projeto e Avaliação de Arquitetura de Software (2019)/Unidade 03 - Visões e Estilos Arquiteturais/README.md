@@ -443,5 +443,10 @@
     - Um elemento de software é alocado a um arquivo ou pasta.
     - Arquivos e pastas podem estar contidos em outras pastas.
     - As relações de estar contido obedecem a uma hierarquia de uma árvore.
-  - Notação UML - Estereótipos: - `uml <<artifact>>` - Qualquer arquivo. - `uml <<manifest>>` - Relação de que um componente ou classe se manifesta em um arquivo, artefato.
+  - Notação UML 
+    - Estereótipos: 
+      - `uml <<artifact>>` 
+        - Qualquer arquivo. 
+      - `uml <<manifest>>` 
+        - Relação de que um componente ou classe se manifesta em um arquivo, artefato.
     <img src="imgs/27.png"/>
