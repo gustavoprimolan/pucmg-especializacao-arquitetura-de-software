@@ -74,3 +74,89 @@
 <img src="imgs/05.png"/>
 
 
+
+<h1>Aumento de Maturidade na Gestão de Builds</h1>
+
+* 1 - No início, existem builds manuais e dependências do ambiente do desenvolvedor. Precisamos compreender onde estão as fontes de ineficiências que atacam os três princípios DevOps.
+
+* 2 - Depois, usamos ferramentes como NuGet, Maven, Gradle, NPM ou Yarn para eliminar a dependências de IDEs e do ambiente específico.
+
+* 3 - Com builds gerados por scripts e robôs, criamos ambientes dedicados e limpos para testar o processo fora do ambiente de desenvolvimento.
+
+* 4 - Aumentos a frequência de geração de builds. Queremos aumentar o feedback.
+
+* 5 - Agora, queremos buscar um ambiente onde os commits sejam diários.
+
+* 6 - Simultaneamente, incentivamos a escrita diária de testes de unidade automatizados. QUeremos robustez nos nossos builds.
+
+* 7 - Incentivamos o uso de métricas e incentivamos qualidade contínua no processo de automação de builds.
+
+<h1>Princípios de Automação de Testes para DevOps</h1>
+
+* Automação de testes é peça fundamental nos processos DevOps.
+
+* 1 - O que deve ser automatizado
+
+    * Pirâmide de testes
+
+    <img src="imgs/06.png"/>
+
+    * Quem escreve os testes unitários são os desenvolvedores.
+
+* 2 - Teste de fumaça (Smoke Test)
+    * Veio que componentes de hardware para verificar se o hardware estava soltando fumaça ou não e veio para o meio de software, também.
+
+* 3 - Como devemos investir o tempo do time de testes.
+    * Pareamento com o time de desenvolvimento, mais que trabalho isolado para pegar defeitos.
+
+* 4 - Testes ao longo de todo o pipeline DevOps
+
+<h1>Automação de Liberações, Implatação e Entrega Contínua (CD)</h1>
+
+* A automação das liberações é uma prática que buscar garantir que o processo de promoção do executável para os ambientes de testes, homologação e produção sejam automatizados e assim tornados consistentes e eficientes. (Release Management)
+    * Não pode envolver a recompilação da aplicação.
+    * Movimentação de um build que ja foi aprovado no processo de build.
+    * Automação de build -> Automação de Release
+
+* Benefícios
+    * Reduzir o tempo para entregar um novo build em ambiente de produção através da automação da instalação e configuração de ferramentas e componentes arquiteturais;
+    * Reduzir erros em implantação causadas por parâmetros específicos que não foram corretamente configurados pelos times de desenvolvimento e operações.
+    * Minimizar a fricção entre os times de desenvolvimento, QA e operações.
+    * Prover confiabilidade e segurança no processo de implantar aplicações.
+
+* Avaliar o processo na automação de releases
+
+<img src="imgs/07.png"/>
+
+* Entrega Contínua
+    * A entrega contínua habilita a promoção de builds com grande frequência e automação de todo o ciclo.
+    * Na entrega contínua, entretanto, a etapa de publicação para o ambiente de produção requer aprovação humana, em conformidade por exemplo com regulatórios exigidos por ITIL.
+
+* Implantação Contínua
+    * Com a entrega contínua implantada, é possível automatizar até mesmo a transferência de objetos para a produção. Isso é desejado em ambientes altamente dinâmicos como startups e aplicações que não estejam submetidos a elementos regulatórios de ITIL ou SOX.
+
+<img src="imgs/08.png"/>
+
+* A integração continua (Continuous Integration) é o processo contínuo de compilar o código em ambiente limpo, rodar testes e outros processos de qualidade e gerar um build, disparado por commits em algum branch do repositório de código.
+
+* A entrega contínua (Continuous Devilery) habilita a promoção continua de builds para ambientes na sua TI.
+
+* A implatação contínua (Continuous Deployment) habilita a promoção contínua de builds para ambientes de produção.
+
+<h1>Exercícios</h1>
+
+* 1 - Podemos dizer que a integração contínua o seguinte, exceto.
+    * R: Que ela envolve a compilação, montagem de builds e a execução de smoke tests sobre builds por ferramentas
+
+* 2 - Podemos afirmar o seguinte sobre pipelines DevOps:
+    * R: Que eles são arranjos de ferramentas usadas para encadear e automatizar tarefas em times de desenvolvimento, qualidade e infraestrutura. Os pipelines são conduites que encadeiam tarefas, permitindo repetição de tarefas (jobs) em ambientes de nuvem e ambientes privativos. Ferramentas como o AzureDevOps, GitLab ou Jenkins são populares no mercado brasileiro para esse fim.
+
+* 3 - Podemos descrever a relação de arquitetos com pipelines DevOps da seguinte forma:
+    * R: Pipelines DevOps devem ser trabalhados em conjunto entre os times de desenvolvimento, segurança, qualidade e operações, com a mediação do time de arquitetura para fazer provas de conceito e experimentações. 
+    * Como pipelines DevOps envolvem a escolha e integração entre várias tecnologias, arquitetos podem ajudar na mediação do processos de definição tecnológicas entre times de devs, qa, sec e ops.
+
+* 4 - Considere a seguinte afirmação: " O processo DevOps X permite automatizar até mesmo a transferência de objetos para a produção. Isso é desejado em ambientes altamente dinâmicos como startups ou para aplicações que não estejam submetidos a elementos regulatórios como SoX, ISO ou afins." Podemos falar que o processo X representa:
+    * R: Implantação Contínua. Veja na apostila (material 1.2.6/página 8) a definição de implantação contínua: "A implantação contínua (Continuous Deployment) habilita a promoção contínua de builds para ambientes de produção." Veja também as definições abaixo: "A entrega contínua (Continuous Delivery) habilita a promoção contínua de builds para ambientes na sua TI. A integração contínua (Continuous Integration) é o processo contínuo de compilar o código em ambiente limpo, rodar testes e outros processos de qualidade e gerar um build, disparado por commits em algum branch do repositório de código."
+
+* 5 - Podemos dizer sobre a automação de testes e a cultura DevOps o seguinte:
+    * R: A cultura DevOps enfatiza que devemos investir na automação de testes, especialmente testes de unidade que são baratos para criar e rodar. Um dos princípios DevOps diz que devemos promover feedback ao longo de toda a cadeia de desenvolvimento e operações. E a automação de testes é o principal mecanismos para aumentar esse feedback.
