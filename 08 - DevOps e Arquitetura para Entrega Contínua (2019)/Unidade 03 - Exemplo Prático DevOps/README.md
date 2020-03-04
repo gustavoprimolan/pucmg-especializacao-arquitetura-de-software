@@ -53,3 +53,30 @@
 - docker run mysql
 
 ```
+
+<h1>Exemplo de Uso de Contêineres com o Docker</h1>
+
+* Comandos básicos do docker
+
+```
+//PROCURA IMAGENS EM REPOSITÓRIOS NA WEB OU PRIVATIVOS DA EMPRESA
+//PESQUISA NO REPOSITÓRIO DO DOCKER COMO DEFAULT
+- docker search mysql
+- docker search redis
+
+
+//ESPERA O NOME DA IMAGEM QUE VAI INSTANCIAR O CONTAINER
+// -d DISPARA O PROCESSO EM BACKGROUND
+- docker run -d redis
+
+//MOSTRA OS CONTEINERS INSTANCIADOS
+- docker ps
+
+// -p É A PORTA DO SISTEMA OPERACIONAL NATIVO VAI BATER NO CONTEINER
+- docker run -d -p 6379:6379 redis
+
+
+//6380 É A PORTA DO SISTEMA OPERACIONAL NATIVO
+- docker run -d -p 6380:6379 redis
+
+```
