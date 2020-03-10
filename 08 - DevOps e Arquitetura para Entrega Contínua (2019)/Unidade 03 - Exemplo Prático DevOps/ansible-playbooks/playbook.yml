@@ -1,0 +1,6 @@
+#TODAS MÁQUINAS QUE TIVEREM ACESSO SERÁ ALVO DO PLAYBOOK
+#ANSIBLE JÁ TEM VÁRIOS COMANDO PRONTOS
+- hosts: all
+  tasks:
+      - name: "Ping to test connection"
+        ping: 
