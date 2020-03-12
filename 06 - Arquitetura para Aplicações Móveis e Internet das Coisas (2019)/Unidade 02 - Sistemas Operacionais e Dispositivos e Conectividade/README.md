@@ -109,4 +109,112 @@
 * Redes Celulares
     * Procurava resolver o problema da interferência dos sinais de rádio.
     * Cada usuário do rádio ocupava uma faixa de frequência, que não poderia ser utilizada por outro usuário.
-    * O conceito de célula permite que usuários em células adjacentes não utilizem a meesma frequência, mas células mais distantes podem utilizá-las.        
+    * O conceito de célula permite que usuários em células adjacentes não utilizem a meesma frequência, mas células mais distantes podem utilizá-las.
+    * O conceito de redes celulares surgiu em 1947 nos laboratórios Bell, nos EUA.
+    * Utiliza a ideia de ter várias estações de comunicação, chamadas radio-base, para permitir uma ampla cobertura do sinal de rádio.
+    * Handoff: conceito em que um usuário trafega de uma estação rádio-base para que outra sem perder a conexão.
+    * Componentes de uma rede celular:
+        * Estação móvel (Dispositivo móvel).
+        * Estação Rádio-Base (Antena)
+        * MSC - Mobile Switching Center - Central de Comutação Móvel.
+        * PSTN - Public Switched Telephone Network - Central de COmutação de Telefonia Pública.
+
+<img src="imgs/04.png"/>
+
+* Características da Rede Celular:
+    * Roaming
+    * Controle de Energia.
+    * Reuso de frequência
+    * Handoff
+
+* Roaming
+    * Permite que um usuário utilize o telefone celular fora da área de cobertura de sua operadora
+        * Pode ser fora do estado, região ou país.
+        * Pode ser a utilização da infraestrutura de outra operadora.
+        * Normalmente envolve custos adicionais para o usuário.
+
+* Controle de Energia
+    * A antena da estação rádio-base controla o nível de potência do sinal do telefone celular.
+    * Isto permite que o celular possa utilizar apenas a energia necessária para manter a qualidade da chamada.
+    * Quanto menor a potência transmitida, maior o tempo de duração da bateria.
+
+* Reuso de frequências
+    * Células adjacentes utilizam canais diferentes
+
+<img src="imgs/05.png"/>
+
+* Handoff
+    * É a passagem, de forma transparente, de um usuário móvel de uma célula para outra.
+    * Permite continuar a conexão de voz e dados de um usuário móvel, permitindo a continuidade do serviço de comunicação.
+    * O handoff pode ser controlado pela estação rádio-base, pelo telefone celular ou ambos:
+        * Controlado pela Rede:
+            * Realizado de forma centralizada. A MSC toma a decisão de fazer o handoff.
+        * Handoff assistido:
+            * Telefone celular auxilia a MSC fazendo medições do sinal para realizar o handoff.
+        * Controlado pelo telefone celular: A estação móvel toma a decisão de solicitar o handoff para a estação rádio-base.
+    * Existem 2 tipos de handoff:
+        * Soft: A transição entre uma célula e outra é realizada de forma suave. Normalmente não ocorre perda de conexão. Utiliza na primeira geração de telefonia celular.
+        * Hard: Ocorre uma pequena interrupção durante a mudança de células. Pode ocorrer perda de conexão. Utilizada a partir da segunda geração de telefonia celular.
+
+* Gerações do Celular
+
+    * 1G
+        * Primeira geração de telefonia celular.
+        * Utilizava comutação de circuitos e modulação analógica
+        * Tecnologia FDMA
+            * Orientado à conexão.
+            * Alocava uma faixa de frequência para cada conexão.
+    
+    * 2G
+        * Sinal digital, permitiam um número maior de usuários por faixa de frequência.
+        * Utilizava comutação de circuito.
+        * Modulação com TDMA e também com CDMA
+        * Transmissão de dados de até 14Kbps.
+
+    * 2.5G
+        * Melhoria da tecnologia 2G.
+        * Permitiu a comutação de pacotes.
+        * Transmissão de dados de até 144 Kbps
+        * Implementada sobre a 2G
+        * Inclusão do protocolo GPRS (redes GSM).
+    
+    * 2.75G
+        * Melhoria da tecnologia GPRS.
+        * Transmissão de dados de até 473Kbps (teórico).
+        * Protocolo EDGE (redes GSM).
+        * Pode ser implementado na mesma faixa de frequência utilizada pelas operadoras.
+    
+    * 3G
+        * Rede comutada a pacotes.
+        * Velocidade de 384Kbps para usuários móveis e 7Mbps para usuários estacionários.
+        * Padronização mundial de telefonia celular.
+    
+    * UMTS - Universal Mobile Telecommunication System
+        * Utiliza o padrão de comunicação W-CDMA.
+        * Velocidades de até 2Mbps
+        * Projetado para banda larga móvel.
+            * Internet Móvel.
+            * Aplicações Multimídia.
+    
+    * HSDPA - High-Speed Downlink Packet Access (rede 3.5G)
+        * Evolução do W-CDMA/UMTS
+        * Velocidades de até 14,4 Mbps para Download
+    
+    * HSUPA
+        * High Speed Uplink Packet Access - 5,76Mbps para upload.
+    
+    * 4G - LTE - Long Term Evolution
+        * Padrão em desenvolvimetno
+        * Velocidades de até 150Mbps (podendo evoluir).
+        * Em testes chegou a 3,3Gbps (condições ideais).
+        * Padrão a ser adotado no Brasil
+            * Proposto para 2,5Ghz, operadoras querem 700Mhz.
+        * Os grandes atrativos do 4G são a convergência de uma variedade de serviços ate então somente acessíveis na banda larga fixa, bem como a redução de custos e investimentos para a ampliação do uso de banda larga na sociedade, trazendo benefícios culturais, melhoria na qualidade de vida e acesso a serviços básicos tais como comunicação e serviços públicos antes indisponíveis ou precários à população.
+        * 4G está sendo desenvolvido prevendo oferecer serviços baseados em banda larga móvel tais como: vídeo chat, mobile tv, conteúdo HDTV, serviços básicos como voz e dados, sempre no conceito de uso em qualquer local e a qualquer momento. Todos os serviços deverão ser prestados tendo como premissas a otimização do uso de espectro, troca de pacotes em ambiente IP.
+    
+* Wireless
+    * É uma tecnologia capaz de unir terminais eletrônicos, geralmente computadores, entre si devido às ondas de rádio ou infravermelho, sem necessidade de utilizar cabos de conexão entre eles. O uso da tecnologia wireless vai desde de rádio como walkie-talkies até satélites artificais no espaço.
+    * Seu uso mais comum é em redes de computadores, onde a grande maioria dos usuários utiliza-se da mesma para navegar pela Internet no escritório, em um bar, um aeroporto, um parque, em casa, etc. Uma rede de computadores sem fios são redes que utilizam ondas eletromagnéticas ao invés de cabos.
+
+* Bluetooth
+    * É uma especificação industrial para áreas de redes pessoais sem fio (Wireless personal area networks - PANs). O Bluetooth provê uma maneira de conectar e trocar informações entre dispositivos como telefones celulares, notebooks, computadores, impressoras, câmeras digitais e consoles de videogames digitais através de uma frequência de rádio de curto alcance globalmente não licenciada e segura.
