@@ -218,3 +218,29 @@
 
 * Bluetooth
     * É uma especificação industrial para áreas de redes pessoais sem fio (Wireless personal area networks - PANs). O Bluetooth provê uma maneira de conectar e trocar informações entre dispositivos como telefones celulares, notebooks, computadores, impressoras, câmeras digitais e consoles de videogames digitais através de uma frequência de rádio de curto alcance globalmente não licenciada e segura.
+
+
+<h1>Exercícios</h1>
+
+* 1 - Quais os tipos de celulares existentes?
+    * R: Dumb Phone e Features Phones. Os dois tipos de celulares são: Dumb Phones (Somente função de agenda e envio de mensagens). Features Phones (Telas coloridas, rádio, músicas mp3, vídeos, câmeras, Bluetooth, WAP).
+
+* 2 - Qual dos itens baixo NÃO pode ser considerado uma característica dos smartphones atuais?
+    * R: Baterias com duração superior a 24 horas contínuas em nível moderado de utilização. Os smartphones estão evoluindo rápido, a cada dia novas funcionalidades são apresentadas aos usuários. Infelizmente os modelos de energia que consegue uma autonomia de muitas horas ainda são caros para equipar os devices a nível de consumidor final. Estudos recentes estão tentando contornar esse cenário.
+
+* 3 - Qual dos componentes abaixo NÃO faz parte de uma rede celular?
+    * R: Back Bones: Os quatro componentes básicos de uma rede celular são: Estação móvel (Dispositivo móvel); Estação Rádio-Base (Antena); MSC – Mobile Switching Center – Central de Comutação Móvel; PSTN - Public switched telephone network – Central de Comutação de Telefonia Pública.
+
+* 4 - Quais das características abaixo NÃO faz parte de uma rede celular?
+    * R: Controle de Notificações. As quatro características básicas de uma rede celular são: Roaming; Controle de Energia; Reuso de frequências; Handoff.
+
+* 5 - O Handoff pode ser caracterizado como?
+    * R: A passagem, de forma transparente, de um usuário móvel de uma célula para outra.  O Handoff é a passagem, de forma transparente, de um usuário móvel de uma célula para outra. Permite continuar a conexão de voz e dados de um usuário móvel, permitindo a continuidade do serviço de comunicação. O handoff pode ser controlado pela estação rádio-base, pelo telefone celular ou ambos.
+
+* 6 - Qual das tecnologias NÃO é considerada de transmissão?
+    * R: GPS. O GPS é uma tecnologia de recepção de dados.
+
+* 7 - É característica do controle de energia de uma radio-base e estação móvel celular:
+    * R: Controlar o nível de potência do sinal do telefone celular. São características de uma rádio-base e estação celular: A antena da estação rádio-base controla o nível de potência do sinal do telefone celular; Isto permite que o celular possa utilizar apenas a energia necessária para manter a qualidade da chamada; Quanto menor a potência transmitida, maior o tempo de duração da bateria.
+
+    
