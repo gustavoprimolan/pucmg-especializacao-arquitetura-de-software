@@ -104,3 +104,54 @@
 
 <h1>Conceitos de Alta Disponibilidade</h1>
 
+* Alta disponibilidade
+    * De acordo com as exigências dos clientes e a formalização dos contratos só nos resta agora, enquanto detentores do desenho de solução de TIC, torna-la com alta disponibilidade.
+    * O que devemos fazer?
+        * Alta disponibilidade exigida pelos clientes nos determina a implementar um desenho de solução para não causar percepção de interrupção ao usuário final.
+    
+* Mas como medir a disponibilidade?
+    * A visão do usuário que importa ao prestador de serviços se chama fim-a-fim.
+    * A ideia é medir o acesso do dispositivo do usuário, seja ele qual seja até o serviço que utiliza-se no provedor.
+    * O monitoramento pela Rede é uma boa opção para quem deseja acompanhar o que acontece no Datacenter sem interferir no funcionamento da aplicação.
+    * O monitoramento com a instalação dos agentes em cada servidor também é bastante utilizado e temos uma série de ferramentas de código aberto que podemos utilizar.
+<img src="imgs/07.png"/>
+
+<img src="imgs/08.png"/>
+
+* Agente é um software que vai monitorar.
+* Objetivo do agente é verificar o consumo de memória/processamento.
+
+* Ferramentas Open Source de Apoio (Agentes)
+    * Nagios
+    * Zabbix
+    * Cacti
+    * Opennms
+    * Icinga
+
+* É importante monitorar?
+    * A ferramenta nos garantirá o acompanhamento da prestação de serviço TIC seja ela qual for e se estiver localizada em um Datacenter ou na nuvem.
+    * Ter estes números em mãos é fundamental para argumentação com os decisores do projeto de migração (ou não) para a nuvem.
+
+* A tabela de noves pode se converter nisto...
+
+<img src="imgs/09.png"/>
+
+<h1>Disponibilidade</h1>
+
+* Como funciona o produto de hospedagem
+    * Atualmente um dos produtos oferecidos no mercado é a disponibilização aos clientes de infraestrutura para hospedagem de sistemas.
+    * A questão fundamental é que este modelo está pautado à aquisição de hardware físico para provimento de serviço.
+
+* Características deste ambiente
+    * Precisa ser escalável: Permitir o aumento da capacidade de atendimento de um serviço aumentando a quantidade de acessos e/ ou requisições sem alterar o design (codificação ou componentes ou licenças) que provê a aplicação.
+    * Precisa ser confiável: É necessário dar garantias de funcionamentos em condições pré estabelecidas e em um período de tempo especificado, geralmente em contrato.
+    * Precisa ser manutenível: Deve facilitar a possibilidade de execução de manutenções no produto ou em seus componentes isolando problemas, corrigindo defeitos, e possibilitando substituir compoenentes de hardware com falha sem proporcionar interrupção em outros componentes que estão em funcionamento.
+
+* Tipos de escalonamento
+    * Escalonamento vertical: É quando se tem um hardware que não tem a capacidade para processamento de todo o serviço e acrescenta-se recursos (processador, memória ou rede) neste componente.
+    * Problemas: 
+        * Existe um custo de hardware mas para qualquer manutenção de componentes é necessário interrupção do serviço. Mais que isto existem componentes que não podem ser duplicados em uma única caixa, por exemplo placa mãe.
+        * O risco de violação de disponibilidade de um provimento adotando-se este tipo de escalonamento é alto.
+        * O USUÁRIO PERCEBERÁ INEVITAVELMENTE A INDISPONIBILIDADE.
+<img src="imgs/10.png"/>
+
