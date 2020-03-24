@@ -206,6 +206,10 @@
 * 2 - Considerando o algoritmo MAP e REDUCE, a opção que melhor define o que função MAP faz é:
     * R: Aplica uma função, que deve ser executada de forma independente, em cada membro de uma estrutura de dados, gerando uma estrutura chave e valor. O algoritmo pode ser usado sempre que houver uma lista; Para cada elemento da lista uma função que a transforme; Outra função que possa ser aplicada ao conjunto de dados transformados de forma a agregá-los;
 
+* 3 - Considerando o algoritmo MAP e REDUCE, selecione a opção que não representa a função REDUCE:
+    * R: Ordenar as chaves. A porção do framework que ordena as chaves finais é feita pelo Name Node. A função reduce já recebe as chaves ordenadas e agrupadas. 
 
+* 4 - Considerando consistência eventual, selecione a afirmativa correta:
+    * R: De acordo com o teorema CAP, é uma das características existentes nos bancos de dados NoSQL para um sistema distribuído. 
 
  
