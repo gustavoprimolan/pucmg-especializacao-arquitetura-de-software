@@ -384,5 +384,117 @@
     
 <h1>Bancos de Dados baseados em colunas - Cassandra</h1>
 
+* Cassandra
 
+* Características:
+    * Utiliza cocneitos tanto do AMazon DynamoDB quanto do Google Bigtable;
+    * Em alguns livros e artigos é tido como um banco de dados chave valor;
+    * Possui um API para os clientes simplificada (get, insert e delete);
+    * Não possui nó central, utiliza um protocolo GOssip, em que troca de mensagens entre os servidores de forma intensiva;
+    * Todos os servidores possuem log;
+    * Possui também uma estrutura de dados em memória (Memtable). Dados são escritos no disco quando a memória esta cheia;
+    * Nós podem ser adicionados em tempo real ao cluster;
+    * Não utiliza uma DFS como o Google Bigtable. Dados são gravados localmente e, se for o caso, replicados;
+    * Os arquivos de dados são compactados com certa periodicidade, por um processo de plano de fundo;
+    * POssui uma linguagem 'SQL like': Cassandra Query Language -CQL (DDL, DML);
+    * Um nó servidor no cluster cassandra executa alguns módulos:
+        * Particionamento;
+        * Mecanismo de armazenamento;
+        * Detecção a falha e nó do cluster;
+    * Todos os módulos são implementados em Java;
+    * No caso de uma nova requisição;
+        * Identifica-se qual nó possui a chave;
+        * A requisição é enviada para o nó identificado e a requisição é atendida;
+        * Caso haja falha na resposta, indica para o cliente e procura pela última réplica e response;
+
+* Modelos de Dados:
+    * <img src="imgs/19.png"/>
+    * Coluna
+        * É o elemento mais granular na hierarquia do Cassandra;
+        * Possui a seguinte estrutura:
+            * <img src="imgs/20.png"/>
+        * O valor 'timestamp' é fornecido pelo cliente e pode ser utilizado para resolução de conflitos;
+        * O nome e valor são binários, podem ser serializados utilizando strings UTF8;
+    * Famílias de colunas
+        * É um repositório para linhas, analogamente, seriam as tabelas nos SGBDR's;
+        * Cada linha em uma família de colunas é referenciada por sua chave;
+        * O armazenamento das chaves nas famílias de colunas é ordenado, sendo configurável a ordenação aplicada (ASCII, UTF-8, Long, etc.);
+        * Colunas relacionadas (serão acessadas em conjunto) devem ser armazenadas na mesma família de colunas;
+        * Famílias de colunas - exemplo dinâmico:
+            * <img src="imgs/21.png"/>
+    * Linhas
+        * Cada família de colunas é armazenada em um arquivo separado e o arquivo é ordenado por linhas;
+        * A chave da linha é o que determina em qual nó do cluster será armazenado o dado;
+        * Para cada chave pode haver dados em múltiplas famílias de colunas;
+    * Super colunas:
+        * As supercolunas são uma especie de agrupamento de colunas;
+        * Mais especificamente é um 'hashmap' de colunas:
+        * Exemplo:
+        * <img src="imgs/22.png"/>
+        * <img src="imgs/23.png"/>
+    * KeySpace
+        * Pode ser considerado como esquema ou banco de dados (primeiro hash map do armazenamento no Cassandra);
+        * Armazena as famílias de colunas;
+
+* Escalabilidade (tolerância a partição):
+    * Não possui papeis especiais para os nós: 'server nodes';
+    * Os dados de uma família de colunas são particionados e distribuídos entre os nós utilizando o algoritmo 'consistent hashing' que preserva a ordem das chaves;
+    * O algoritmo 'consistent hashing' possui uma alteração comparada com a do Amazon DynamoDB: não utiliza o conceito de 'virtual node';
+    * Faz analise constante das cargas nos servidores e se necessária altera a ordem dos servidores no anel para o 'consistent hashing': foca no balanceamento da carga;
+    * Os particionamentos são feitos pelas chaves: aleatório ou ordenados;
+    * O particionamento dos dados é controlado por um arquivo de configuração: cassandra.yaml;
+    * Uma vez que um cluster é iniciado com uma opção de particionamento, o mesmo não pode ser alterado sem que haja a recarga dos dados no cluster;
+
+* Disponibilidade:
+    * Utiliza o protocolo Gossip entre os nós do cluster;
+    * No cluster cada nó tenta localizar e detectar se outro nó esta ativo/desativo (evitar tentativas de requisições que vão falhar);
+    * As réplicas são controladas por um fator que é chamado de 'replication factor';
+    * O fator de replicação é determinado por keyspace (banco de dados);
+    * Um fator de replicação de 5, signifca que 5 réplicas de cada linha serão gerenciadas pelo cluster;
+    * Existem alguns tipo de replicações:
+        * Simples: utiliza o 'consistent hashing';
+        * Grupo: permite implementar o conceito de diferentes 'rack's' ou múltiplos data center's; Arquivo: cassandra-topology.properties
+        * <img src="imgs/24.png"/>
+    
+* Consistência:
+    * A consistência pode ser escolhida (por requisição): escrita ou eventual;
+    * No processo de escrita as seguintes opções são válidas:
+        * Any (Eventual): a escrita é bem sucedida se é escrita em qualquer nó disponível;
+        * One: A escrita é bem sucedida se é escrita em um nó responsável pela linha;
+        * Quorun: a escrita é bem sucedida se é escrita em um conjunto de nós da réplica ((fator de replicação/2) + 1)
+        * Local Quorun: A escrita é bem sucedida se é escrita em um conjunto de nós da réplica no mesmo local;
+        * All (estrita): a escrita é bem sucedida se é escrita em todos os nós que contenham a chave;
+    * Processo de reparação para leitura:
+        * Garante que dados acessados com elevada frequência estaão sempre consistentes;
+        * No processo de leitura há uma comparação dos dados oriundos das réplicas: se existe inconsistência um processo de escrita é acionada para as demais réplicas;
+        * O processo de reparação para leitura vem configurado como padrão.
+        * A configuração pode ser feita por família de colunas;
+    * Passos para o processo de escrita, exemplo:
+        * Processo tenta fazer a escrita para todos os nós que contenham a linha;
+        * Se todos os nós não estão disponíveis, dados são armazenados em um nó descrevendo todo o procesos de escrita (espécie de log);
+        * Se algum nó volta a ativa ou é contatado, a atualização é realizada;
+    * Algumas opções de escrita estão disponíveis para leitura (Any, One, Quorum, Local_Quorum e All)
+    * <img src="imgs/25.png"/>
+
+* Atividade:
+    * Demonstração utilização mostrando o Cassandra
+
+* Reflexão:
+    * Em quais cenários os bancos de dados baseados em colunas são recomendáveis?
+    * Como é tratada a consistência no Cassandra?
+    * Importância de ser avaliar o teorema CAP em uma solução NoSQL?
+
+<h1>Atividade Objetiva</h1>
+
+* 1 - Considerando os bancos de dados chave e valor, é incorreto afirmar:
+    * R: A consistência é facilmente configurada nesses produtos, pois eles têm um fraco suporte para tolerância a partição. Boa parte das soluções chave valor favorecem a escalabilidade (versus consistência);
+
+* 2 - Considerando os bancos de dados baseados em documento, selecione a afirmação correta:
+    * R: Na grande maioria dos casos, cada banco de dados consiste em um conjunto de documentos – o servidor gerencia os IDs dos documentos (um exemplo é o CouchDB). Justificativa a) não podemos afirmar que todos tem o nó central, o CouchDB, por exemplo não o tem. c) não podemos afirmar que todos fazem Map reduce e d)Nem todos os produtos possuem esta flexibilidade 
+
+* 3 - Considerando os bancos de dados baseados em famílias de colunas, é incorreto afirmar:
+    * R: Possuem esquema pré-estabelecido na criação de tabelas.  Justificativa: Bancos de dados baseados em colunas também pode ser schemaless, ou seja, fracamente dependentes de esquema de tabelas;
+
+* 4 - Considerando os bancos de dados baseados em famílias de colunas, assinale o conceito que não se relaciona com o tema:
+    * R: Subgrupos. Não existe o conceito de sub grupos em bancos de dados baseado em coluna
 
