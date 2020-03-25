@@ -292,7 +292,7 @@
     * Administração de usuários
         * Modelo de controle de acesso de documentos: listas de usuários autorizados a ler o documento ('readers');
         * Esta mesma restrição é válidas para as visões que acessam o documento;
-        * Existe o perfil do adminsitrador: criar bancos e usuários;]
+        * Existe o perfil do adminsitrador: criar bancos e usuários;
 
 * Atividade e Reflexão
     * Atividade
@@ -302,3 +302,87 @@
         * O termo 'schemaless' é válido para os bancos de dados de documentos ou eles são semi-estruturados?
         * A importÂncia do paradigma Map/Reduce para o CouchDB e banco de dados de documentos?
         * Importância de ser avaliar o teorema CAP em uma solução NoSQL?
+
+<h1>Bancos de dados baseados em colunas</h1>
+
+* Conceitos
+    * Origem: ANalytics e Business Intelligence;
+    * Exemplo de produto: Sybase IQ - 2002;
+    * A proposta é um armazenamento em colunas:
+        * <img src="imgs/11.png"/>
+    * Orientada a linhas: fácil de adicionar novas linhas, leitura de colunas (dados) adicionais;
+    * Orientado a colunas: Somente lê colunas necessárias, necessidade de 'busca' na adição de novas linhas;
+    * Abordagem economiza espaço. Se a coluna for nula, não será armazenada.
+    * Orientado para leituras (Data Warehouse):
+        * Desempenho para várias agregações e leituras;
+        * Escritas são executadas em lote;
+        * Normalmente esta no Top 3 do TPC-H (Exasol, ParAccel, e Kickfire);
+    * Cada unidade do dado (linha no SGBDR) é um conjunto de pares chave valor;
+    * A unidade do dado é identificada com a ajuda de uma chave primária ('row key');
+    * Um conjunto de colunas é chamado de família de colunas;
+    * Dentro da família de colunas, as chaves primárias são armazenadas de forma ordenada;
+    * Considere o seguinte exemplo:
+        * <img src="imgs/12.png"/>
+        * <img src="imgs/13.png"/>
+    * Cada coluna e linha possui controle de versão;
+    * Milhões de colunas;
+    * As colunas podem ficar em memória ou podem ser compactadas;
+    * Família de colunas
+        * Na prática as famílias de colunas não ficam fisicamente isoladas;
+        * Definida no momento de criação dos dados;
+        * É recomendável que não tenha alterações muito frequentes;
+        * Cada família de colunas é uma estrutura chave valor. Cada família de colunas possui uma chave e a linha é então um 'hash-map':
+            * <img src="imgs/14.png"/>
+        * As chaves ordenadas propiciam a eficiência para leitura;
+        * No acesso aos dados (leitura) além da chave ordenada, as colunas podem conter estruturas para melhorar as consultas:
+            * <img src="imgs/15.png"/>
+        * Lógica de acesso aos dados
+            * (Table, RowKey, Family, Column, Timestamp) -> Value
+            * SortedMap<RowKey, List<SortedMap<Column, List<Value,Timestamp>>>>
+        * O primeiro 'SortedMap' é a tabela contendo a lista de família de colunas;
+        * A família de colunas por sua vez, contém outro 'SortedMap' com as colunas e seus valores e versões;
+
+    * Armazenamento
+        * Todos os dados pertencentes a uma chave e são retidas em um conjunto;
+        * O armazenamento dos dados é ordenado, mas o processo de partição entre os nós pode ser aleatório ou não;
+        * Normalmente faz uso de DFS, desta forma a tolerância a falhas pode ser garantida com a replicação de dados em nós diferentes do 'cluster';
+        * Arquivos de dados e logs são armazenados nos 'data nodes';
+    
+    * Arquitetura:
+        * Alguns produtos utlizam os 'server nodes' e em outros não há figura de um controlador central;
+        * Retêm metadados para:
+            * Local de armazenamento de cada tabela;
+            * Servidores disponíveis;
+            * Informações de esquema: famílias de colunas;
+            * Listas de controles de acesso;
+        * No Google Bigtable um serviçoo central consiste de um cluster com 5 réplicas ativas. Em uma nova requisição, uma delas é eleita como 'master' e faz toda execução;
+        * Exemplo HBASE:
+            * <img src="imgs/16.png"/>
+        * Exemplo Google BigTable:
+            * <img src="imgs/17.png"/>
+        * Possui arquivos de log (comum em vários produtos);
+        * Também é comum nos bancos colunares o uso de 'write ahead log';
+        * Exemplo HBase:
+            * Cliente modifica o dado(put(), delete(), ...);
+            * Modificações são tratadas para estrutura chave valor;
+            * Dados são encontrados no Servidor(HRegionServer) e no arquivo (HRegion).
+            * <img src="imgs/18.png"/>
+    
+    * HBase:
+        * Site: http://hbase.apache.org
+        * Histórico: Criado pela empresa Powerset. Doado a fundação Apache antes de ser adquirida pela Microsoft em 2007;
+        * Linguagem: Foi implementado em Java;
+        * Métodos de acesso: REST (Representational State Transfer) e Java API; Outro projeto Apache introduz SQL neste banco de dados: Hive (http://hive.apache.org)
+        * Utilização: Facebook, StumbleUpon, Mahalo, Yahoo e outros;
+
+    * Cassandra:
+        * Site: http://cassandra.apache.org/
+        * Histórico: Desenvolvido no Facebook. Projeto teve ser código aberto em 2008. Foi doado para a fundação Apache;
+        * Linguagem: Foi implementado em Java;
+        * Métodos de acesso: Java API e outras linguagens: Python, Grails, PHP, .NET e Ruby; Possui o CQL - 'SQL-like' para manipulação de dados;
+        * Utilização: Facebook, Twitter
+    
+<h1>Bancos de Dados baseados em colunas - Cassandra</h1>
+
+
+
