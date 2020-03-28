@@ -1,3 +1,6 @@
+* Link -> Máquina Virtual da HortonWorks versão 2.1
+    * http://hortonassets.s3.amazonaws.com/2.1/virtualbox/Hortonworks_Sandbox_2.1.ova
+
 <h1>Introdução ao Hadoop</h1>
 
 * Plataforma para processamento paralelo e distribuído.
@@ -247,3 +250,18 @@
         * Quais são seus principais componentes (fundamentais)?
         * Qual a função do Hive para a plataforma Hadoop? Quais seriam seus casos de uso, pensando em uma arquitetura distribuída de dados?
         * Você imagina algum caso prático em que poderia usar o Hive?
+
+
+<h1>Atividade Objetiva</h1>
+
+* 1 - Considerando os componentes essenciais do HADOOP, assinale a alternativa cujas informações estão incorretas:
+    * R:Sqoop: Movimentação de dados para dentro do Hadoop a partir de bancos de dados relacionais e vice-versa. O Sqoop não é um componente essencial do Hadoop;
+
+* 2 - Considerando o Hadoop, selecione a afirmação correta:
+    * R:  Possui componente para gestão de metadados. O HCatalog em conjunto com outros produtos pode se visto como componente para gestão de metadados.
+
+* 3 - Considerando o Hive como um produto de suporte a Data Warehouses, é incorreto afirmar:
+    * R: Não pode se integrado com outros componentes do Hadoop. Justificativa: Pode ser integrado tanto com jobs map reduce, quanto com o banco de dados baseado em família de colunas (HBase, por exemplo) dentre outros;
+
+* 4 - Considerando a arquitetura do Hive, selecione a afirmação que correta:
+    * R: Tabelas em Hive são compostas por dados: arquivo ou conjunto de arquivos no HDFS, por exemplo; e esquema (metadados). As tabelas em Hive possuem dois componentes: arquivos e metadados criado pelo HCatalogo
