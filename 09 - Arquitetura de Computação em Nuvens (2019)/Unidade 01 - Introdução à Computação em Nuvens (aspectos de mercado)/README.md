@@ -70,7 +70,7 @@
     * Os clientes e as corporações buscam cada vez mais garantias de viabilidade para a execução de projetos.
     * Já consagrada na área de infraestrutura há uma referência de mercado para que se sigam as melhores práticas.
 
-* Biblioteca ITL
+* Biblioteca ITIL
     * O framework Information Technology Infrastructure Lybrary (ITIL), segundo Molinaro e Ramos (2011), é um conjunto de melhores práticas para gerenciamento de serviços de TI que surgiu no final dos anos 80 por necessidade do governo britânico.
     * Desta forma, foi solicitado o desenvolvimento de uma abordagem de melhores práticas gerenciamento dos recursos de TI independente dos negócios e dos fornecedores envolvidos. (FERNANDES 2008).
     * Para atingir eficiência e eficácia na tulizacação de recursos, atingindo um grau de maturidade e qualidade em níveis de classificação elevadors, recomenda-se adotar as práticas ITIL.
